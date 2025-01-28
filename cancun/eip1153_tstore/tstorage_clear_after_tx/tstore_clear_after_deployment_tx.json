@@ -47,9 +47,9 @@
                     "0x0c": "0x0c"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x0391aa",
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x02",
+                "balance": "0x3635c9adc5de941a74",
                 "code": "0x",
                 "storage": {}
             },
@@ -59,14 +59,24 @@
                 "code": "0x60015c600155",
                 "storage": {}
             },
-            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
-                "nonce": "0x02",
-                "balance": "0x3635c9adc5de941a74",
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x0391aa",
                 "code": "0x",
                 "storage": {}
             }
         },
         "lastblockhash": "0x670384df31e9c0557adef1428eb9f2966525e772ac1ed3914bf180754019e0db",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a063383dbb17c22d07d7f7768d7e9b528638b61dea59f9484999ffb3463e1ee7d9a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -131,11 +141,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x02240bc3b2a366b9268f854e459e726d3e2297259921bbe62fb7e2a13839a2fb",
+            "hash": "0x87caac0a8bfc92a0ea4d2ab6d8010bdd23ef75244da82fb94c2f23de571b76c7",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    This test first creates a contract, which TSTOREs a value 1 in slot 1.\n    After creating the contract, a new tx will call this contract, storing TLOAD(1) into slot 1.\n    The transient storage should be cleared after creating the contract (at tx-level), so\n    the storage should stay empty.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L29",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    First creates a contract, which TSTOREs a value 1 in slot 1.\n    After creating the contract, a new tx will call this contract, storing TLOAD(1) into slot 1.\n    The transient storage should be cleared after creating the contract (at tx-level), so\n    the storage should stay empty.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L29",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"
         }
@@ -323,6 +334,21 @@
             }
         },
         "lastblockhash": "0x0388ad4a69625aa2d1a55fc27a5ee09317aa66bde8813e6a80c4879a1e9b29b9",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0261fa021eb7c95c21060dd7254c54d964483158a13b1ed5332aa5ea204449476a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -388,11 +414,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x77def5afb902528b1935a1332eb12eda608756c7603b225936f39c7701731b88",
+            "hash": "0xddedce72e0f7f11fbb9fbc04d46e6d45eb08a418d8dab916308ede531bdd40c4",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    First creates a contract, which TSTOREs a value 1 in slot 1.\n    After creating the contract, a new tx will call this contract, storing TLOAD(1) into slot 1.\n    The transient storage should be cleared after creating the contract (at tx-level), so\n    the storage should stay empty.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L29",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L29",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"
