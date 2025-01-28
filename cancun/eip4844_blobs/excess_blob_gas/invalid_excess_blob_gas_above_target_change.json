@@ -1,5 +1,5 @@
 {
-    "tests/cancun/eip4844_blobs/test_excess_blob_gas.py::test_invalid_excess_blob_gas_above_target_change[fork_Cancun-blockchain_test-new_blobs_1-zero_blobs_decrease_more_than_expected]": {
+    "tests/cancun/eip4844_blobs/test_excess_blob_gas.py::test_invalid_excess_blob_gas_above_target_change[fork_Cancun-zero_blobs_decrease_more_than_expected-blockchain_test-new_blobs_1]": {
         "network": "Cancun",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -65,6 +65,16 @@
             }
         },
         "lastblockhash": "0x7a5f2f41468b5207a240bd9bbe5e7ca3950ff7f3e790ea6c8cca58b9604597da",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90243f9023da00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0b4ebf7b941bea3aaec32b33ca9dceb9b5b9876b57db27ab4d0ce4640b233fbd0a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b42180830a0000a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -124,16 +134,17 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xe23fc18191bdcd8aa76884d7f9373f4a7a2e3e3440796189205a3eea81275394",
+            "hash": "0x156a9ed4f6bacba8254dd0f40f0dcb57a1c0770b7176997dd7be775ec0d7ada5",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test rejection of blocks where the `excessBlobGas`\n\n    - decreases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with zero blobs\n    - increases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with max blobs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L501",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test rejection of blocks where the `excessBlobGas`.\n\n    - decreases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with zero blobs\n    - increases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with max blobs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L477",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
     },
-    "tests/cancun/eip4844_blobs/test_excess_blob_gas.py::test_invalid_excess_blob_gas_above_target_change[fork_Cancun-blockchain_test-new_blobs_1-max_blobs_increase_more_than_expected]": {
+    "tests/cancun/eip4844_blobs/test_excess_blob_gas.py::test_invalid_excess_blob_gas_above_target_change[fork_Cancun-max_blobs_increase_more_than_expected-blockchain_test-new_blobs_1]": {
         "network": "Cancun",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -185,12 +196,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x4a600055",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -199,10 +204,16 @@
                     "0x0c": "0x0c"
                 }
             },
-            "0x6389e7f33ce3b1e94e4325ef02829cd12297ef71": {
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x00",
-                "balance": "0x01",
+                "balance": "0x06ce79",
                 "code": "0x",
+                "storage": {}
+            },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x4a600055",
                 "storage": {}
             },
             "0x8a0a19589531694250d570040a0c4b74576919b8": {
@@ -211,14 +222,24 @@
                 "code": "0x",
                 "storage": {}
             },
-            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+            "0x6389e7f33ce3b1e94e4325ef02829cd12297ef71": {
                 "nonce": "0x00",
-                "balance": "0x06ce79",
+                "balance": "0x01",
                 "code": "0x",
                 "storage": {}
             }
         },
         "lastblockhash": "0xe2b3638c2a70920ae6a31477ab3981e92e4e35284f432d8ef008eab15adec048",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90243f9023da00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0de09a82126125fddec6388029abd53274745961f80591c84bc2190fb815fdf57a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218083100000a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -334,11 +355,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xeea1b8cf683862d0411e227d370ce7ad15c40340e2cea01b09fd85579599d9a5",
+            "hash": "0x0926336d04a1b2d5a778c0707778af6a4a83bc03c4fd1d63b85bb0e18ae25b56",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test rejection of blocks where the `excessBlobGas`\n\n    - decreases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with zero blobs\n    - increases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with max blobs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L501",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test rejection of blocks where the `excessBlobGas`.\n\n    - decreases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with zero blobs\n    - increases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with max blobs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L477",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -522,6 +544,21 @@
             }
         },
         "lastblockhash": "0x75503da26b42f2b6df072b41c0db700052d5a6875e26a4e21a81bac115d39692",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90264f9025ea00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0cb2838d16cd04fce6fae4ef6fbd1fe45310598658533f43fd808b20d68f0bce5a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218083100000a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -582,11 +619,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd43ff0c80a787d91af1ff1a56099034905137e5cb97a8e4e503e480e56194374",
+            "hash": "0xd5c65058244623d66bdbc663da98d8f1f0df6c7cad5122bcfc1012b5226e4e5f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test rejection of blocks where the `excessBlobGas`.\n\n    - decreases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with zero blobs\n    - increases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with max blobs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L477",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L477",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -793,6 +830,21 @@
             }
         },
         "lastblockhash": "0xa210af7a75514e2c23439f33d77e540b97bf2cded871bfc970517cb62970aeed",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90264f9025ea00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a03418eae9fa9813109e410a9e8a2bb1e949f944bc4ecdb882af144de4808b97d4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b42180831c0000a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -913,11 +965,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x58455bd2f8df946eaf4bf982d477b37189eef679e3904df4ff91bcb92b827c7b",
+            "hash": "0x3726749409a5d114445dc3cb574a6ad2512e4ba2951ea661ba988d10c5e8ddde",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test rejection of blocks where the `excessBlobGas`.\n\n    - decreases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with zero blobs\n    - increases more than `TARGET_BLOB_GAS_PER_BLOCK` in a single block with max blobs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L477",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_excess_blob_gas.py#L477",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"

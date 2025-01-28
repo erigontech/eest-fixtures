@@ -45,14 +45,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c350f15a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -61,20 +53,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04576e",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c350f15a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91873c",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04576e",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xdc46f28f7b533d4ca84259f00dc13c0edd19e3804f45f9e2a7f0bc43209d61bc",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0b2b1a4f145c6f108fb63266c27488a5869e9609823191094bd5466d8b6410116a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -125,11 +135,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xe9d08c711b1cd1e52ebb25278bf6f35bb7968b7b7a2fe735ed66e0451760f80b",
+            "hash": "0xb9aa23b0758738304e5c1aa2d07152a297737933289f1e3e6dbc41a82aae4958",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -180,14 +191,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c350f45a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -196,20 +199,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045765",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c350f45a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91875a",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045765",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x7c923fdb51bbab3535c1c1c2c7455d9fb6bd48fc6caa16f6fb2fedd2071f5559",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0f88b3bf0de9fd4d4bc0a1ac727adcfddcbebe8ee196b71278c2a81c97e68a4bfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -260,11 +281,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xab523681449de6819f66e1c96851fc43449aaee245b6e70dfc55d07fcf992ff2",
+            "hash": "0x039f34c83bac45a4d3c6f26a9b6d8a789b58feb3fa8d7cb44acc657c57fc500c",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -315,14 +337,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c350f25a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -331,20 +345,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04576e",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c350f25a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91873c",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04576e",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xcea8b5e34a6bd40f693bd814529ca29b74dd0c2054a6e0e43988de34a75c9353",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a045252044659f7ae50f9cb4c73e9e70eca58bf89469eced6bc0ce3830d744f259a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -395,11 +427,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x65bc8a22a8a3f11ebf7592ec832fb44a4e5610af8447e42bc459496addb8909e",
+            "hash": "0x4edd79d5810cef824ff537d6be8f65271284d7b7b2978bed14f06296817be6b1",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -450,14 +483,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c350fa5a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -466,20 +491,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045765",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c350fa5a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91875a",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045765",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x5bf5c903602cbb6e8cbd7a2c156a9b5fdc374e1895e453031dfc321eca872533",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0a50e721e0196eb399b3b4279ed1f81e0f6a48e2eb5cbdbf4e7b554d6a3e4ac34a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -530,11 +573,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x3f7d4c3e380cdaf898b866b49650940aca7c0a84301cef529f3014a93230a6b5",
+            "hash": "0x530c0cc32e2d62cd0d3a51ea70c0444fee08b55235fa75c3b04f81d04ecc56af",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -585,14 +629,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c34ff15a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -601,20 +637,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04576b",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c34ff15a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de918746",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04576b",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xe54ac67ff3fdaa6a5a42f75bf27092a10d9f97c10825fab759a136da83758c5e",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a07069457de64043858c25b632aef40416bfd343f9a410dbd8dd256625eab1c6f1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -665,11 +719,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xb57d3894ef4ec5fc1384cecf0cf18c0f01ea0e30216f41a13f9f8c31ece1c568",
+            "hash": "0x5447ca7eddba93f92590ccc38454a74b95b34c0ef756582964709ea5b03b48c9",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -720,14 +775,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c34ff45a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -736,20 +783,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045762",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c34ff45a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de918764",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045762",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xa8aded72c6f2786cb4cbac11235436cd9bd38401b65dd52a4e8b0d37d49b71fc",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0235f883cd3e95bb7ac2da86b4798714d5b68d4b21a0243c7bd1be2b901faf7d1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -800,11 +865,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xff60e70d8f0a671e6db9707132530498a49557b03e8a76693d22eabe84a0e94d",
+            "hash": "0xf2f6f5004a7a34f8d20c03327c9cef464c9b92b5668cc1be6fba1fa30eadcca7",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -855,14 +921,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c34ff25a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -871,20 +929,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04576b",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c34ff25a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de918746",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04576b",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x49139566a466392a67962228a560e4098c88cc6624caf8323fd8cc787a97748a",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a03235c163aef63e5891b8416f112f4fde577e3cade4b0f254e5769390815830e4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -935,11 +1011,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x4ccd4b9ac01aac8d3ad673da7284688a5a7b4a99219f54c070c3861c490cf8e2",
+            "hash": "0x1bee217514d46f61001c902c434eb7b9a40c70431b1f5a17d4d93895e01576fe",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -990,14 +1067,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c34ffa5a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1006,20 +1075,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045762",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c34ffa5a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de918764",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045762",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x9f4699f3d9ed3e8f3e417aaabed857a73ca0c3d1ac276ce396af30c463ae1ae2",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a04d0dea55bd3a43b132be75eab0dd52a634f2d7d40217811eb8b2f8bcc9830acfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1070,11 +1157,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x66272090c7cf780a1695a2ad9b100d2896c78c3c922b7b3e50fc56a920547351",
+            "hash": "0x89781ef2b5a09f503028f7e6db77ce1e6e1296ec8b9a98b66171e2e1824ac785",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1125,14 +1213,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c351f15a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1141,20 +1221,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04576e",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c351f15a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91873c",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04576e",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x4f985527d8122c9abd7db0dc598bfd3d4d653d46c3b460041c7af0e073224c27",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0d5fbc566cc9b5eb449a9ed99ff78f6531e0e0e8d96183b8530a5d654778d84c4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1205,11 +1303,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc624e1eb7252333d18e5907681eb75858df10b69fd627a4c5a56118cf2f7ef9a",
+            "hash": "0xe6a22d2408619c9cf75a471e56607c0876794bde5e30c863a1be4f5bcfc31116",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1260,14 +1359,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c351f45a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1276,20 +1367,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045765",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c351f45a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91875a",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045765",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x4de56fcf00f9454b39cbd8ec7e1a8f0b7a0bb5548846963ede67f1af8c66d66a",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a01f48646a541b917343af20f80f2fd0a20cc43a16df30a34ae18144a76e7bab3fa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1340,11 +1449,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x89f82884d450e270809646dd26f623a7f508452ab8672205f8dd50d70ad1bcb7",
+            "hash": "0x77f02d34515bc9fdc4bcb19b9db53f1e49b7084d52f0bd27790e8164a7f00760",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1395,14 +1505,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c351f25a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1411,20 +1513,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04576e",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c351f25a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91873c",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04576e",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xce9d56820c6527d0206b7768f18ac3adeb3634f88eb37ab30355c0fe2cff5ee5",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a00bd2f100a10dc6410a075865ba76bb33f09dc8fa4fca322d006bc2c13eaa8c5da056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1475,11 +1595,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1bf257bc970fc8ed7fe493c0cf019046f879becc6d0609fd3551d9f3087650fc",
+            "hash": "0xce7f23686458e02d834c7c5f641263734f3ce0616bf0500ee568c2d05d2ae7d7",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1530,14 +1651,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c351fa5a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1546,20 +1659,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045765",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c351fa5a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de91875a",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045765",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x3ee42f9710972334734f4d6f8147f79e66c32cf3a0898382c941a2eac5dbc993",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a06e407429e81f1e0caff502baadaec7959f1f89fe2a8fd11d4f28417232e6e8fca056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1610,11 +1741,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x4904fd46195fdd55f786496bbb7a5dcc2fa370c3b13514ea7769ead524832891",
+            "hash": "0x239d682aeaa9594e82bfc246551e2fe2b739a63a40c3fe5131cd2313ef8d436a",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1665,14 +1797,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c350f15a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1681,20 +1805,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045792",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c350f15a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186c4",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045792",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x658aa83cbbaf50760242abddd8d04f1e800bc1a1d3484c27fd2e7e0f1145d5ce",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0b2b1a4f145c6f108fb63266c27488a5869e9609823191094bd5466d8b6410116a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1745,11 +1887,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x2044ff0c063fcaacefc2e53c3af6485b23f965fb436fcc06b18f8f29bc0cbe2a",
+            "hash": "0xefcdd39af47ed11026988a2eb6cec40a2e95cc82b01b0ae7f4250e59580a801d",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1800,14 +1943,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c350f45a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1816,20 +1951,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045789",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c350f45a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186e2",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045789",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x8af20e1ca826989c9e27be9fc3f8440fd7f14a5b9aa6e20280a224d26ab9748c",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0f88b3bf0de9fd4d4bc0a1ac727adcfddcbebe8ee196b71278c2a81c97e68a4bfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1880,11 +2033,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc186e482cde293fa87e0401be762f03dc5ad61d71b191abfbc394b2b308197cc",
+            "hash": "0x10b56dd7f27f12bb1b2fa45f913da3ceeadb0cf5764e8ccec37ea08094ec204e",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -1935,14 +2089,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c350f25a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1951,20 +2097,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045792",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c350f25a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186c4",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045792",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xd179625d03e71f308679555ad7042898d8e6612700045d56c93d64fa16feaeab",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a045252044659f7ae50f9cb4c73e9e70eca58bf89469eced6bc0ce3830d744f259a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2015,11 +2179,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc13a9c474cc6a2561f5c75523ea2d5987b968f94de49b0c55b7798bd3c15d8ae",
+            "hash": "0x3ef06b3b6fc5b9986045e1d4ebd49dc83631fdb51e6f43aff2cecd1017f87cfd",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2070,14 +2235,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c350fa5a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc350"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2086,20 +2243,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045789",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c350fa5a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc350"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186e2",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045789",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x911c8d6e59977e99fd586435965a6d0f01945d8dba76aa5e80279ca9b38b1a87",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0a50e721e0196eb399b3b4279ed1f81e0f6a48e2eb5cbdbf4e7b554d6a3e4ac34a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2150,11 +2325,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x7ec4314da6b1e8991c57a257ec5aacd84ec1d777e316fea54830ee8b4a7608b8",
+            "hash": "0x698cfe31e91b1580880acc197f76d4c2dd530a20daad3049776942fb7051971c",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2205,14 +2381,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c34ff15a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2221,20 +2389,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04578f",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c34ff15a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186ce",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04578f",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xf8f9577d44736e243d85121a61e6a0ce1a83d95db984098c6159de39b7723ddf",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a07069457de64043858c25b632aef40416bfd343f9a410dbd8dd256625eab1c6f1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2285,11 +2471,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x24bc738993b8c0497c088c2ddbb24164c5863d74e319b83dba3bcf097f28950a",
+            "hash": "0x58e0e2649bdc6406cf0a1809516f190d8c5949f792b798114566608c20605c30",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2340,14 +2527,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c34ff45a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2356,20 +2535,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045786",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c34ff45a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186ec",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045786",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x602d54e0fa155aa159f7a28bd9dcf5c352d305997657f6cdeabfd7dd29217ea0",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0235f883cd3e95bb7ac2da86b4798714d5b68d4b21a0243c7bd1be2b901faf7d1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2420,11 +2617,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xb79cc892d94b4e09178402ad9c31a3f44d263826718286c0645e0d9cf2f33908",
+            "hash": "0x95974d90b53da5343106fad909e1f76d6a4e547cf221bca0b71ba2a84d22db0e",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2475,14 +2673,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c34ff25a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2491,20 +2681,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04578f",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c34ff25a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186ce",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04578f",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xe30c709de1e835c999c93f94aeedc899cf8bb176a100986b882b5693888df68e",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a03235c163aef63e5891b8416f112f4fde577e3cade4b0f254e5769390815830e4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2555,11 +2763,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xb9ea36b0a208a1c1600db0480f16f904bdb1353708cff3d513b652cfe61fb0d8",
+            "hash": "0x4e9f745e66b91bcac8009f46e05e8bbbfefefecd2d2b51e691035353004b0ac5",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2610,14 +2819,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c34ffa5a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc34f"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2626,20 +2827,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045786",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c34ffa5a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc34f"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186ec",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045786",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xd86dcf31a1ba006f48c2b19568d764d51fc06c5f0b3443635916f1616bbebaf4",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a04d0dea55bd3a43b132be75eab0dd52a634f2d7d40217811eb8b2f8bcc9830acfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2690,11 +2909,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x149e539452f1b85d8b649ba820039d09be5bbfeb7310c24f9739600aa971a52a",
+            "hash": "0x0853df48b1c4edc2acee008691cbd1da16fa59d8660c7d2a0b97c792007b657c",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2745,14 +2965,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c351f15a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc351"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2761,20 +2973,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045795",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c351f15a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc351"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186ba",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045795",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x5f1aa486bd1e9c418a839da947ca06defe792caf9b9ac026dc781c6b2161f650",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0d5fbc566cc9b5eb449a9ed99ff78f6531e0e0e8d96183b8530a5d654778d84c4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2825,11 +3055,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0348e02632a73f6dd38c3bb719046fd78697373d94f659e815870c72e6e581dc",
+            "hash": "0xce045e46aeb1627fd6009467fe1c12272f306eae850e283376e3efff886f4fa1",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -2880,14 +3111,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c351f45a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc351"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -2896,20 +3119,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04578c",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c351f45a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc351"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186d8",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04578c",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x899ce69110ee0877310fba54d52dfa02411bf0302212add87be8b0e309ca60c7",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a01f48646a541b917343af20f80f2fd0a20cc43a16df30a34ae18144a76e7bab3fa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -2960,11 +3201,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xa996ea8ac1f23a0bec4a69f74cc6bc2271bb8e9b78f2783be84c083144c0da45",
+            "hash": "0xfd4554b9b5b0288428d2a36a8f5244316c3b455fd91396cb99d5e9fd215fc6d7",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -3015,14 +3257,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a366000600037600060003660006000600a61c351f25a9050900360a9900360005500",
-                "storage": {
-                    "0x00": "0xc351"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -3031,20 +3265,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x045795",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a366000600037600060003660006000600a61c351f25a9050900360a9900360005500",
+                "storage": {
+                    "0x00": "0xc351"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186ba",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x045795",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xc42f90a8eda238a751902897a9150bd3c5881fcb80257c54eff9167723d81efc",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a00bd2f100a10dc6410a075865ba76bb33f09dc8fa4fca322d006bc2c13eaa8c5da056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -3095,11 +3347,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x08786c3a062bb5698f73464931d7a7946dd3039e9801a4b72b513cc765d80415",
+            "hash": "0xbc5c6a0c15b8da50679938cede4fa5a8ff65aa05560b8567c4c26f3b4e40a976",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -3150,14 +3403,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5a36600060003760006000366000600a61c351fa5a9050900360a6900360005500",
-                "storage": {
-                    "0x00": "0xc351"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -3166,20 +3411,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x04578c",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5a36600060003760006000366000600a61c351fa5a9050900360a6900360005500",
+                "storage": {
+                    "0x00": "0xc351"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9186d8",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x04578c",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x8e2bfa9c55b3094d7b386607bd552907907a776256d0f03cd9eeab7fa95ebfdb",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a06e407429e81f1e0caff502baadaec7959f1f89fe2a8fd11d4f28417232e6e8fca056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -3230,11 +3493,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc1237c690c9a81d88265551000e5f3db230ae6a90315e9e6540267aa0793454d",
+            "hash": "0x128fa514ef4e08786ef683687d90d9833f006e05640f065f5ef9c65c33fd84ee",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits:\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L177",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -3430,6 +3694,21 @@
             }
         },
         "lastblockhash": "0xe3d2ccf47c329714f75075eece2e3979a168c60fe3c07012c98214827d28b1b1",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02a90cc64a00c616d2d6d5e4826494095f6585d6f6035849cfe4c3b1d0f1913a5a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3481,11 +3760,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xae70204dd52e2821b69b42b9022adc5704a5b5f662e819b456f7300d3c24e96a",
+            "hash": "0xe3bf9d31d545a75d51c1cceef6ceb30d7291f482dc8b3d51c1377e78b05ec4d9",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -3682,6 +3961,21 @@
             }
         },
         "lastblockhash": "0x4a73e253d6f1482a71dee141dc36f325a67216f0575a70f7e0da101f03819ca1",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0bbc2b4fcd77dcf76343acba16bb262d5f0536d1a78f00a60082d78c41119c17aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3733,11 +4027,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc685521d24ae1141c1fae6d5f031b05d1a76c7d21ed87ff83cb4a8a812fa76cf",
+            "hash": "0x7246cad6327f09c84cdccea5ee19b597d2b7efbff0089e0f0dd5fdfca6bbd10f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -3934,6 +4228,21 @@
             }
         },
         "lastblockhash": "0x90327e2811b3738187d6c1b2a6e1d993074b589f09b5eb3a9b78c67c95646465",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ba17b4a1c1a9ad553bfb3539da90e7900ebb072703d2622218a4079d19b737bca056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3985,11 +4294,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xcfe824b1ab75120c9fc493304d9dbd7088d4864043ccca5362da104086702342",
+            "hash": "0x8d352f859467810649a01b01714628f92c9b4a9fe2367f4839d468b9d6f4e4a0",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -4186,6 +4495,21 @@
             }
         },
         "lastblockhash": "0x61cb2b6462e18084beba52e83a11317603b45024e43dbf9228e02e5f2b4b646d",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0e619999a33b5696fb12b45232239227c24de6ef21d922777dd825680973ec81ea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -4237,11 +4561,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0385a209638ea81398ab2332ba11414359d74c213f69111b388971c96cf22b68",
+            "hash": "0x665cef628d4e8dc24e2369033c849c621e16df962bc76d9d6827d00a4012cf77",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -4438,6 +4762,21 @@
             }
         },
         "lastblockhash": "0x27f0eda68d0db054a17a74778f7d10480e3fd519556a42e157632f1344f3378f",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a04f4836877a2e9318869f521d7f997445c9e6d19e4ae3153ee14a853462ca3879a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -4489,11 +4828,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd50db014d6b68a039ba4e0211225733377a60782637ce8d9ba0ec86a64939199",
+            "hash": "0xc8ee1e47bb2961301eed1acab06b94472a7257c217931b8fab2e61ea7e5727ea",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -4690,6 +5029,21 @@
             }
         },
         "lastblockhash": "0x2d6bd54e10751f58b545ed0fb8f74206c4943e9cd92d924ed85f78321d6062bf",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0cfbfd1d21ab0fa9b9260bf5c72c88586a21d858513e6b0f9359320e6b91e99aea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -4741,11 +5095,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd3cd5016a1bd72f45ef176bb0c00a62dc40143b9503359fdae0ae1006104d19a",
+            "hash": "0x81bccdd6dabbbb3a41a0b5949b8171bea99f8932f0a8edf26cc33fe3404fd5cf",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -4942,6 +5296,21 @@
             }
         },
         "lastblockhash": "0x5279846d861757b2bfb5ef41a3bbef13827d7409d5f3212dbf64e611e29436cf",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a090a444236137e7bc62046fb38bd755641ca378d451f5f8ebf324767eb5c06195a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -4993,11 +5362,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xaaf39f717aad8a19b4a2c635ee2efbe6efdb6888c6847a108cc862879f30d046",
+            "hash": "0x84e2c191fb894df37381cd77bb67bb2997f73eed7e2b72cbb5bb2bfaae2b93bf",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -5194,6 +5563,21 @@
             }
         },
         "lastblockhash": "0xfd25af4eae006a58f4420e4e1f13d97ccbcb311d651afc7d2ebf46759766526a",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0191e970f348cf0f5e3dbf81e0d5691fa5caabd8e42e48e21c09aafe56697069fa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -5245,11 +5629,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xf009fa8db7e459b6e3336260d01453237504c79f27acfaf4b9016a9399d688a7",
+            "hash": "0x5848aded43eaf423955a4dfc24da891faa97f17df0aa7974b94b924d7481938f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -5446,6 +5830,21 @@
             }
         },
         "lastblockhash": "0x38175ec8e4e6809c02a9ad71866f4224f7664544e39a01e84b36dc738423955b",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0dd7847b27c8b6361b9ae612d55f97f2895cbb440f103c5f01af44731a690262ba056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -5497,11 +5896,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x456837e8d8f3c765c2c499a333003170f1778c12ebaa63496fea8d0ac671f333",
+            "hash": "0x94b64fa8af1f2f746282a7c2374d368e1f743330633820689b0a44d320ef0c72",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -5698,6 +6097,21 @@
             }
         },
         "lastblockhash": "0xe376997eb2828fac22f5fb796d0137a770bb0ace38abf2e4f9d91b23735c55a3",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a015c1b54e0ab58720db61117278ec4548ef522d95273bfefa72bec5bff9cd004ca056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -5749,11 +6163,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xcd546fa847a6d89ff70f9210c3daf1f5414f7e52faf1523fee0e0c56aef9bea0",
+            "hash": "0xf2eb526e3f9aeb840f9869a2066272107662c0865d2220194a77bf7a62a3cd6f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -5950,6 +6364,21 @@
             }
         },
         "lastblockhash": "0x75f5b91fc09a1442c809987a5a2a46783e4381b4d442586e369468c1f4518a97",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0cd914eedca4a0264e9c5a8a8a0e36c266bf9d5ca770b4c468396f4db6d5eb13ea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -6001,11 +6430,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd2536fc60e9983131cc869d21586b540083979fea83c953803e8a0fc18f8199c",
+            "hash": "0xdddce0e6c6df77e24d1e2bf0a5269e1be4abc2481c341c33e7d5d80d9d42d302",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -6202,6 +6631,21 @@
             }
         },
         "lastblockhash": "0xb4b39553544d8076c0d1a668c07e284817ffd0172334f8c0e2b122034d73626e",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0c2fbb34c3530bd3f5a4daa2a10efcb912517bcbbe66c83cf55b9ebd91654f6d2a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -6253,11 +6697,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x30ca85379ebdaf950dc778a9f3f617d94f81b95609748c603361fbdeeaa92c2e",
+            "hash": "0x01a9974a3f4dc6f82b56edbdb75e73873b37bab4da09169321f8bddb696c7faa",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -6454,6 +6898,21 @@
             }
         },
         "lastblockhash": "0x69b78577f15e60d32dc93a831948df1a26975b592b828d25aa3942f1e1d922fe",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02a90cc64a00c616d2d6d5e4826494095f6585d6f6035849cfe4c3b1d0f1913a5a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -6505,11 +6964,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc815e6cbf1c2d01c7a35ed8e953ca31737751a120c1fee3b4e37c3bc401069a2",
+            "hash": "0xfca17cf63d9f0c9cb237d6cd20b4c141b57c630be5428ae31b45fff99ef2bfad",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -6706,6 +7165,21 @@
             }
         },
         "lastblockhash": "0xc7eca07905506529bb65bef5a6f167853dc3f932788fe0bf52cce37c8c400f01",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0bbc2b4fcd77dcf76343acba16bb262d5f0536d1a78f00a60082d78c41119c17aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -6757,11 +7231,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x4a4236aed01be4f9d81b3de5f584b72a84aca07d498d63f888704b207c486668",
+            "hash": "0x6c71d8bd80a52b3942fb101ce5bd2882e5706bab0a14d5a4de525d6311fcb3b8",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -6958,6 +7432,21 @@
             }
         },
         "lastblockhash": "0xc6ed0956a595bdfb051da5ce46e416510c7c7a9fed7917f96b11973d8f1736b4",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0ba17b4a1c1a9ad553bfb3539da90e7900ebb072703d2622218a4079d19b737bca056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -7009,11 +7498,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xeb05cc0bb4dbdc52cd5011115976ea04a91454309d2bd2aefffb38bbe693fb59",
+            "hash": "0x2ee927d0c43c70840ddc1ce6e516426d0b78af8682d61ae488e5146b0f75536d",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -7210,6 +7699,21 @@
             }
         },
         "lastblockhash": "0x1c6aa923ba42d5298333795ffa70a59f2a6565dc9d4b635c50ca4e0a412e35f8",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0e619999a33b5696fb12b45232239227c24de6ef21d922777dd825680973ec81ea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -7261,11 +7765,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x6216fc8e72879512178371fadaad3b12b7fc9db7565a11fca6ac7a1f492a2a8e",
+            "hash": "0x8f68a6843e9b4e53d3edfb0349fcd362a3c51e0be3399d706e9fe703d68242e2",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -7462,6 +7966,21 @@
             }
         },
         "lastblockhash": "0x567e9a93b97291eb93169b4d733f9fe8fb384c9fc4b7c4fcddf49e428a331447",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a04f4836877a2e9318869f521d7f997445c9e6d19e4ae3153ee14a853462ca3879a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -7513,11 +8032,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x30546449e5c398f61277f38ad6544b2119ebb81f217b5d3054c5611fc75f7ad8",
+            "hash": "0xb98421be6b293d221da11bf3d4663cafd9aa8709d1183d0dedec2ac13775d069",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -7714,6 +8233,21 @@
             }
         },
         "lastblockhash": "0x801f61597cc3fe551a29f654ee00f5b9fa93753828572c0ee063fd40c5ddf421",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0cfbfd1d21ab0fa9b9260bf5c72c88586a21d858513e6b0f9359320e6b91e99aea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -7765,11 +8299,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xdf6c3146e3b77247fcb5dc84b05537ef3d628434fa70d1e3d997a57e959b0ae5",
+            "hash": "0x13d26ecb4b53b17da9444a10e80b58f5c959cf194ab8ef096c0578e766133952",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -7966,6 +8500,21 @@
             }
         },
         "lastblockhash": "0x1b6f7c173f28515c89791d1902348b99161be309b69431b1d00769f8b4ee845e",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a090a444236137e7bc62046fb38bd755641ca378d451f5f8ebf324767eb5c06195a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -8017,11 +8566,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x631fccb59604b9bbc8a64f0d4c249617242bc0b4701ad83234b643d69c08e448",
+            "hash": "0x7f528630cab9a52945e0736a48a5765db2e9c8e87b5c6541593fafe313efcaca",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -8218,6 +8767,21 @@
             }
         },
         "lastblockhash": "0x465bdb3456b2fe6d303a2c568a6dc4cb8cf5b0f34cae75c98b36af9f7f2d2aca",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0191e970f348cf0f5e3dbf81e0d5691fa5caabd8e42e48e21c09aafe56697069fa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -8269,11 +8833,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x2a23b11951f7f80d1627305963fbde242093075d9818d2c28ac44339534a6ba8",
+            "hash": "0x6ae770d819d4c030ddc5c034914726bf5ac5e4c026234e175aaf64460a8d16c4",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -8470,6 +9034,21 @@
             }
         },
         "lastblockhash": "0xdc5ee6321cca6d6d8c18571960d171c3f48f51f5b38bbdb7824006fba26b6e57",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0dd7847b27c8b6361b9ae612d55f97f2895cbb440f103c5f01af44731a690262ba056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -8521,11 +9100,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x92777a9abc1db376ea1185a49993b591f02914d47037c5a8d550c8bec635e2a6",
+            "hash": "0xc476d678568bcac427be041ca5d772fb6db6b1667a9372e44be905c67e5f093c",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -8722,6 +9301,21 @@
             }
         },
         "lastblockhash": "0x489b67f6151cbdc95baae6edaf58f975f8efb0d71fff11691adc54cedecddf4c",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a015c1b54e0ab58720db61117278ec4548ef522d95273bfefa72bec5bff9cd004ca056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -8773,11 +9367,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x9664cefd72d55788c91fddff9dacb2980c54d0e8d96c65202fbe872a76cfc87b",
+            "hash": "0x0f506d5b19a40a0e19351229be4704207a2f506c273a059c0ac2224f14105b69",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -8974,6 +9568,21 @@
             }
         },
         "lastblockhash": "0xbc24c225706b69827f76bbf48f128f51c4c95a0f847db727e2f729cad63e220b",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0cd914eedca4a0264e9c5a8a8a0e36c266bf9d5ca770b4c468396f4db6d5eb13ea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -9025,11 +9634,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x513f4dbb6ecea7a7c2b578ef6bd6e6d078481f6a4d82d291ec2751650e1a763f",
+            "hash": "0x6c9f0e447f6ed699fcf1195a94b249def72a7dfb949623fcbfd4d36149d7f591",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
@@ -9226,6 +9835,21 @@
             }
         },
         "lastblockhash": "0xd58bd16c4e436bdb914fe2da4b06fa43ab2e7c988e22d0739c94b951a18920e8",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0c2fbb34c3530bd3f5a4daa2a10efcb912517bcbbe66c83cf55b9ebd91654f6d2a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -9277,11 +9901,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1a2ecc983ce48c6bee891dc53c8ec8d75b30ae0290de68f08facbd558a1689b6",
+            "hash": "0xb7cf6064894521b0d9ba33d8bfe57629d050606c692755460ddac2357cf8d27f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Test point evaluation precompile gas usage under different call contexts and gas limits.\n\n    - Test using all call types (CALL, DELEGATECALL, CALLCODE, STATICCALL)\n    - Test using different gas limits (exact gas, insufficient gas, extra gas)\n    - Test using correct and incorrect proofs",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_point_evaluation_precompile_gas.py#L186",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"

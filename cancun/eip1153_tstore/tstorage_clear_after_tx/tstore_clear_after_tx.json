@@ -45,12 +45,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x60015c600155600160015d",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -59,10 +53,10 @@
                     "0x0c": "0x0c"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x0224b8",
-                "code": "0x",
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60015c600155600160015d",
                 "storage": {}
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
@@ -70,9 +64,25 @@
                 "balance": "0x3635c9adc5de98daf0",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x0224b8",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x696f18c4564e28b78b2937afae7c4cc6acecb73674ca4bd9deb3a171a5ecd64d",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a099b021f2dd044e9b49ba5805a0c86f1868cb9598178a32c8310081c9a94da9e7a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -137,11 +147,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x67f33fa454ef6f089d23381b3a5dae8d22c703840a475b0fa8ad5cd2eb3f6a30",
+            "hash": "0x3fb54eea97d04a0e7f14754a5c25bb8a6cc1a79b9e265221e0c04d2849e03d63",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    This test first SSTOREs the TLOAD value of key 1 in slot 1. Then, it TSTOREs 1 in slot 1.\n    The second tx will re-call the contract. The storage should stay empty,\n    because the transient storage is cleared after the transaction.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L77",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    First SSTOREs the TLOAD value of key 1 in slot 1. Then, it TSTOREs 1 in slot 1.\n    The second tx will re-call the contract. The storage should stay empty,\n    because the transient storage is cleared after the transaction.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L77",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"
         }
@@ -335,6 +346,21 @@
             }
         },
         "lastblockhash": "0xea366349065a66f74b3dd2eaef5da75d607c146c7737eafd02e68f9540451e98",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0f646dc2f8e308b692e1ba834547c18abca1ef3d86c075ccdea8f702904616181a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -400,11 +426,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1ccc09eb5490c9dcdaa38e496b810136980cb13ea1d9f86e554a5d6d563a14d2",
+            "hash": "0x5ecebe17c4b3c77e198eb25e7502a78f79fc9adaf9b7b8715bf87cef7bbf54a6",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    First SSTOREs the TLOAD value of key 1 in slot 1. Then, it TSTOREs 1 in slot 1.\n    The second tx will re-call the contract. The storage should stay empty,\n    because the transient storage is cleared after the transaction.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L77",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_tstorage_clear_after_tx.py#L77",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"

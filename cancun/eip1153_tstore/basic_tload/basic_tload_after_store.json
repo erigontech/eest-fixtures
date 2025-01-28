@@ -47,14 +47,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5b601660015560015c6001556001600255",
-                "storage": {
-                    "0x02": "0x01"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -63,20 +55,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x01fdfd",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5b601660015560015c6001556001600255",
+                "storage": {
+                    "0x02": "0x01"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x6124fee993b55c0a",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x01fdfd",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0x174012f4e22763ff5ba234e207ddf23db09b37270b7477073da8d3434e3c36ef",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a00e981ea4d6265883ebcbaf07c239a79d6dcf9a00c553ae0b8ddc38a3ce6ffbc5a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -127,11 +137,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0faf46baefc653b81ca956b4f6542035771416055ff0f8e855345cb765cccda2",
+            "hash": "0xd5001320f2aacd8d21088d374277caa142093c1e23f0767943bcd4d8c087142d",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Ported .json vectors:\n\n    (18_tloadAfterStoreFiller.yml)\n    tload from same slot after store returns 0",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip1153_tstore/test_basic_tload.py#L242",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Ported .json vectors.\n\n    (18_tloadAfterStoreFiller.yml)\n    tload from same slot after store returns 0",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_basic_tload.py#L242",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"
         }
@@ -329,6 +340,21 @@
             }
         },
         "lastblockhash": "0xad533e2a745291ab405512c15b7523bdd73eb54a3d65231c295df073d3a3d338",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0e5456a971bb5a3450c60b7595e79b4ff0a633734ded283c3d706a3a11b922b5aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -380,11 +406,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x608c4df04cff43bb1bb379d6c91695c25712a239425ce0e667bb86de9938b671",
+            "hash": "0xf51dca80b006d0a0f182d5ebf8b0a04e8e0aa4e4483bd9794eacb331b7a71e7e",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Ported .json vectors.\n\n    (18_tloadAfterStoreFiller.yml)\n    tload from same slot after store returns 0",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip1153_tstore/test_basic_tload.py#L242",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_basic_tload.py#L242",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"

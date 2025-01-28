@@ -47,14 +47,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x5b605860035d60005c6001556001600255",
-                "storage": {
-                    "0x02": "0x01"
-                }
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -63,20 +55,38 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                "nonce": "0x00",
-                "balance": "0x01fdfd",
-                "code": "0x",
-                "storage": {}
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x5b605860035d60005c6001556001600255",
+                "storage": {
+                    "0x02": "0x01"
+                }
             },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x6124fee993b55c0a",
                 "code": "0x",
                 "storage": {}
+            },
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x01fdfd",
+                "code": "0x",
+                "storage": {}
             }
         },
         "lastblockhash": "0xdc0496a3a2ab1560b1affed4ebcc111d19c5368052e44b4db014c8516d2e00b7",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0c31034e0f240d44cd4a38327718df838c55465a5b325d89fbfc0f88bb2eeaae3a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -127,11 +137,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc00f0697d16a466771f5400ddd8d14cfc96b1f35c4e4e1843e8d8482cf0560d0",
+            "hash": "0xf69a82d784b603655a383107dfe18fbce943739fc0dc4a9f00f206a4abea43ef",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Ported .json vectors:\n\n    (03_tloadAfterStoreIs0Filler.yml)\n    Loading any other slot after storing to a slot returns 0.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip1153_tstore/test_basic_tload.py#L116",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Ported .json vectors.\n\n    (03_tloadAfterStoreIs0Filler.yml)\n    Loading any other slot after storing to a slot returns 0.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_basic_tload.py#L116",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"
         }
@@ -329,6 +340,21 @@
             }
         },
         "lastblockhash": "0x345e49c125bf3ba1f84e85fb4a23b49e64a20acdf0de36fe7c02b0f48a6e2820",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a03b807ca0d3276f0bcf728da8ac0ef23dc557e4eca6cb22f240dd25795fdaebe3a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -380,11 +406,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd24b6a13b8eba96da31b2995f6addc9f16a29f65756372d0c7556eb10f491011",
+            "hash": "0x473c16c6546fce06f62bddf63d1cc19a515efb5a70cbdf29b0fffbe8c9368a46",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Ported .json vectors.\n\n    (03_tloadAfterStoreIs0Filler.yml)\n    Loading any other slot after storing to a slot returns 0.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip1153_tstore/test_basic_tload.py#L116",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip1153_tstore/test_basic_tload.py#L116",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1153.md",
             "reference-spec-version": "6f0be621c76a05a7b3aaf0e9297afd425c26e9d0"

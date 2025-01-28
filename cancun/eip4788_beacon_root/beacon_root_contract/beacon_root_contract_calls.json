@@ -45,6 +45,15 @@
             }
         },
         "postState": {
+            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
+                "nonce": "0x01",
+                "balance": "0x01",
+                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
+                "storage": {
+                    "0x0c": "0x0c",
+                    "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
+                }
+            },
             "0x0000000000000000000000000000000000001000": {
                 "nonce": "0x01",
                 "balance": "0xffffffffff",
@@ -56,15 +65,6 @@
                     "0x03": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
-            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
-                "nonce": "0x01",
-                "balance": "0x01",
-                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
-                "storage": {
-                    "0x0c": "0x0c",
-                    "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
-                }
-            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de92d628",
@@ -73,6 +73,16 @@
             }
         },
         "lastblockhash": "0xc5aa37124015eb59849f527f1201329e0ba91fa89dc8d846c281e5f921e4979f",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a05c108f159f467b7acc4e0a0c95b0c16541433348349ffdc4e0c3fb2aff6148b2a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -125,11 +135,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xf841e2a1ab46f746111c84b43c7cb3de85a9672508ba62a632126cc2abd21b2f",
+            "hash": "0x7919739c358aca9c012c844182e341b0baf868a509d920b98bfc63f1c02215cb",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -180,12 +191,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x366000602037602060003660206001720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f16000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -195,6 +200,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x366000602037602060003660206001720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f16000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9b72b1",
@@ -203,6 +214,16 @@
             }
         },
         "lastblockhash": "0x3366c80263f7a3e399bc19bd6d38e8a744c3175e68b5378a027a3bbc9010a407",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a05a78d63b1fb892e281c4ef318448620035a1bce573e499391f88db740e2a2480a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -255,11 +276,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x906a082da81ba0fc6866ed68890db933c4a664492541f428641510817f29998e",
+            "hash": "0xf32b894b8944eda754f06a44e8e6eb0ce015304eaafa428124618160192a4edf",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -310,6 +332,15 @@
             }
         },
         "postState": {
+            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
+                "storage": {
+                    "0x0c": "0x0c",
+                    "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
+                }
+            },
             "0x0000000000000000000000000000000000001000": {
                 "nonce": "0x01",
                 "balance": "0x010000000000",
@@ -321,15 +352,6 @@
                     "0x03": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
-            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
-                "storage": {
-                    "0x0c": "0x0c",
-                    "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
-                }
-            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de938d5c",
@@ -338,6 +360,16 @@
             }
         },
         "lastblockhash": "0x9858e6631a669b874a29a96bbc9d1756b23d281db64b7bd1bda8bc232967446f",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a06f78ee01791dd8a62b4e2e86fae3d7957df9fa7f7a717ae537f90bb0c79df296a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -390,11 +422,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1cc88dc42d1c7b9f849e48ec7579676a636d8fb4559c832d04bee2e3e37d6589",
+            "hash": "0xecb195d43288116877f732e321480e9b39489b30585865f8953bfae795ff9700",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -445,12 +478,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x366000602037602060003660206000720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f16000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -460,6 +487,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x366000602037602060003660206000720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f16000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9c68c9",
@@ -468,6 +501,16 @@
             }
         },
         "lastblockhash": "0xa39a159b447d475c6fc6208ee2a139646a5b0d9fbb8a9cf70d79429a82211a76",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a05abc8018bd1a7850ae3084156c7acf8bbb789a1a1ab6f084a28e21ad76537c9aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -520,11 +563,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xbb68284388de5e216a575cbde5904cb610cf643af58e794ec7419dc803d640dc",
+            "hash": "0x6ff1e294f90e5a54e3267fe19f2c5a6016743fa8091d2399d7a18005a0a27126",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -575,12 +619,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x366000602037602060003660206000720f3df6d732807ef1319fb7b8bb8522d0beac02620186a0f26000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -590,6 +628,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x366000602037602060003660206000720f3df6d732807ef1319fb7b8bb8522d0beac02620186a0f26000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9c47dd",
@@ -598,6 +642,16 @@
             }
         },
         "lastblockhash": "0x424249a8acba7a56854c5b83529f4e757e6ae2f84bc3df3bf465d92aa32990b2",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0f458953708ef59e287c13919abcba178fa304f6fb4f41910a5aa0d2d517e374ea056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -650,11 +704,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0ae72f9bc7dc72c740537bbf810621ac3dec64ad6464defc20267ad252b266f8",
+            "hash": "0x609a10444badf8245c767f46cc06278ba19a12a455ce41ac2d2ca62d0e1ec1bd",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -705,12 +760,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x366000602037602060003660206000720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f26000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -720,6 +769,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x366000602037602060003660206000720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f26000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9c68c9",
@@ -728,6 +783,16 @@
             }
         },
         "lastblockhash": "0xbcdb207d2248938c26f621708382c7465c20768b3eeb2fd4567a907cfc375170",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a029d9472bfc3943965eabe20d3d007e9bdbe6aaf4efbd6242d0c12b6bad5c5c59a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -780,11 +845,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x3a60b3a06fa8e896f38a08867214c5818b84b62b5b0b21085bf350c14f8f7c1c",
+            "hash": "0x00bb231c399f98da9454afeec99a125c56c0895818d66bdaa66d0905942c1499",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -835,12 +901,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x36600060203760206000366020720f3df6d732807ef1319fb7b8bb8522d0beac02620186a0f46000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -850,6 +910,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x36600060203760206000366020720f3df6d732807ef1319fb7b8bb8522d0beac02620186a0f46000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9c47f2",
@@ -858,6 +924,16 @@
             }
         },
         "lastblockhash": "0xe6a6ae0dbaffef90febcf085060e3de9e6c6bb0976646f35b70d3daeb28ccd2e",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0d1618ea6b8468711f8f0c7ee32ae8ad801eb6b14c63fb44063598353c4416238a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -910,11 +986,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x974b7e9603d7bb85847275677f7a25097a8755c17219daa5670dd88b1b4ca840",
+            "hash": "0x5fdb6940bb98736dd6e1244d7770ad37cf999a0c53a77b0aa824a64dd45b0e16",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -965,12 +1042,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x36600060203760206000366020720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f46000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -980,6 +1051,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x36600060203760206000366020720f3df6d732807ef1319fb7b8bb8522d0beac026103e8f46000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9c68de",
@@ -988,6 +1065,16 @@
             }
         },
         "lastblockhash": "0xb1455e85c0406f0bc4a9aa9a2fbb342615b3ddafb8deac922d6939657782a4ec",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0e4535fd1bb00bf23bbcfdb954649b12e105ac9b00581ecdb9777b526ceac8fe1a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1040,11 +1127,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x924c7cf677794aaaf9ec5702670f8e3be59b55b5740d871c8e08acccc00ba69d",
+            "hash": "0xcb1901862fc3dc6f01630a873dc1a09ff6df9af1577731b850801acfa190d3af",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -1095,6 +1183,15 @@
             }
         },
         "postState": {
+            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
+                "storage": {
+                    "0x0c": "0x0c",
+                    "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
+                }
+            },
             "0x0000000000000000000000000000000000001000": {
                 "nonce": "0x01",
                 "balance": "0x010000000000",
@@ -1106,15 +1203,6 @@
                     "0x03": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
-            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
-                "storage": {
-                    "0x0c": "0x0c",
-                    "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
-                }
-            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de938d71",
@@ -1123,6 +1211,16 @@
             }
         },
         "lastblockhash": "0xe8a4386cda8b50a3afddc664721d7dcba9984d8c5e56b6fec7a3879a4a8c6aa8",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a01d4e628cf69d6ecf4dd1e7ed615a28a1ed33ad38ee608b66bf7744fa40c3ffd7a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1175,11 +1273,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x3c1eb3fc7360a0e09c65165b140c922065bc1e7d125ae4fd729027e991eacb48",
+            "hash": "0x249a33d36b17384eddd0f6ad5ef5dfdd538445f4961b850d0b53b01e2c8b095b",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -1230,12 +1329,6 @@
             }
         },
         "postState": {
-            "0x0000000000000000000000000000000000001000": {
-                "nonce": "0x01",
-                "balance": "0x010000000000",
-                "code": "0x36600060203760206000366020720f3df6d732807ef1319fb7b8bb8522d0beac026103e8fa6000556000516001553d6002553d600060003e600051600355",
-                "storage": {}
-            },
             "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -1245,6 +1338,12 @@
                     "0x200b": "0x6c31fc15422ebad28aaf9089c306702f67540b53c7eea8b7d2941044b027100f"
                 }
             },
+            "0x0000000000000000000000000000000000001000": {
+                "nonce": "0x01",
+                "balance": "0x010000000000",
+                "code": "0x36600060203760206000366020720f3df6d732807ef1319fb7b8bb8522d0beac026103e8fa6000556000516001553d6002553d600060003e600051600355",
+                "storage": {}
+            },
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
                 "nonce": "0x01",
                 "balance": "0x3635c9adc5de9c68de",
@@ -1253,6 +1352,16 @@
             }
         },
         "lastblockhash": "0xc524a0187ec2a87c0e778706d7c8037559ac1ca258fcb96f9115529faf03054e",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a071557d9b7a14db205ba9eb402dd28466392f75b462d3863c81a4adb93a8f7e9aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -1305,11 +1414,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x6854df335fb7694ae35295796438d0aced2ec5030dde9beb1809e228e35fbd51",
+            "hash": "0x1a202f1b695a31391f3a576f9c2c2358002c3b32eea9ec3697e6622b40948799",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
-            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call)\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
+            "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
         }
@@ -1503,6 +1613,21 @@
             }
         },
         "lastblockhash": "0x134bbb99ca5b49c006d4bd690cb127c8cfd240bfbe317e7dbc40029f5448a2b4",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0e5cb029fe2002ea7653671c2d42753ad1f60ade01a7f826fee49630181f19f33a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -1556,11 +1681,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x4baa6be195642e625f332a5aa8bb5d01bd45ec8b4f0f9fa80daf25df5229ee56",
+            "hash": "0x69a4ce542e2e7fe3e38936425883005199a950b35e0f69fa0e0c7ee5759885d8",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -1750,6 +1875,21 @@
             }
         },
         "lastblockhash": "0x5f6f66db2a0b77af075bc4f5f5b87a3d45d57fa958444fb2ea1df01f245926fc",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0efcf4cbbaef68e8914dc427c8f599902f46e61c2a93cafcb71b8578794f6d298a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -1803,11 +1943,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1720506796405ebc374a0a2ab570cba8c4d6bae54758c8dfba9b45dd67946c28",
+            "hash": "0x827a375a264aedbbe68ee6bfe6983ddaa2f01bc188a8469c311bb4823bb145f7",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -2002,6 +2142,21 @@
             }
         },
         "lastblockhash": "0x102fc3b98d0accd55f30d8875617b6d00c10bc410572d560e85ad4fe28409319",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a026d5ec0649a52c413fb2489275e544e0b958bbe354e597bf3b9dbf9b82b2ba4da056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -2055,11 +2210,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x05fab9bb122ff4a9681ec1dd85994bc84828e36936f33aaf404e8e6ec53be539",
+            "hash": "0xdf9e49375632b87a4d25c49dbf240cd0ab030e6376e48b1fb670dae76b42ecd4",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -2249,6 +2404,21 @@
             }
         },
         "lastblockhash": "0x54dc0ee55a73a21fb1cb468f62b18f00ef649b63194709002164341c0d6e9a74",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0d07940bf16c761e8b995fc443c317c0f216aa087fff87730ceb488fcb9a4f895a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -2302,11 +2472,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x4212afb57037055d0c55fd799aa759cdf9974b276faf5a2e50abaff0b090ccb8",
+            "hash": "0x464623a97c7a32ec52b6c4351dd4f855f8d15ae176c97f8830ab89b420f2407f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -2496,6 +2666,21 @@
             }
         },
         "lastblockhash": "0xc1a85d6d4dc2842436051521625294408ee0f333a4229e443d97f948c9fc1635",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a09e649ef2a4e91852740af8fbda1072fbbfce9c56b311e419211c0e4e7c2627e4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -2549,11 +2734,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x3f68140c173bd79f12f2dad93d69d4dbb310e25f832282f6398c49de4f3f3e29",
+            "hash": "0x7b2e8da4ee84bfbe6e72b1d27dea659d5adb109caace7d97b6ae53030befd318",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -2743,6 +2928,21 @@
             }
         },
         "lastblockhash": "0xeef8d80ef49441109e1c1e88cfec544d511a2524a3a5df9a7eef07459fd3ce67",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a08325d9af882716747c284923e20c0e36e95fd61e2f943de2fca72291dc750fa4a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -2796,11 +2996,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x8827dec62b672aa695ff0472f037a514bfbad6507178fab039031a45634e0e77",
+            "hash": "0x62250348e74527fdcdec36d11eefc07fa3e5f120edd7bed8ea551d869ff328fb",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -2990,6 +3190,21 @@
             }
         },
         "lastblockhash": "0xc692f1c70f7c7ad2a44cefdb4133c336bc7a324de844d0edc2d9e5f28c51d597",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0bd37639df262efb2b3fd706448c41511f99cea007bf7f54ba11cecb8a3616b93a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3043,11 +3258,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x4d63beccee7262b3976dbefc47a240f619056e6ef82c05d7423d2240f6bd145c",
+            "hash": "0x40a17ebe3adaa2ad1b89acaefae8294e828b32fce4d6259e67acda59605f075c",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -3237,6 +3452,21 @@
             }
         },
         "lastblockhash": "0x7689e75b974672732ce391044878372640b81b0426a6657b517d616d6e82848c",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0519bdb02e79f117103ae7139bccbd436ae4eb397876585bf040c1435604710a3a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3290,11 +3520,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x47bb960e25f7b6773653f23a34c0d54199ffced2e4c98dae7c5fd239da57aa5b",
+            "hash": "0x9918372d35206d8daca483bc758834224dc862ec32605007fcfa2314b9f49094",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -3489,6 +3719,21 @@
             }
         },
         "lastblockhash": "0x2fe1002fb9f8fd25cbaa37896a9c171655c7338cbbd1c1ea4d71e5f18acec283",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a037dff154c52790bca41220fabec357eb2eab0b7a4273dc613ebb0b8e2e4b258aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3542,11 +3787,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x5c06bea36a59dd02f86bcc262b36eb4dfdc47d9bd1a79a10f45d4dc9f7fcd194",
+            "hash": "0x72c4ee89a86f91b0108d5695b360b9fb070a0b0d19590cfcac8b19bf838bf467",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"
@@ -3736,6 +3981,21 @@
             }
         },
         "lastblockhash": "0x11d0ccb62fe143c4ba76817315b7d478df08658eca147904872e8a2a5c604b61",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a0a95dfe7562096fec3bfacd8e3a19d5dc63e771414d16042a6daede7f107a8980a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -3789,11 +4049,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xde0bcc80704c2206d5776cc0ac44818f466be6202ac4c204a7c2bc1687d40f63",
+            "hash": "0x30dac6a2084f6877e49439331cdaac086928f9540ec7eee8ce037308fd414965",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests the beacon root contract call using various call contexts:\n    - `CALL`\n    - `DELEGATECALL`\n    - `CALLCODE`\n    - `STATICCALL`\n    for different call gas amounts:\n    - exact gas (valid call)\n    - extra gas (valid call)\n    - insufficient gas (invalid call).\n\n    The expected result is that the contract call will be executed if the gas amount is met\n    and return the correct`parent_beacon_block_root`. Otherwise the call will be invalid, and not\n    be executed. This is highlighted within storage by storing the return value of each call\n    context.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4788_beacon_root/test_beacon_root_contract.py#L46",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4788.md",
             "reference-spec-version": "e7608fe8ac8a60934ca874f5aab7d5c1f4ff7782"

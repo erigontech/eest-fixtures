@@ -69,6 +69,24 @@
             }
         },
         "postState": {
+            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
+                "storage": {
+                    "0x0c": "0x0c",
+                    "0x18": "0x18",
+                    "0x24": "0x24",
+                    "0x30": "0x30",
+                    "0x3c": "0x3c"
+                }
+            },
+            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+                "nonce": "0x05",
+                "balance": "0x3635c9adc5ddc0fcac",
+                "code": "0x",
+                "storage": {}
+            },
             "0x0000000000000000000000000000000000001000": {
                 "nonce": "0x01",
                 "balance": "0x00",
@@ -119,32 +137,24 @@
                     "0x04": "0x01a9b2a6c3f3f0675b768d49b5f5dc5b5d988f88d55766247ba9e40b125f16bb"
                 }
             },
-            "0x000f3df6d732807ef1319fb7b8bb8522d0beac02": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
-                "storage": {
-                    "0x0c": "0x0c",
-                    "0x18": "0x18",
-                    "0x24": "0x24",
-                    "0x30": "0x30",
-                    "0x3c": "0x3c"
-                }
-            },
             "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
                 "nonce": "0x00",
                 "balance": "0x39e766",
                 "code": "0x",
                 "storage": {}
-            },
-            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
-                "nonce": "0x05",
-                "balance": "0x3635c9adc5ddc0fcac",
-                "code": "0x",
-                "storage": {}
             }
         },
         "lastblockhash": "0x5035f53d85dd2aee55824a9bd96fa4fd9dec4df69bfdb6b1ed4b2221333f449e",
+        "config": {
+            "network": "Cancun",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            }
+        },
         "genesisRLP": "0xf90240f9023aa00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a02b0233cb5b6647777594950a108ba42cd7c976410281262779e86abcdbade9cfa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000c0c0c0",
         "blocks": [
             {
@@ -415,11 +425,12 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x719e8194bfbebe793a1c958af2003e52089fc8610a29766f734fc0bc45d5c43a",
+            "hash": "0x6325abde473c3297ea6dfc113ffc693fd96045bff7e3d4f394ceb78e30afdfc0",
             "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "evm version 1.14.12-unstable-e100dcf1-20241017",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests that the `BLOBHASH` opcode returns a zeroed `bytes32` value for invalid\n    indexes.\n\n    Includes cases where the index is negative (`index < 0`) or\n    exceeds the maximum number of `blob_versioned_hash` values stored:\n    (`index >= len(tx.message.blob_versioned_hashes)`).\n\n    It confirms that the returned value is a zeroed `bytes32` for each case.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-4@v1.0.1/tests/cancun/eip4844_blobs/test_blobhash_opcode.py#L168",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_blobhash_opcode.py#L175",
+            "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
         }
@@ -689,6 +700,21 @@
             }
         },
         "lastblockhash": "0xf1294f33b3b31f0e8a7544481d1dc9910c54cf9f21e72e44723b62b3a01df189",
+        "config": {
+            "network": "Prague",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
         "genesisRLP": "0xf90261f9025ba00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a067d541cb3de42b8ea67d443f75d88e77d088382854e103caed1dd42114d26f6fa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808088016345785d8a0000808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855c0c0c0",
         "blocks": [
             {
@@ -964,11 +990,11 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xce001f2c6378f1fa6b7d569dd34d67fa0d3987d1d4650b94d2fda8540231e163",
+            "hash": "0x737fe49dc0d09a94e6a8020f77f7408abfe6f1cd766264d7bb74dbf058cc6de8",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.1",
             "description": "Test function documentation:\n\n    Tests that the `BLOBHASH` opcode returns a zeroed `bytes32` value for invalid\n    indexes.\n\n    Includes cases where the index is negative (`index < 0`) or\n    exceeds the maximum number of `blob_versioned_hash` values stored:\n    (`index >= len(tx.message.blob_versioned_hashes)`).\n\n    It confirms that the returned value is a zeroed `bytes32` for each case.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-5@v1.2.0/tests/cancun/eip4844_blobs/test_blobhash_opcode.py#L175",
+            "url": "https://github.com/ethereum/execution-spec-tests/blob/d9add545219932e7fa1394bc9bc57a3ab6cb425e/tests/cancun/eip4844_blobs/test_blobhash_opcode.py#L175",
             "fixture_format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
             "reference-spec-version": "f0eb6a364aaf5ccb43516fa2c269a54fb881ecfd"
