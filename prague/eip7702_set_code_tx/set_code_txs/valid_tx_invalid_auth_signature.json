@@ -1,5 +1,5 @@
 {
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-r=0]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-r=0]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -186,6 +186,7 @@
         "lastblockhash": "0xc04a9f7ee1ff76a9a2eac527c967fbf084c1522e5a7cd99ab2a6a7906707ea93",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -249,7 +250,8 @@
                                 "nonce": "0x00",
                                 "v": "0x01",
                                 "r": "0x00",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x01"
                             }
                         ]
                     }
@@ -262,22 +264,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x85892a02c12a579f79bb6c417bcd709a01dc6b03e21315130881c85237d38e4b",
+            "hash": "0xbf875fdd79ef7cce2c550c8d258e8e49cd1240eb35326c0c77f76491a38d3a06",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-r=2**256-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-r=2**256-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -464,6 +466,7 @@
         "lastblockhash": "0x886071a5adeedaa03dccccc88f6ec3668acc3da6da6e06260c0b030ceae7179c",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -527,7 +530,8 @@
                                 "nonce": "0x00",
                                 "v": "0x01",
                                 "r": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x01"
                             }
                         ]
                     }
@@ -540,22 +544,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x88bfa7f482a3e37bc0f8aceeeeb0b20e99a5a592e02264a6f016ed0cd6150b1d",
+            "hash": "0x9392e6d38fe52103bb9c58786612ae5dc42070849bd201f5c76cea81b44bbc16",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-r=SECP256K1N+1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-r=SECP256K1N+1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -742,6 +746,7 @@
         "lastblockhash": "0xe589a9c889b596513001f0cc5dee07eaedbdcfd0789257a0c2ff5987357d41b9",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -805,7 +810,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364142",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -818,22 +824,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd58e8a214f9c43062d80a470c1a402adaf1004abdb5a5c2834418135f9eae749",
+            "hash": "0xc491ee52fbea0c45cc34f97f5f47c2a8584a87dda404671d2ef85de0cb764cec",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-r=SECP256K1N-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-r=SECP256K1N-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1020,6 +1026,7 @@
         "lastblockhash": "0x6f7d349603af055fb33a950137060c0dfcc665b9c6c23166c4a93fe6ad22221a",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -1083,7 +1090,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364140",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -1096,22 +1104,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc1637e2aff0e1cd4af7e510196736ddc252bfe03aa81f998e666a85b05e7ccf3",
+            "hash": "0x7590fb88a1659bf772e1fa7299fb1ad17f1a83d95731fa1416dcd9e588ead035",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-r=SECP256K1N]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-r=SECP256K1N]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1298,6 +1306,7 @@
         "lastblockhash": "0xbc400a448c84de56159802de9ddaf95f2fa68f6361c8bb52dcdbfe2782a74800",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -1361,7 +1370,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -1374,22 +1384,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x2402d105ff477b4339a43f8bebc50371017499c69a8499f231eeb9917ac6e7b1",
+            "hash": "0x3dd2be7c8e061c1d90dac76d4e84488410bee927185fef75266dda99a465c62a",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=0]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=0]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1576,6 +1586,7 @@
         "lastblockhash": "0xa55485ee53552df487f098f841d58482c1e7a30ce2069aa20354cbd1e2176545",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -1639,7 +1650,8 @@
                                 "nonce": "0x00",
                                 "v": "0x01",
                                 "r": "0x01",
-                                "s": "0x00"
+                                "s": "0x00",
+                                "yParity": "0x01"
                             }
                         ]
                     }
@@ -1652,22 +1664,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0496643c6240fc00bdd30993ed2c36ba4f2c9f3bc4f7567c0a8ab4de8bc4566b",
+            "hash": "0x8fe2afadf705890ef2770a16ab293a83e9f6e4f12c9bd4e4302601c3a6d16443",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=2**256-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=2**256-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1854,6 +1866,7 @@
         "lastblockhash": "0xef0a0a180a467637038c126830644e85d064a8091ab3494eb7980de1061f4525",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -1917,7 +1930,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0x01",
-                                "s": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+                                "s": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -1930,22 +1944,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x53ca53ca207a8fdb130c348da5100f1b9aab847f9dcbd3aa1ce7e9d27b085fa0",
+            "hash": "0x08d119ab8aa1be0ba0fac81ed24228189eb818f57ddfb8371f159d0840059ee4",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=SECP256K1N+1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=SECP256K1N+1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -2132,6 +2146,7 @@
         "lastblockhash": "0xeabe97b0e7f20ae496d0c8379951212d8376efa5505921e1813a175e49d1e58d",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -2195,7 +2210,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0x01",
-                                "s": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364142"
+                                "s": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364142",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -2208,22 +2224,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x6f5f69b0474b60c020b910c41436884a82476febc838640b4ad504f049105246",
+            "hash": "0x929ac2bec07375c76ce489c2fefaab744aa793a179c72fe509e888c838685630",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=SECP256K1N-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=SECP256K1N-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -2410,6 +2426,7 @@
         "lastblockhash": "0x4c536911651d5dc730c87baaa7787a2e82ce523873eb5ba35eab6b64078e2c27",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -2474,7 +2491,8 @@
                                 "v": "0x00",
                                 "r": "0x01",
                                 "s": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364140",
-                                "signer": "0x09a35063490b5fedd67f03a49e9e44c9c5961fbb"
+                                "signer": "0x09a35063490b5fedd67f03a49e9e44c9c5961fbb",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -2487,22 +2505,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x8847abb1df7ee63a950b160e20a951545acdca7e86895add63782dad3f6c8282",
+            "hash": "0x74bef55f1fd9ac6aa00db3fa457d8655c98011fb5b6ad119389ad68f3c47344e",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=SECP256K1N]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=SECP256K1N]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -2689,6 +2707,7 @@
         "lastblockhash": "0x0027f22abb3ecdd8eda7237e09a9c192655778f3a13614d020826635896b02ca",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -2752,7 +2771,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0x01",
-                                "s": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141"
+                                "s": "0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -2765,22 +2785,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xed57ad27cf4f670f4ad1a3501231ad3ef72d9857f3f04553e80ab90d3458f52b",
+            "hash": "0xbd4ec0365bdef02d44800b4523af9a1e57dc21d27e1d707f81f868987019d5ab",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=SECP256K1N_OVER_2+1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=SECP256K1N_OVER_2+1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -2967,6 +2987,7 @@
         "lastblockhash": "0x33d06786581e1eaf32bd0033db81e49817b30d607f9d383e07ed6a5b35b8f46a",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -3031,7 +3052,8 @@
                                 "v": "0x00",
                                 "r": "0x01",
                                 "s": "0x7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a1",
-                                "signer": "0x3241f66f8d1f7fbd7f1b369671b54732ffa8f35d"
+                                "signer": "0x3241f66f8d1f7fbd7f1b369671b54732ffa8f35d",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -3044,22 +3066,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x9785867d1dede675a0d40c173001cda52b4e4e2e34a8207db00072d011f9309b",
+            "hash": "0x9804a1f6f607a83e442722e934578c34f51fe82b24876ea785d730f500adb589",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=SECP256K1N_OVER_2-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=SECP256K1N_OVER_2-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -3252,6 +3274,7 @@
         "lastblockhash": "0x5d0608076afe5ad7ecccdd3ae45559b45c3fa72e5861b092f8790450f9fc55bf",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -3316,7 +3339,8 @@
                                 "v": "0x00",
                                 "r": "0x01",
                                 "s": "0x7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b209f",
-                                "signer": "0xeb98f5622ff22576fdc264fbdf0d410faea4e3b1"
+                                "signer": "0xeb98f5622ff22576fdc264fbdf0d410faea4e3b1",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -3329,22 +3353,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x52d1939661f5097510e18f053962ccea5ff2309ea568554efc9a4434335ae5eb",
+            "hash": "0xac533a873ece1990593cb1fa3c2522e238996f05c3c9114d23e828327a36c786",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-s=SECP256K1N_OVER_2]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-s=SECP256K1N_OVER_2]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -3537,6 +3561,7 @@
         "lastblockhash": "0xbb318ba48558964a400d6cd901921566ff532131c4be5ab833019c220ff1554a",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -3601,7 +3626,8 @@
                                 "v": "0x00",
                                 "r": "0x01",
                                 "s": "0x7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a0",
-                                "signer": "0xd3ca7e688c611fe019f34d12705804290ce71f53"
+                                "signer": "0xd3ca7e688c611fe019f34d12705804290ce71f53",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -3614,22 +3640,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x2dcaa85f7ad794cb0dee8bde23f6fcf110d6f324ac8333efc929d462cd0a1602",
+            "hash": "0x0df963c85c47c9aa289cae27d70a30dda4a0eb35aa05c5db901feb82963b31de",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=2**8-1,r=s=2**256-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=2**8-1,r=s=2**256-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -3816,6 +3842,7 @@
         "lastblockhash": "0x3de602e38c5e9faddcb12eb998fafaab9cf2958435949d375fa58ccc093e2c8a",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -3879,7 +3906,8 @@
                                 "nonce": "0x00",
                                 "v": "0xff",
                                 "r": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-                                "s": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+                                "s": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+                                "yParity": "0xff"
                             }
                         ]
                     }
@@ -3892,22 +3920,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc5f1690e2687f324ded051d36c76268197995e6eaea9f42b15b9f7068c48ed4e",
+            "hash": "0xada73c3b23f770809ce2f165ad2c42cee05e19c7eb38e1cfe7ad2cb76874fc46",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=2**8-1]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=2**8-1]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -4094,6 +4122,7 @@
         "lastblockhash": "0xe6153b6bf246767eda839267ea3ca0ab8c232b39e72c132098f48ce8dc04c23a",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -4157,7 +4186,8 @@
                                 "nonce": "0x00",
                                 "v": "0xff",
                                 "r": "0x01",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0xff"
                             }
                         ]
                     }
@@ -4170,22 +4200,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1a523aedc8bba080e0788e50b396afd3cd6b0bf46b7ac84ec266739e7c85e370",
+            "hash": "0xc09a511e75bcefc4859133961c2943ab9b661c284668618a752e6c8437aa50a5",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=27]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=27]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -4372,6 +4402,7 @@
         "lastblockhash": "0xb9993a5dd3e587ad7af353350efb924a4811f07f179f1afdba2b8bb38d72fcfb",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -4435,7 +4466,8 @@
                                 "nonce": "0x00",
                                 "v": "0x1b",
                                 "r": "0x01",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x1b"
                             }
                         ]
                     }
@@ -4448,22 +4480,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x1aa452c09593e3abe98433dd73dc79fcd1eceedee3d5fdc9ebf57b11c9480dfd",
+            "hash": "0xda6e033bb0bdfc60123d2fbb2e22db269abbba16c78ac6537a85c4306230d672",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=28]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=28]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -4650,6 +4682,7 @@
         "lastblockhash": "0x7320b671742de02ad5e0c463cab08259e51a7b11a9203eda8c6b339638d7a95f",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -4713,7 +4746,8 @@
                                 "nonce": "0x00",
                                 "v": "0x1c",
                                 "r": "0x01",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x1c"
                             }
                         ]
                     }
@@ -4726,22 +4760,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xe434abd1dc16d9a5a2bd3d5b77551704e45b7c10299d80b4798e73b3d248f13b",
+            "hash": "0x8100f5484229e1c4b7a5abbbed51c6134ce09fd7523665522feb263d9ddaf80f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=2]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=2]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -4928,6 +4962,7 @@
         "lastblockhash": "0x11644ddea5865160a2846391c4066e6db56c4f761aab76c0941d834fcc2bb3d3",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -4991,7 +5026,8 @@
                                 "nonce": "0x00",
                                 "v": "0x02",
                                 "r": "0x01",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x02"
                             }
                         ]
                     }
@@ -5004,22 +5040,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x64e5228a82c1f28dfa128c8b4e4c4ba46c3f96e0472aec482ddd8587c9d3497d",
+            "hash": "0xa0a6d918f7e3d59761f615ad4aeb9dd3c5dae65bcb81da8778f51c8733175e71",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=35]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=35]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -5206,6 +5242,7 @@
         "lastblockhash": "0x0c8c891dfa1debbe5879e44599aafe2bd8471294dcdf5e7eded2a038711849be",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -5269,7 +5306,8 @@
                                 "nonce": "0x00",
                                 "v": "0x23",
                                 "r": "0x01",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x23"
                             }
                         ]
                     }
@@ -5282,22 +5320,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0d6e536689d4cd37e247724796f387d693a3feb8c4dbe1ca16c5e8202761813f",
+            "hash": "0x17e81d9e3803adb507e1762c49915b0000061dbdb95cd1cefeef57a99757bddc",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=36]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=36]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -5484,6 +5522,7 @@
         "lastblockhash": "0xa93425e782c0a6d1fb4dbea98ff09b216c2233e98eda3f17442e0a96e6cbd759",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -5547,7 +5586,8 @@
                                 "nonce": "0x00",
                                 "v": "0x24",
                                 "r": "0x01",
-                                "s": "0x01"
+                                "s": "0x01",
+                                "yParity": "0x24"
                             }
                         ]
                     }
@@ -5560,22 +5600,22 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x735aa2c02c2fca2d29ab16405abb3682549c1404eb4ff2fcae4389d3e2d9949a",
+            "hash": "0x2edee0e517f22f6572c6da5394bf1ed50ce71a55920023e2a67365e1699626c5",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test-v=r=s=0]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_auth_signature[fork_Prague-blockchain_test_from_state_test-v=r=s=0]": {
         "network": "Prague",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -5762,6 +5802,7 @@
         "lastblockhash": "0x7da3ab58a12a779245586cd5d08c09c1c203e1898fb960fb53ebacc27660a065",
         "config": {
             "network": "Prague",
+            "chainid": "0x01",
             "blobSchedule": {
                 "Cancun": {
                     "target": "0x03",
@@ -5825,7 +5866,8 @@
                                 "nonce": "0x00",
                                 "v": "0x00",
                                 "r": "0x00",
-                                "s": "0x00"
+                                "s": "0x00",
+                                "yParity": "0x00"
                             }
                         ]
                     }
@@ -5838,18 +5880,18 @@
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc8ed3b34a635b6d30426e766cd0f6607239bc6e96a7185de50703bf159f8e0b1",
+            "hash": "0x0b512f502f7cfc09bd5be3b5d304de73c99876920302759c4e3d720c5d63c584",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test function documentation:\n\n    Test sending a transaction to set the code of an account using synthetic signatures,\n    the transaction is valid but the authorization should not go through.",
-            "url": "https://github.com/ethereum/execution-spec-tests/blob/pectra-devnet-6@v1.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2128",
-            "fixture_format": "blockchain_test",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v4.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2115",
+            "fixture-format": "blockchain_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "4334df83395693dc3f629bb43c18320d9e22e8c9",
             "eels-resolution": {
                 "git-url": "https://github.com/ethereum/execution-specs.git",
                 "branch": "devnets/prague/6",
-                "commit": "fa33d824decac0a6ac55adc943e7f139b0719f0e"
+                "commit": "a25a8ab3a2989b15baac19eb327325e442342a60"
             }
         }
     }
