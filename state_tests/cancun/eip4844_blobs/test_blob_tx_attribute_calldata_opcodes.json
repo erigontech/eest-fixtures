@@ -1,0 +1,2954 @@
+{
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-empty-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0xef6949d8aaea69d4d35aca2341f4a17131637bd5": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x7438dee6d5a27bb4420b90daca5b540acd57833e": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x7438dee6d5a27bb4420b90daca5b540acd57833e",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0xef6949d8aaea69d4d35aca2341f4a17131637bd5",
+            "secretKey": "0x92aeb72c08c4520e5b4989917438dee6d5a27bb4420b90daca5b540acd57833e"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0xf0615401b998e57bec6fd034fc7661042acc0b7d32961d942a459bd8ae191af2",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a120947438dee6d5a27bb4420b90daca5b540acd57833e0180c001e1a0010000000000000000000000000000000000000000000000000000000000000001a057760b78dcf50a8b716c083835228aca226e0a5a52f316ff3b51fbfddca61563a0303d391fa1e534458bc4a2fc0921719b1f579642f1c3a0820df625c76709d4db",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xef6949d8aaea69d4d35aca2341f4a17131637bd5": {
+                            "nonce": "0x01",
+                            "balance": "0x32ecdf",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x7438dee6d5a27bb4420b90daca5b540acd57833e": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x55c505323be7e76c2750158ea51bd273b12269946a8b6d98fe4472d823f172ca",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-empty-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x9cc0d6f55ad93a2dafeac247b19624983830caf2": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x9cc0d6f55ad93a2dafeac247b19624983830caf2",
+            "secretKey": "0xb249eb45735f0cd420fcfd8f6572770a39eaa2ab55deeae14e2e38eff9c4cb19"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x52518612ca2decf9aef8ecdda502d558639c608e2246fc01892d89b130049e72",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a120946572770a39eaa2ab55deeae14e2e38eff9c4cb190180c001e1a0010000000000000000000000000000000000000000000000000000000000000001a086faca6710ec43330562e6fd1ffa783f1285304a00dc7a6858d669e255f03676a021579bf35e24184e3ab1329882b0d96334ae8751f06b4154682eb5f1bb27fbf4",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x9cc0d6f55ad93a2dafeac247b19624983830caf2": {
+                            "nonce": "0x01",
+                            "balance": "0x32ed41",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xeb4f26789e0fec3ad3cc4e8b0ffa0853e4008cefeeeb73b1092ec5b3c68fdfba",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-empty-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x72387ffda2dc832e34617996cc097276281ed482": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x72387ffda2dc832e34617996cc097276281ed482",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a",
+            "secretKey": "0x159d587c7aa0dcc06954013e72387ffda2dc832e34617996cc097276281ed482"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x9fc6b4e558c6504735c8fd26850d1ff17ddf0aeb0a6c4bdd7160027deaf330a8",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a1209472387ffda2dc832e34617996cc097276281ed4820180c001e1a0010000000000000000000000000000000000000000000000000000000000000080a08d9d3c784d257b925445c52f97d73d5cc648351900ebf298c93eee05e3eb6568a01242ad354e5c2b23de5d5b68a7028eddc8ee1ceb28c95b17022f1bc9bfe2ba73",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a": {
+                            "nonce": "0x01",
+                            "balance": "0x32ed5d",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x72387ffda2dc832e34617996cc097276281ed482": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7115703d7dbdf811c6ac998b1e28cbd6725622bd726d6eed519b7a9db83d58e3",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-single_byte-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x4c130bca1e65c0e53ece7475bb1cc99a06631224": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x4c130bca1e65c0e53ece7475bb1cc99a06631224",
+            "secretKey": "0xf0b9088b6681fdc6cd8cb971605fa68d4ac9d886207fe3e3ecc4cc253e9caf60"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0xb20f88e56a7972eb1ed5d4c8c769398d300158db4fc023334282ab06f5bf174c",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094605fa68d4ac9d886207fe3e3ecc4cc253e9caf600101c001e1a0010000000000000000000000000000000000000000000000000000000000000001a067b2ed80dee913d65f8819e07faa4cacab2476b306937249d4dd61a811781c43a042bce3f359ddec95707764d6239ca00cfe5a790a862f4266492adfd327097200",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x4c130bca1e65c0e53ece7475bb1cc99a06631224": {
+                            "nonce": "0x01",
+                            "balance": "0x30cc36",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {
+                                "0x00": "0x0100000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5be56524820ec11755e5c601ffac1dd1ec784d787be8953c362d676ac456294c",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-single_byte-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x8edf9749ede3bf0d55b288996774176adc306861": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x637902479f6c2503c2449d6d665b7b2809de46e0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x637902479f6c2503c2449d6d665b7b2809de46e0",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x8edf9749ede3bf0d55b288996774176adc306861",
+            "secretKey": "0x926161607a293e485f8ba41b637902479f6c2503c2449d6d665b7b2809de46e0"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x7f64fb7303968c9e5f761152c3d9dde4ab03ad8128dbea366fcafbcd7be0666e",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094637902479f6c2503c2449d6d665b7b2809de46e00101c001e1a0010000000000000000000000000000000000000000000000000000000000000080a0fce7e1b806a97cb316ca93ae03f441ba52efc33eb482cb3d1167af890ac2ada4a049615e95fd58a351439a514b976dde81acd2ec0133a1ea6a60de3cac9b870e0e",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x8edf9749ede3bf0d55b288996774176adc306861": {
+                            "nonce": "0x01",
+                            "balance": "0x30ccad",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x637902479f6c2503c2449d6d665b7b2809de46e0": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {
+                                "0x00": "0x0100000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x777358ffd49e179009ea8d9778a00647d50dcff9c50408d3c90855413d58bcc4",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-single_byte-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x36c742540d3925fe513ab9f58ceb276465801e00": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xcefaf1319b636daabd523e296eecac0de9a5c3eb": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0xcefaf1319b636daabd523e296eecac0de9a5c3eb",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x36c742540d3925fe513ab9f58ceb276465801e00",
+            "secretKey": "0xb410bcf690b0a5c67adf04f6cefaf1319b636daabd523e296eecac0de9a5c3eb"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0xa98ee6ee55b8794e96206595b9ae6645c853491de55f7145254f0d1dc61de030",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094cefaf1319b636daabd523e296eecac0de9a5c3eb0101c001e1a0010000000000000000000000000000000000000000000000000000000000000080a047ba4dcf913f3c43eb45bb3c9e5fbc8bcf949e2a878e4277e881c72cb3fafa5ea0315fb9d9a2ceb9d683cac9904897e48bd1c448336a139fb52693a8f44b4e5e99",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x36c742540d3925fe513ab9f58ceb276465801e00": {
+                            "nonce": "0x01",
+                            "balance": "0x30ccc9",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xcefaf1319b636daabd523e296eecac0de9a5c3eb": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {
+                                "0x00": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7e1bc3b36db53f05c04feab7f646f50e98f02ed84d7673583953167cdf21e150",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-word-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0xccb4913b69e0e9206a4494d8b678e69395679fc5": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0xccb4913b69e0e9206a4494d8b678e69395679fc5",
+            "secretKey": "0x36a1216375dda72cbb91fc6b84ddea96a8398036f31f29a46369b9e5b91bbfbd"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0xa349f52877e711677d8c1b1391dc33ef36c9ffdc3d4572f13f2d20c1be1fe179",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a1209484ddea96a8398036f31f29a46369b9e5b91bbfbd01a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000001a0fe33046761a93031f5de1d8eb2ae68d462b257e196946ac150bd2f2c2fe1cfb7a0224ea93dcaa61380f9329105c45626969f5b6d755fcb555cdac56b3c0163ef9a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xccb4913b69e0e9206a4494d8b678e69395679fc5": {
+                            "nonce": "0x01",
+                            "balance": "0x30c3e6",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {
+                                "0x00": "0x01000100010001000100010001000100010001000100010001000100010001"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x1f25979b0890df4940a517274e6f1717a9a81fb9fb52ba4de698e76ecc7c3f9a",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-word-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x579c6c2a92b77560de5f3aaa74101faac9e37a80": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xb82fc576de066ba3c4eb304670f1e164b310acd3": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0xb82fc576de066ba3c4eb304670f1e164b310acd3",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x579c6c2a92b77560de5f3aaa74101faac9e37a80",
+            "secretKey": "0xcb4b8f07fa74c59153db6ffab82fc576de066ba3c4eb304670f1e164b310acd3"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x7947ea1c020da2e10565d57b167e7ab193d991a62f616505b58b1824639c1bbc",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a12094b82fc576de066ba3c4eb304670f1e164b310acd301a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000080a010ff9c0d02d253133067dfc00e4a8e1fda853404b95661cc51f0169f3de6f9caa04906d7268ddb94005eb32cc6730a3b5471741f417b9a6e42c0b6a192fae9d821",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x579c6c2a92b77560de5f3aaa74101faac9e37a80": {
+                            "nonce": "0x01",
+                            "balance": "0x30c45d",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xb82fc576de066ba3c4eb304670f1e164b310acd3": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {
+                                "0x00": "0x01000100010001000100010001000100010001000100010001000100010001"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xfc3866a01294b51fedb79b2d6ae95e60f80e3ff21f3c5e2bff12845352474afa",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Cancun-state_test-tx_gas_500000-word-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x0e0000"
+        },
+        "pre": {
+            "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x36ca08827ee953a88ef2e89db26713e9d9587256": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x36ca08827ee953a88ef2e89db26713e9d9587256",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9",
+            "secretKey": "0x8736505593239eb75fdd58f236ca08827ee953a88ef2e89db26713e9d9587256"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x47e733cbbb421a283d9e936a3b37655ade6b333d07db45e9b918e5ec87a3d68a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a1209436ca08827ee953a88ef2e89db26713e9d958725601a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000001a0866eac43e8d4d19f2a743191ed095c830aa3f8c77576b1e8842b3fce07f7d3e2a06cafc0f4c2fd51588c14ecee0abe715a0152f715572566defe6faf3e0e4def01",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9": {
+                            "nonce": "0x01",
+                            "balance": "0x30c479",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x36ca08827ee953a88ef2e89db26713e9d9587256": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x035dfc4834aa1eca07552702e13bd019507e3b7694c60725482c7c97a5744273",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-empty-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0xef6949d8aaea69d4d35aca2341f4a17131637bd5": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x7438dee6d5a27bb4420b90daca5b540acd57833e": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x7438dee6d5a27bb4420b90daca5b540acd57833e",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0xef6949d8aaea69d4d35aca2341f4a17131637bd5",
+            "secretKey": "0x92aeb72c08c4520e5b4989917438dee6d5a27bb4420b90daca5b540acd57833e"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xf0615401b998e57bec6fd034fc7661042acc0b7d32961d942a459bd8ae191af2",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a120947438dee6d5a27bb4420b90daca5b540acd57833e0180c001e1a0010000000000000000000000000000000000000000000000000000000000000001a057760b78dcf50a8b716c083835228aca226e0a5a52f316ff3b51fbfddca61563a0303d391fa1e534458bc4a2fc0921719b1f579642f1c3a0820df625c76709d4db",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xef6949d8aaea69d4d35aca2341f4a17131637bd5": {
+                            "nonce": "0x01",
+                            "balance": "0x32ecdf",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x7438dee6d5a27bb4420b90daca5b540acd57833e": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0aacb7c97fc68cf1ffebf8cf6546ed2886ed4e280e1f261c343d4a1eb2f99949",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-empty-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x9cc0d6f55ad93a2dafeac247b19624983830caf2": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x9cc0d6f55ad93a2dafeac247b19624983830caf2",
+            "secretKey": "0xb249eb45735f0cd420fcfd8f6572770a39eaa2ab55deeae14e2e38eff9c4cb19"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x52518612ca2decf9aef8ecdda502d558639c608e2246fc01892d89b130049e72",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a120946572770a39eaa2ab55deeae14e2e38eff9c4cb190180c001e1a0010000000000000000000000000000000000000000000000000000000000000001a086faca6710ec43330562e6fd1ffa783f1285304a00dc7a6858d669e255f03676a021579bf35e24184e3ab1329882b0d96334ae8751f06b4154682eb5f1bb27fbf4",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x9cc0d6f55ad93a2dafeac247b19624983830caf2": {
+                            "nonce": "0x01",
+                            "balance": "0x32ed41",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x93e733bcb742c2c4a7d4449a153858eb67500dae286156a4a2a494143ef49f75",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-empty-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x72387ffda2dc832e34617996cc097276281ed482": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x72387ffda2dc832e34617996cc097276281ed482",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a",
+            "secretKey": "0x159d587c7aa0dcc06954013e72387ffda2dc832e34617996cc097276281ed482"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x9fc6b4e558c6504735c8fd26850d1ff17ddf0aeb0a6c4bdd7160027deaf330a8",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a1209472387ffda2dc832e34617996cc097276281ed4820180c001e1a0010000000000000000000000000000000000000000000000000000000000000080a08d9d3c784d257b925445c52f97d73d5cc648351900ebf298c93eee05e3eb6568a01242ad354e5c2b23de5d5b68a7028eddc8ee1ceb28c95b17022f1bc9bfe2ba73",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a": {
+                            "nonce": "0x01",
+                            "balance": "0x32ed5d",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x72387ffda2dc832e34617996cc097276281ed482": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x2b296d9de2e85db2776eb3075e7fa35474cafe53a9fe6c314f78963e989c6242",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-single_byte-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x4c130bca1e65c0e53ece7475bb1cc99a06631224": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x4c130bca1e65c0e53ece7475bb1cc99a06631224",
+            "secretKey": "0xf0b9088b6681fdc6cd8cb971605fa68d4ac9d886207fe3e3ecc4cc253e9caf60"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xb20f88e56a7972eb1ed5d4c8c769398d300158db4fc023334282ab06f5bf174c",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094605fa68d4ac9d886207fe3e3ecc4cc253e9caf600101c001e1a0010000000000000000000000000000000000000000000000000000000000000001a067b2ed80dee913d65f8819e07faa4cacab2476b306937249d4dd61a811781c43a042bce3f359ddec95707764d6239ca00cfe5a790a862f4266492adfd327097200",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x4c130bca1e65c0e53ece7475bb1cc99a06631224": {
+                            "nonce": "0x01",
+                            "balance": "0x30cc36",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {
+                                "0x00": "0x0100000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xb1c248678d81cd63b5782228f4cf3ac2d3ec17d98d92b3a70aba53ec6476b6de",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-single_byte-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x8edf9749ede3bf0d55b288996774176adc306861": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x637902479f6c2503c2449d6d665b7b2809de46e0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x637902479f6c2503c2449d6d665b7b2809de46e0",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x8edf9749ede3bf0d55b288996774176adc306861",
+            "secretKey": "0x926161607a293e485f8ba41b637902479f6c2503c2449d6d665b7b2809de46e0"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x7f64fb7303968c9e5f761152c3d9dde4ab03ad8128dbea366fcafbcd7be0666e",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094637902479f6c2503c2449d6d665b7b2809de46e00101c001e1a0010000000000000000000000000000000000000000000000000000000000000080a0fce7e1b806a97cb316ca93ae03f441ba52efc33eb482cb3d1167af890ac2ada4a049615e95fd58a351439a514b976dde81acd2ec0133a1ea6a60de3cac9b870e0e",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x8edf9749ede3bf0d55b288996774176adc306861": {
+                            "nonce": "0x01",
+                            "balance": "0x30ccad",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x637902479f6c2503c2449d6d665b7b2809de46e0": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {
+                                "0x00": "0x0100000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x12a8cc6f07b68ea9cefc60155195718b385d9f403c60e528372a6504f59eb812",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-single_byte-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x36c742540d3925fe513ab9f58ceb276465801e00": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xcefaf1319b636daabd523e296eecac0de9a5c3eb": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0xcefaf1319b636daabd523e296eecac0de9a5c3eb",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x36c742540d3925fe513ab9f58ceb276465801e00",
+            "secretKey": "0xb410bcf690b0a5c67adf04f6cefaf1319b636daabd523e296eecac0de9a5c3eb"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xa98ee6ee55b8794e96206595b9ae6645c853491de55f7145254f0d1dc61de030",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094cefaf1319b636daabd523e296eecac0de9a5c3eb0101c001e1a0010000000000000000000000000000000000000000000000000000000000000080a047ba4dcf913f3c43eb45bb3c9e5fbc8bcf949e2a878e4277e881c72cb3fafa5ea0315fb9d9a2ceb9d683cac9904897e48bd1c448336a139fb52693a8f44b4e5e99",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x36c742540d3925fe513ab9f58ceb276465801e00": {
+                            "nonce": "0x01",
+                            "balance": "0x30ccc9",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xcefaf1319b636daabd523e296eecac0de9a5c3eb": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {
+                                "0x00": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xb8568fae75f9bfab8b37395afea4c4977a8d1d9624dd216ada45e26192560880",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-word-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0xccb4913b69e0e9206a4494d8b678e69395679fc5": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0xccb4913b69e0e9206a4494d8b678e69395679fc5",
+            "secretKey": "0x36a1216375dda72cbb91fc6b84ddea96a8398036f31f29a46369b9e5b91bbfbd"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xa349f52877e711677d8c1b1391dc33ef36c9ffdc3d4572f13f2d20c1be1fe179",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a1209484ddea96a8398036f31f29a46369b9e5b91bbfbd01a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000001a0fe33046761a93031f5de1d8eb2ae68d462b257e196946ac150bd2f2c2fe1cfb7a0224ea93dcaa61380f9329105c45626969f5b6d755fcb555cdac56b3c0163ef9a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xccb4913b69e0e9206a4494d8b678e69395679fc5": {
+                            "nonce": "0x01",
+                            "balance": "0x30c3e6",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {
+                                "0x00": "0x01000100010001000100010001000100010001000100010001000100010001"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0d0441afafffce36626f30d11f9006d829c489aee32ae89775ff03fd880d6d71",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-word-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x579c6c2a92b77560de5f3aaa74101faac9e37a80": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xb82fc576de066ba3c4eb304670f1e164b310acd3": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0xb82fc576de066ba3c4eb304670f1e164b310acd3",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x579c6c2a92b77560de5f3aaa74101faac9e37a80",
+            "secretKey": "0xcb4b8f07fa74c59153db6ffab82fc576de066ba3c4eb304670f1e164b310acd3"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x7947ea1c020da2e10565d57b167e7ab193d991a62f616505b58b1824639c1bbc",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a12094b82fc576de066ba3c4eb304670f1e164b310acd301a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000080a010ff9c0d02d253133067dfc00e4a8e1fda853404b95661cc51f0169f3de6f9caa04906d7268ddb94005eb32cc6730a3b5471741f417b9a6e42c0b6a192fae9d821",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x579c6c2a92b77560de5f3aaa74101faac9e37a80": {
+                            "nonce": "0x01",
+                            "balance": "0x30c45d",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xb82fc576de066ba3c4eb304670f1e164b310acd3": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {
+                                "0x00": "0x01000100010001000100010001000100010001000100010001000100010001"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5d7562ba9ed3d9880e4beb066d69175155c163dca4b540ba14047fea33237dd2",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Osaka-state_test-tx_gas_500000-word-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x36ca08827ee953a88ef2e89db26713e9d9587256": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x36ca08827ee953a88ef2e89db26713e9d9587256",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9",
+            "secretKey": "0x8736505593239eb75fdd58f236ca08827ee953a88ef2e89db26713e9d9587256"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x47e733cbbb421a283d9e936a3b37655ade6b333d07db45e9b918e5ec87a3d68a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a1209436ca08827ee953a88ef2e89db26713e9d958725601a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000001a0866eac43e8d4d19f2a743191ed095c830aa3f8c77576b1e8842b3fce07f7d3e2a06cafc0f4c2fd51588c14ecee0abe715a0152f715572566defe6faf3e0e4def01",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9": {
+                            "nonce": "0x01",
+                            "balance": "0x30c479",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x36ca08827ee953a88ef2e89db26713e9d9587256": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x84b7f4b187dee153d41d00539b879e7e5256d1679ddeb3c07c86e29dee74c8d3",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-empty-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0xef6949d8aaea69d4d35aca2341f4a17131637bd5": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x7438dee6d5a27bb4420b90daca5b540acd57833e": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x7438dee6d5a27bb4420b90daca5b540acd57833e",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0xef6949d8aaea69d4d35aca2341f4a17131637bd5",
+            "secretKey": "0x92aeb72c08c4520e5b4989917438dee6d5a27bb4420b90daca5b540acd57833e"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xf0615401b998e57bec6fd034fc7661042acc0b7d32961d942a459bd8ae191af2",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a120947438dee6d5a27bb4420b90daca5b540acd57833e0180c001e1a0010000000000000000000000000000000000000000000000000000000000000001a057760b78dcf50a8b716c083835228aca226e0a5a52f316ff3b51fbfddca61563a0303d391fa1e534458bc4a2fc0921719b1f579642f1c3a0820df625c76709d4db",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xef6949d8aaea69d4d35aca2341f4a17131637bd5": {
+                            "nonce": "0x01",
+                            "balance": "0x32ecdf",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x7438dee6d5a27bb4420b90daca5b540acd57833e": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x339e42f02f559fe15ff23a6a6280735a1d98c90fe91b9559d09d086a33236511",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-empty-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x9cc0d6f55ad93a2dafeac247b19624983830caf2": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x9cc0d6f55ad93a2dafeac247b19624983830caf2",
+            "secretKey": "0xb249eb45735f0cd420fcfd8f6572770a39eaa2ab55deeae14e2e38eff9c4cb19"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x52518612ca2decf9aef8ecdda502d558639c608e2246fc01892d89b130049e72",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a120946572770a39eaa2ab55deeae14e2e38eff9c4cb190180c001e1a0010000000000000000000000000000000000000000000000000000000000000001a086faca6710ec43330562e6fd1ffa783f1285304a00dc7a6858d669e255f03676a021579bf35e24184e3ab1329882b0d96334ae8751f06b4154682eb5f1bb27fbf4",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x9cc0d6f55ad93a2dafeac247b19624983830caf2": {
+                            "nonce": "0x01",
+                            "balance": "0x32ed41",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x6572770a39eaa2ab55deeae14e2e38eff9c4cb19": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7e20a3579d978a8407bb7168a0d188a2bbc59d3621a88df467088f05ddbdb069",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-empty-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x72387ffda2dc832e34617996cc097276281ed482": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x72387ffda2dc832e34617996cc097276281ed482",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a",
+            "secretKey": "0x159d587c7aa0dcc06954013e72387ffda2dc832e34617996cc097276281ed482"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x9fc6b4e558c6504735c8fd26850d1ff17ddf0aeb0a6c4bdd7160027deaf330a8",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a1209472387ffda2dc832e34617996cc097276281ed4820180c001e1a0010000000000000000000000000000000000000000000000000000000000000080a08d9d3c784d257b925445c52f97d73d5cc648351900ebf298c93eee05e3eb6568a01242ad354e5c2b23de5d5b68a7028eddc8ee1ceb28c95b17022f1bc9bfe2ba73",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x89e4d67a06e82bdb2e92265e52c5624b7ac51e0a": {
+                            "nonce": "0x01",
+                            "balance": "0x32ed5d",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x72387ffda2dc832e34617996cc097276281ed482": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5ca90ea6869439057d34df8dbd730898c28a380d62180b8d7abc1e47744b764b",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-single_byte-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x4c130bca1e65c0e53ece7475bb1cc99a06631224": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x4c130bca1e65c0e53ece7475bb1cc99a06631224",
+            "secretKey": "0xf0b9088b6681fdc6cd8cb971605fa68d4ac9d886207fe3e3ecc4cc253e9caf60"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xb20f88e56a7972eb1ed5d4c8c769398d300158db4fc023334282ab06f5bf174c",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094605fa68d4ac9d886207fe3e3ecc4cc253e9caf600101c001e1a0010000000000000000000000000000000000000000000000000000000000000001a067b2ed80dee913d65f8819e07faa4cacab2476b306937249d4dd61a811781c43a042bce3f359ddec95707764d6239ca00cfe5a790a862f4266492adfd327097200",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x4c130bca1e65c0e53ece7475bb1cc99a06631224": {
+                            "nonce": "0x01",
+                            "balance": "0x30cc36",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x605fa68d4ac9d886207fe3e3ecc4cc253e9caf60": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {
+                                "0x00": "0x0100000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xbf8d6fd33e6d37d60f0e1ce914e5f821f5e7a8ebe4154a855872e7e41bf28695",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-single_byte-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x8edf9749ede3bf0d55b288996774176adc306861": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x637902479f6c2503c2449d6d665b7b2809de46e0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x637902479f6c2503c2449d6d665b7b2809de46e0",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x8edf9749ede3bf0d55b288996774176adc306861",
+            "secretKey": "0x926161607a293e485f8ba41b637902479f6c2503c2449d6d665b7b2809de46e0"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x7f64fb7303968c9e5f761152c3d9dde4ab03ad8128dbea366fcafbcd7be0666e",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094637902479f6c2503c2449d6d665b7b2809de46e00101c001e1a0010000000000000000000000000000000000000000000000000000000000000080a0fce7e1b806a97cb316ca93ae03f441ba52efc33eb482cb3d1167af890ac2ada4a049615e95fd58a351439a514b976dde81acd2ec0133a1ea6a60de3cac9b870e0e",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x8edf9749ede3bf0d55b288996774176adc306861": {
+                            "nonce": "0x01",
+                            "balance": "0x30ccad",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x637902479f6c2503c2449d6d665b7b2809de46e0": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {
+                                "0x00": "0x0100000000000000000000000000000000000000000000000000000000000000"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x9da68a653b587ef03e3e8b9f53a61411430c6cd83840943fa489fac637989ce6",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-single_byte-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x36c742540d3925fe513ab9f58ceb276465801e00": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xcefaf1319b636daabd523e296eecac0de9a5c3eb": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0xcefaf1319b636daabd523e296eecac0de9a5c3eb",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x01"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x36c742540d3925fe513ab9f58ceb276465801e00",
+            "secretKey": "0xb410bcf690b0a5c67adf04f6cefaf1319b636daabd523e296eecac0de9a5c3eb"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xa98ee6ee55b8794e96206595b9ae6645c853491de55f7145254f0d1dc61de030",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f886018080078307a12094cefaf1319b636daabd523e296eecac0de9a5c3eb0101c001e1a0010000000000000000000000000000000000000000000000000000000000000080a047ba4dcf913f3c43eb45bb3c9e5fbc8bcf949e2a878e4277e881c72cb3fafa5ea0315fb9d9a2ceb9d683cac9904897e48bd1c448336a139fb52693a8f44b4e5e99",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x36c742540d3925fe513ab9f58ceb276465801e00": {
+                            "nonce": "0x01",
+                            "balance": "0x30ccc9",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xcefaf1319b636daabd523e296eecac0de9a5c3eb": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {
+                                "0x00": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x1f897273f077e53c30390f1a45c3b37a1fbef4aeb9d8e3782156d6dff4a904c5",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-word-opcode_CALLDATACOPY]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0xccb4913b69e0e9206a4494d8b678e69395679fc5": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600051600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0xccb4913b69e0e9206a4494d8b678e69395679fc5",
+            "secretKey": "0x36a1216375dda72cbb91fc6b84ddea96a8398036f31f29a46369b9e5b91bbfbd"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xa349f52877e711677d8c1b1391dc33ef36c9ffdc3d4572f13f2d20c1be1fe179",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a1209484ddea96a8398036f31f29a46369b9e5b91bbfbd01a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000001a0fe33046761a93031f5de1d8eb2ae68d462b257e196946ac150bd2f2c2fe1cfb7a0224ea93dcaa61380f9329105c45626969f5b6d755fcb555cdac56b3c0163ef9a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xccb4913b69e0e9206a4494d8b678e69395679fc5": {
+                            "nonce": "0x01",
+                            "balance": "0x30c3e6",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x84ddea96a8398036f31f29a46369b9e5b91bbfbd": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x366000600037600051600055",
+                            "storage": {
+                                "0x00": "0x01000100010001000100010001000100010001000100010001000100010001"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x59ff3815b25754576d78acbf5f8d66c68266f95d9cbb4869bb9a3558b88b05ad",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-word-opcode_CALLDATALOAD]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x579c6c2a92b77560de5f3aaa74101faac9e37a80": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xb82fc576de066ba3c4eb304670f1e164b310acd3": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600035600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0xb82fc576de066ba3c4eb304670f1e164b310acd3",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x579c6c2a92b77560de5f3aaa74101faac9e37a80",
+            "secretKey": "0xcb4b8f07fa74c59153db6ffab82fc576de066ba3c4eb304670f1e164b310acd3"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x7947ea1c020da2e10565d57b167e7ab193d991a62f616505b58b1824639c1bbc",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a12094b82fc576de066ba3c4eb304670f1e164b310acd301a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000080a010ff9c0d02d253133067dfc00e4a8e1fda853404b95661cc51f0169f3de6f9caa04906d7268ddb94005eb32cc6730a3b5471741f417b9a6e42c0b6a192fae9d821",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x579c6c2a92b77560de5f3aaa74101faac9e37a80": {
+                            "nonce": "0x01",
+                            "balance": "0x30c45d",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xb82fc576de066ba3c4eb304670f1e164b310acd3": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x600035600055",
+                            "storage": {
+                                "0x00": "0x01000100010001000100010001000100010001000100010001000100010001"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x35b80edd11ff7fe2d203e99b89c21f6c6a16a5dc1820b84e9fdf522ac2f75ec8",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/cancun/eip4844_blobs/test_blob_txs.py::test_blob_tx_attribute_calldata_opcodes[fork_Prague-state_test-tx_gas_500000-word-opcode_CALLDATASIZE]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x080000"
+        },
+        "pre": {
+            "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9": {
+                "nonce": "0x00",
+                "balance": "0x3767e1",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x36ca08827ee953a88ef2e89db26713e9d9587256": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600055",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x07a120"
+            ],
+            "to": "0x36ca08827ee953a88ef2e89db26713e9d9587256",
+            "value": [
+                "0x01"
+            ],
+            "data": [
+                "0x0001000100010001000100010001000100010001000100010001000100010001"
+            ],
+            "accessLists": [
+                []
+            ],
+            "maxFeePerBlobGas": "0x01",
+            "blobVersionedHashes": [
+                "0x0100000000000000000000000000000000000000000000000000000000000000"
+            ],
+            "sender": "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9",
+            "secretKey": "0x8736505593239eb75fdd58f236ca08827ee953a88ef2e89db26713e9d9587256"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x47e733cbbb421a283d9e936a3b37655ade6b333d07db45e9b918e5ec87a3d68a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x03f8a6018080078307a1209436ca08827ee953a88ef2e89db26713e9d958725601a00001000100010001000100010001000100010001000100010001000100010001c001e1a0010000000000000000000000000000000000000000000000000000000000000001a0866eac43e8d4d19f2a743191ed095c830aa3f8c77576b1e8842b3fce07f7d3e2a06cafc0f4c2fd51588c14ecee0abe715a0152f715572566defe6faf3e0e4def01",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x8de7cfa8c3e9073b4f099255edd3fdd67cba13a9": {
+                            "nonce": "0x01",
+                            "balance": "0x30c479",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x36ca08827ee953a88ef2e89db26713e9d9587256": {
+                            "nonce": "0x01",
+                            "balance": "0x01",
+                            "code": "0x36600055",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7b27fc3195a4cc836d91846a7c7884052a9f12a4215c75c6cb41327cb1b5a654",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test calldata related opcodes to verify their behavior is not affected by blobs.\n\n    - CALLDATALOAD\n    - CALLDATASIZE\n    - CALLDATACOPY",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip4844_blobs/test_blob_txs.py#L1222",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4844.md",
+            "reference-spec-version": "de2e4a46ad93fc04e6fe3174dc6e90a3307bdb5f",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    }
+}
