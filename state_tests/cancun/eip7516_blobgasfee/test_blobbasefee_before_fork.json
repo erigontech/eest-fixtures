@@ -1,0 +1,107 @@
+{
+    "tests/cancun/eip7516_blobgasfee/test_blobgasfee_opcode.py::test_blobbasefee_before_fork[fork_Shanghai-state_test-]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x1d4c",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0xe9414e5ce1d6ddb22fdfc5fd3e9cde9368305aa0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x4a00",
+                "storage": {}
+            },
+            "0xe9414e5ce1d6ddb22fdfc5fd3e9cde9368305ba0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6000600060006000600073e9414e5ce1d6ddb22fdfc5fd3e9cde9368305aa061fffff14355",
+                "storage": {}
+            },
+            "0x1889ab4c0903004a7d4b724951c5513ab8750f00": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0f4240"
+            ],
+            "to": "0xe9414e5ce1d6ddb22fdfc5fd3e9cde9368305ba0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x1889ab4c0903004a7d4b724951c5513ab8750f00",
+            "secretKey": "0x8148cc0fcbbadfc388022f73e9414e5ce1d6ddb22fdfc5fd3e9cde9368305aa0"
+        },
+        "post": {
+            "Shanghai": [
+                {
+                    "hash": "0xe48bca16341688c14baa45f5c081c635c19cce1146d322ae4e3a6bd52bd51ba9",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a830f424094e9414e5ce1d6ddb22fdfc5fd3e9cde9368305ba0808026a0a2cfc36ecbd36c5559b51772419b14b41c625b7e45fd830fb1efec6cb97a0246a043882d90f41c27e24a4e5c71e0bfc17e2bde7006779bcb0171c8f6e1012fcfc8",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xe9414e5ce1d6ddb22fdfc5fd3e9cde9368305aa0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x4a00",
+                            "storage": {}
+                        },
+                        "0xe9414e5ce1d6ddb22fdfc5fd3e9cde9368305ba0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x6000600060006000600073e9414e5ce1d6ddb22fdfc5fd3e9cde9368305aa061fffff14355",
+                            "storage": {}
+                        },
+                        "0x1889ab4c0903004a7d4b724951c5513ab8750f00": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de920f54",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x042e9a",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5e5713fc562fa00668eca80a94097814c9c16ff6e06675af303397b67baa4d12",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Tests that the BLOBBASEFEE opcode results on exception when called before the fork.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/cancun/eip7516_blobgasfee/test_blobgasfee_opcode.py#L149",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7516.md",
+            "reference-spec-version": "dcd2f4ede58a6ed908acd3cc2c198e9f605cbf3b",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    }
+}

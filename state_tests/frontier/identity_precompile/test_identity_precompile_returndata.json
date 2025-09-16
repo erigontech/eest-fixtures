@@ -1,0 +1,1922 @@
+{
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Berlin-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Berlin": [
+                {
+                    "hash": "0x24db18d89e385ff666e0a979dee6f3ca59d6276a16a232ada423427817146c90",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x069a46",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x3317564d5b9eacd7b088428553cadd94a92dcc412bced6615e8694fbd40001dd",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Berlin-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Berlin": [
+                {
+                    "hash": "0x92e076fd40c5381b4b977e2acc22e295f1b15b5e7900663fb60d8b73c26c0758",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x069a28",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x1f93ae5acf5f08f5d712b82c47d99040659bb3e3f445bb26b761d9953fd0cb55",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Byzantium-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Byzantium": [
+                {
+                    "hash": "0x0a8d6362c2cf4c94899cd445586253a330e45b13ba000b252d8c42cd9c4158f4",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de99a052",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x065fae",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xd966aaa44908c36b115fa6233ede854b8082f5735feb9141cdd3ae138ea7f87b",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Byzantium-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Byzantium": [
+                {
+                    "hash": "0xbfcb003b4cedb32fc60994018ee3f2a0631579cd6950565f8f3bce9883e2115a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de99a070",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x065f90",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x4b23d8ee79124ca2c409efc15432e17353e8d416deb39475ab60fbe885eefa32",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Cancun-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x8fcd8da676ca3bf20f8a647d415f2b14303e9e12b3c8d73a0b56d547ebadcf86",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb15",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xad40a03d592697844ec767f07e394a400f00e7928523513c982e167a0d2b88f2",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Cancun-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0xfaa6619c62ad352a4529dbe325ab6c889d6c988b51b592381e9dbd936330249f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb0c",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x13afd6b94a81941819d9eb1cf5a3712c35164fb734317751283c6c2b3879183f",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_ConstantinopleFix-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "ConstantinopleFix": [
+                {
+                    "hash": "0x0a8d6362c2cf4c94899cd445586253a330e45b13ba000b252d8c42cd9c4158f4",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de99a052",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x065fae",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xaa874e301f0b50edb63986d69df623b9265071298a8a47eac1e335a93ae7f609",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_ConstantinopleFix-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "ConstantinopleFix": [
+                {
+                    "hash": "0xbfcb003b4cedb32fc60994018ee3f2a0631579cd6950565f8f3bce9883e2115a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de99a070",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x065f90",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x86718c673aca528dc8b2261ded988652757cdecb3afaee26ba2726125ab99281",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Istanbul-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Istanbul": [
+                {
+                    "hash": "0x0a8d6362c2cf4c94899cd445586253a330e45b13ba000b252d8c42cd9c4158f4",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de99a052",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x065fae",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xf2d07a9a616ac57e338546d7a46685c8ebe154d17d0939bf7f7d62ae1e15c55f",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Istanbul-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Istanbul": [
+                {
+                    "hash": "0xbfcb003b4cedb32fc60994018ee3f2a0631579cd6950565f8f3bce9883e2115a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de99a070",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x065f90",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xaa187935feb02dbbd14cd145b4b7d88674dea4a84e793f5eda0e01456dad0e93",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_London-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "London": [
+                {
+                    "hash": "0x8fcd8da676ca3bf20f8a647d415f2b14303e9e12b3c8d73a0b56d547ebadcf86",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb15",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xbcc8a985d3a64c692a7c4cc698cbfd183953d561905ac02ecec001384e29f82e",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_London-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "London": [
+                {
+                    "hash": "0xfaa6619c62ad352a4529dbe325ab6c889d6c988b51b592381e9dbd936330249f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb0c",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xe946a618774fb4425c4b167bc02cb6d20e7e216a453b6b98ec69dc79be00d391",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Osaka-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x8fcd8da676ca3bf20f8a647d415f2b14303e9e12b3c8d73a0b56d547ebadcf86",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb15",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xf2c1a1f2e612bb12ecf630d30ea3b44eb73bf0b2807154a1778552b740d589c8",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Osaka-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xfaa6619c62ad352a4529dbe325ab6c889d6c988b51b592381e9dbd936330249f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb0c",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x8a956bd0bb5636b11886c8047f9ae30ab222ef7dd92a573639742a5f5a55a2e2",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Paris-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Paris": [
+                {
+                    "hash": "0x8fcd8da676ca3bf20f8a647d415f2b14303e9e12b3c8d73a0b56d547ebadcf86",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb15",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xf0342915045b9ff3d1bba482ac18b61fbae97d222e27ec12c6e2a12b946a0c24",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Paris-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Paris": [
+                {
+                    "hash": "0xfaa6619c62ad352a4529dbe325ab6c889d6c988b51b592381e9dbd936330249f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb0c",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xb4a37702e8d9567a786d96de665f747cc80a1679ffe40be57d76e4502d9bee41",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Prague-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x8fcd8da676ca3bf20f8a647d415f2b14303e9e12b3c8d73a0b56d547ebadcf86",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb15",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xc2969b5e749cb7e7d6ed2f656ca108ff3f085993be48496b84474fe0d19a9c0a",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Prague-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xfaa6619c62ad352a4529dbe325ab6c889d6c988b51b592381e9dbd936330249f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb0c",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x822025e015eb9dfb943f08152b6fa22a61e2408b520dd3194a01b34e147c1889",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Shanghai-state_test-output_size_greater_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0x1038b964dc8fd0be28da40ea657a45374b2139f6",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a",
+            "secretKey": "0xebe28bf634b4a9a833e9e1c01038b964dc8fd0be28da40ea657a45374b2139f6"
+        },
+        "post": {
+            "Shanghai": [
+                {
+                    "hash": "0x8fcd8da676ca3bf20f8a647d415f2b14303e9e12b3c8d73a0b56d547ebadcf86",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d40941038b964dc8fd0be28da40ea657a45374b2139f6808026a04667da2c23ef164c7521b68741efb2cdf0b8097d2122ced4101b629143d5aa36a0788a0473b73dcc4f09c08bf6f02120dbae225f71a1bd3cf199110df10966d9c5",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1038b964dc8fd0be28da40ea657a45374b2139f6": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526020601060106000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x10"
+                            }
+                        },
+                        "0x28aa2e66c341f6f14be6ca48d2bf0bd1b246cf4a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965ba",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb15",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x64443c2c4475f589d476491e6b9923d20a5a5e599370c56cf161b9fbe7747d70",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/frontier/identity_precompile/test_identity_returndatasize.py::test_identity_precompile_returndata[fork_Shanghai-state_test-output_size_less_than_input]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                "storage": {}
+            },
+            "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "to": "0xa03e51d083988f858d25fd63b1410b2aed86afb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050",
+            "secretKey": "0xaaa850e537af6862dbf932e1a03e51d083988f858d25fd63b1410b2aed86afb0"
+        },
+        "post": {
+            "Shanghai": [
+                {
+                    "hash": "0xfaa6619c62ad352a4529dbe325ab6c889d6c988b51b592381e9dbd936330249f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83030d4094a03e51d083988f858d25fd63b1410b2aed86afb0808026a099619dc5faaf2a5ed8dbe88e00778bbe0cc94f2c14beb8ff91bbcece2e196c2fa008b1149e97e086adb494d67f326495a2ed7a0cf41660f228973962f97f94a46a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa03e51d083988f858d25fd63b1410b2aed86afb0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x60006000525a7f112233445566778899aabbccddeeff00112233445566778899aabbccddeeff006000526010601060206000600060045af1503d60005500",
+                            "storage": {
+                                "0x00": "0x20"
+                            }
+                        },
+                        "0x3fec091b71f3e0ff4c2cffedc1482c62f56f1050": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9965d8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x01fb0c",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0ba0533568d28b7ffb189730c6ab64c37745848ea9bab54da758499b2190fd4e",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test identity precompile RETURNDATA is sized correctly based on the input size.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/frontier/identity_precompile/test_identity_returndatasize.py#L18",
+            "fixture-format": "state_test",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    }
+}

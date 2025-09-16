@@ -1,0 +1,1802 @@
+{
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_0--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xd6631c8ccaba1949b1540eb97c57fb157242214d": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xa72fedbadd6f36dbc4196fd8c80d025a07331490": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xd6631c8ccaba1949b1540eb97c57fb157242214d",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000b3f3f9519ff3ab349e4ffc214f99998a697b02358fcfe44830e29129f58d6f9154a23fd14dfa660a75d4aaec9b607c3"
+            ],
+            "sender": "0xa72fedbadd6f36dbc4196fd8c80d025a07331490",
+            "secretKey": "0x5a9ec83669f4e9a9fee8cfe3d6631c8ccaba1949b1540eb97c57fb157242214d"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x968dcc3a3acb5629dc897fbe59041ba713ab6ff9ef4addecad1274f7a13aed1b",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94d6631c8ccaba1949b1540eb97c57fb157242214d80b840000000000000000000000000000000000b3f3f9519ff3ab349e4ffc214f99998a697b02358fcfe44830e29129f58d6f9154a23fd14dfa660a75d4aaec9b607c326a0d5a4b6af8eaa1236c2c7df3152982ae146fb0337b3f99c556622e9e1bf494f6ba012d56b412676db72b75533e357e0414d174efaa5e64df8631a72b1ca6c7c94ca",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xd6631c8ccaba1949b1540eb97c57fb157242214d": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xa72fedbadd6f36dbc4196fd8c80d025a07331490": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x4e206465ed6ae60ed3cba5c7f20315f8d5d3e3613f3dd984db87f22e584b82d3",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_1--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc30bea3b3f585c0304fc7ba9ee21d3691787f047": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xd06ddc2d0ca981e5f03105168965f23feceed706": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xc30bea3b3f585c0304fc7ba9ee21d3691787f047",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000598c1367bbd9d3b73dfefb263a117bcdbcb4c7a282897d4a20589ad2ea80da73b23a465e2c291e7ef0fde593438f513"
+            ],
+            "sender": "0xd06ddc2d0ca981e5f03105168965f23feceed706",
+            "secretKey": "0x3801d95795a0a31a61ffd0fec30bea3b3f585c0304fc7ba9ee21d3691787f047"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xe9d7f9d66c18449dab3ba5181db61d471fecf1c10c15daf62d253ae65e9a20e2",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94c30bea3b3f585c0304fc7ba9ee21d3691787f04780b840000000000000000000000000000000000598c1367bbd9d3b73dfefb263a117bcdbcb4c7a282897d4a20589ad2ea80da73b23a465e2c291e7ef0fde593438f51325a00efef11e1401a0f2ea93691ba785cea414adab43444c1063119516b3de9c8561a07bc2d4410f11b0196b35277b4b07ecae0391e048d02a85dd11aa01d2c0c9d035",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc30bea3b3f585c0304fc7ba9ee21d3691787f047": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xd06ddc2d0ca981e5f03105168965f23feceed706": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xbedf6c97caa2a9fdd58d53a5d9d2dd009617ffe4ec70a0173bf09a9255c00beb",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_2--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xee4ea5e9cf9a50772519e39ff8b1b18742a71b02": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x241379a49cfc2adea8566c2a985bcb3f67d7afc4": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xee4ea5e9cf9a50772519e39ff8b1b18742a71b02",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x00000000000000000000000000000000068951d10be6961019aa800a51cf48b707fc9e40700510406be9242d0c8dd866afdec0d66f9dc2cf1dc944702ec161bb"
+            ],
+            "sender": "0x241379a49cfc2adea8566c2a985bcb3f67d7afc4",
+            "secretKey": "0x1c99d8acfa4a250cc8739845ee4ea5e9cf9a50772519e39ff8b1b18742a71b02"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xea25a1af85727d93264dd7bc75754fe36b5f983757c5c21c24bb490ea90cb907",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94ee4ea5e9cf9a50772519e39ff8b1b18742a71b0280b84000000000000000000000000000000000068951d10be6961019aa800a51cf48b707fc9e40700510406be9242d0c8dd866afdec0d66f9dc2cf1dc944702ec161bb25a058291d1432268ea2ab4d91b517fcb1684a602ba53019ce21d9b75ee4c111289fa008c50b35c581bc0c057082df3706a0b9029db6b7a7227456e75e143c1362f40a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xee4ea5e9cf9a50772519e39ff8b1b18742a71b02": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0x241379a49cfc2adea8566c2a985bcb3f67d7afc4": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x3703c3204ba9f97063cdc198afab89728003d8b3cb5fb3f29f7b73cef6e3093b",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_3--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc291d982f0d4572a44b77332323bbe19a2a6e083": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xb76a3c853acd899a30971cf9a0ed2d70459a2a5f": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xc291d982f0d4572a44b77332323bbe19a2a6e083",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000a2605e5991fcf3e63728a7a1468d79bacaa5f23f3816aadcd38efdd330c6d4f5bbf450f92156e0e23e16e3252bcd042"
+            ],
+            "sender": "0xb76a3c853acd899a30971cf9a0ed2d70459a2a5f",
+            "secretKey": "0x2ad600d6eb9defc293b51757c291d982f0d4572a44b77332323bbe19a2a6e083"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x1319de773deb3e5f17520e9377eaa4d81bf0870a9769e472b98e95753bd166de",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94c291d982f0d4572a44b77332323bbe19a2a6e08380b840000000000000000000000000000000000a2605e5991fcf3e63728a7a1468d79bacaa5f23f3816aadcd38efdd330c6d4f5bbf450f92156e0e23e16e3252bcd04225a0657b163842ff923370bbe61b7ac306daa4f3a3098636f7a131534098df3cbf19a00c30b8ac028b8166bf31e2b4dd63d5624694a8e4fdc999d96e04adbe88c02585",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc291d982f0d4572a44b77332323bbe19a2a6e083": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xb76a3c853acd899a30971cf9a0ed2d70459a2a5f": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5bfd64061427097d3d445a8fa2e1ad0f04ead85aceb155b9fbf2d73131a67033",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_4--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x41706fcf93bfd2141045523dd74bae182d493156": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0x53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000ec1d2551f80abe70136a7f42e52133ebddf9b619a88147ae422a98e57581f2b0961dc019c74599f12a1b5513649a2e8"
+            ],
+            "sender": "0x41706fcf93bfd2141045523dd74bae182d493156",
+            "secretKey": "0x01e3c1d86f6804096c44dcfb53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xf492ab4ce3343214bb81553559736a983cb0d0a645a799e92ba5fdc884f8d005",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a9453ebee25e6d96ebeaee6e5b0b757aa6a967b8b1680b840000000000000000000000000000000000ec1d2551f80abe70136a7f42e52133ebddf9b619a88147ae422a98e57581f2b0961dc019c74599f12a1b5513649a2e825a00d2873d1e9c1568e5b78e9a7ea322f356d25462d98ed10ae6a86c58142b69305a00a65d30129336d57aaaf4dc47ffef8dd33ec6398ac3f41afdf427c7aed668229",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0x41706fcf93bfd2141045523dd74bae182d493156": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7636814d4bf6f7f58979f4cb019b5005886e3b4b21dd18e013c482eadaee51c1",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_5--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x9932308426c0b59c3d6c2dd889a608a413cf04a5": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x56d404275719b7d5705f69c4e388c2f472b9b247": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0x9932308426c0b59c3d6c2dd889a608a413cf04a5",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x00000000000000000000000000000000146850b3bdc2495ed73bb803dfaa951a88abff0acb5c7aeac52b48f3c808e87ce3885b98ce916e17caef21a6cbc6b598"
+            ],
+            "sender": "0x56d404275719b7d5705f69c4e388c2f472b9b247",
+            "secretKey": "0x964e32e1c81f4acec32ee5d99932308426c0b59c3d6c2dd889a608a413cf04a5"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x22c1f73a8c8e2a3416e5d2822066fd6d703c6366b23aa193a6ad2741bab8d6d3",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a949932308426c0b59c3d6c2dd889a608a413cf04a580b84000000000000000000000000000000000146850b3bdc2495ed73bb803dfaa951a88abff0acb5c7aeac52b48f3c808e87ce3885b98ce916e17caef21a6cbc6b59825a08d8f6e9996dc88c880a3992364da2cf310b51050ccc66d216f9975c8c7c5cb5fa03ef53fc1c7804ee1e30f45724ddbaa4740c7ba088850c19bb6c4722970a62e6c",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x9932308426c0b59c3d6c2dd889a608a413cf04a5": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0x56d404275719b7d5705f69c4e388c2f472b9b247": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x806548ad2a0585dc3450e1457b64f187f55f7149bdb5fb38844c45d83f407b1a",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_6--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc252d7375f3c05b4ee859a7bd27d9067b07aac9b": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xa00675af7fdf46ec23a0edd9274056b0bdfea901": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xc252d7375f3c05b4ee859a7bd27d9067b07aac9b",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000001377c0192d99508a317127abf17c64205c7aad448380027efb47ae73ea231dbd6ecd3f2841b63d309c35bb8fd13e48f0"
+            ],
+            "sender": "0xa00675af7fdf46ec23a0edd9274056b0bdfea901",
+            "secretKey": "0x6408fc78071f8b4120c37b1ec252d7375f3c05b4ee859a7bd27d9067b07aac9b"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x4089a4d98391f1efb147f6ae948dc7d8b4801c88c5fa4fd6203c40a3c68f83fa",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94c252d7375f3c05b4ee859a7bd27d9067b07aac9b80b840000000000000000000000000000000001377c0192d99508a317127abf17c64205c7aad448380027efb47ae73ea231dbd6ecd3f2841b63d309c35bb8fd13e48f026a06b6594b6795cc49ab190282387a46372d0caa46aff3d1e103707d79c0c19e0eca079c0b74ebee0ab2cfba6f77e6261dfac5ffc6512c10d87f8e4416fe28e4f05af",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc252d7375f3c05b4ee859a7bd27d9067b07aac9b": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xa00675af7fdf46ec23a0edd9274056b0bdfea901": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x2df3c496c7d06f780871107725d7c54162a80dcaec56775682e3b921e3f755ee",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Osaka-state_test-isogeny_kernel_7--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xe065731f49425466d65bfb8958bda988950be4ac": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xcc1dc09b8be9934f6c3adfd291b00923f010d1bf": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f62c"
+            ],
+            "to": "0xe065731f49425466d65bfb8958bda988950be4ac",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000fdb0c04a060175be7a91d3c2ee2d53bb7ccec610003a81199f7e2c3c3a488d4c2ecbaef1f3e91f1961d91cdad42da69"
+            ],
+            "sender": "0xcc1dc09b8be9934f6c3adfd291b00923f010d1bf",
+            "secretKey": "0x62f313a0e8dc83eea30fc535e065731f49425466d65bfb8958bda988950be4ac"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xebf1421d2002db98001551b3674887c673d02ae2e9a855815dc89425c810fa28",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f62c94e065731f49425466d65bfb8958bda988950be4ac80b840000000000000000000000000000000000fdb0c04a060175be7a91d3c2ee2d53bb7ccec610003a81199f7e2c3c3a488d4c2ecbaef1f3e91f1961d91cdad42da6926a098b2119a8e10ca1898b06dc6a8452c14533affad9ff164f803c54c547f95aee0a069997860e89652e599a41bb9d31f4117cdca65467c68de55e4a8453bcaf88760",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xe065731f49425466d65bfb8958bda988950be4ac": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xcc1dc09b8be9934f6c3adfd291b00923f010d1bf": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad84",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044bf2",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5c86d42b5fd69dcd968e9a6c7800c39478bae1c8ae202360617103e95402ae87",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_0--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xd6631c8ccaba1949b1540eb97c57fb157242214d": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xa72fedbadd6f36dbc4196fd8c80d025a07331490": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xd6631c8ccaba1949b1540eb97c57fb157242214d",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000b3f3f9519ff3ab349e4ffc214f99998a697b02358fcfe44830e29129f58d6f9154a23fd14dfa660a75d4aaec9b607c3"
+            ],
+            "sender": "0xa72fedbadd6f36dbc4196fd8c80d025a07331490",
+            "secretKey": "0x5a9ec83669f4e9a9fee8cfe3d6631c8ccaba1949b1540eb97c57fb157242214d"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x968dcc3a3acb5629dc897fbe59041ba713ab6ff9ef4addecad1274f7a13aed1b",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94d6631c8ccaba1949b1540eb97c57fb157242214d80b840000000000000000000000000000000000b3f3f9519ff3ab349e4ffc214f99998a697b02358fcfe44830e29129f58d6f9154a23fd14dfa660a75d4aaec9b607c326a0d5a4b6af8eaa1236c2c7df3152982ae146fb0337b3f99c556622e9e1bf494f6ba012d56b412676db72b75533e357e0414d174efaa5e64df8631a72b1ca6c7c94ca",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xd6631c8ccaba1949b1540eb97c57fb157242214d": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xa72fedbadd6f36dbc4196fd8c80d025a07331490": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x879386b56b67972b43f2b4e181291db993512b28d72cdb35a80a0da4c6c34300",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_1--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc30bea3b3f585c0304fc7ba9ee21d3691787f047": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xd06ddc2d0ca981e5f03105168965f23feceed706": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xc30bea3b3f585c0304fc7ba9ee21d3691787f047",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000598c1367bbd9d3b73dfefb263a117bcdbcb4c7a282897d4a20589ad2ea80da73b23a465e2c291e7ef0fde593438f513"
+            ],
+            "sender": "0xd06ddc2d0ca981e5f03105168965f23feceed706",
+            "secretKey": "0x3801d95795a0a31a61ffd0fec30bea3b3f585c0304fc7ba9ee21d3691787f047"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xe9d7f9d66c18449dab3ba5181db61d471fecf1c10c15daf62d253ae65e9a20e2",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94c30bea3b3f585c0304fc7ba9ee21d3691787f04780b840000000000000000000000000000000000598c1367bbd9d3b73dfefb263a117bcdbcb4c7a282897d4a20589ad2ea80da73b23a465e2c291e7ef0fde593438f51325a00efef11e1401a0f2ea93691ba785cea414adab43444c1063119516b3de9c8561a07bc2d4410f11b0196b35277b4b07ecae0391e048d02a85dd11aa01d2c0c9d035",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc30bea3b3f585c0304fc7ba9ee21d3691787f047": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xd06ddc2d0ca981e5f03105168965f23feceed706": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x6cd0536c3364091c4cb9773398aed8ef7fc24979f7707d1b8ca7a48235075dc2",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_2--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xee4ea5e9cf9a50772519e39ff8b1b18742a71b02": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x241379a49cfc2adea8566c2a985bcb3f67d7afc4": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xee4ea5e9cf9a50772519e39ff8b1b18742a71b02",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x00000000000000000000000000000000068951d10be6961019aa800a51cf48b707fc9e40700510406be9242d0c8dd866afdec0d66f9dc2cf1dc944702ec161bb"
+            ],
+            "sender": "0x241379a49cfc2adea8566c2a985bcb3f67d7afc4",
+            "secretKey": "0x1c99d8acfa4a250cc8739845ee4ea5e9cf9a50772519e39ff8b1b18742a71b02"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xea25a1af85727d93264dd7bc75754fe36b5f983757c5c21c24bb490ea90cb907",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94ee4ea5e9cf9a50772519e39ff8b1b18742a71b0280b84000000000000000000000000000000000068951d10be6961019aa800a51cf48b707fc9e40700510406be9242d0c8dd866afdec0d66f9dc2cf1dc944702ec161bb25a058291d1432268ea2ab4d91b517fcb1684a602ba53019ce21d9b75ee4c111289fa008c50b35c581bc0c057082df3706a0b9029db6b7a7227456e75e143c1362f40a",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xee4ea5e9cf9a50772519e39ff8b1b18742a71b02": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0x241379a49cfc2adea8566c2a985bcb3f67d7afc4": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x66a83f03a379e41d23202f8e629705e58cd3928ae1f3920ad984a14f3e2044de",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_3--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc291d982f0d4572a44b77332323bbe19a2a6e083": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xb76a3c853acd899a30971cf9a0ed2d70459a2a5f": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xc291d982f0d4572a44b77332323bbe19a2a6e083",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000a2605e5991fcf3e63728a7a1468d79bacaa5f23f3816aadcd38efdd330c6d4f5bbf450f92156e0e23e16e3252bcd042"
+            ],
+            "sender": "0xb76a3c853acd899a30971cf9a0ed2d70459a2a5f",
+            "secretKey": "0x2ad600d6eb9defc293b51757c291d982f0d4572a44b77332323bbe19a2a6e083"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x1319de773deb3e5f17520e9377eaa4d81bf0870a9769e472b98e95753bd166de",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94c291d982f0d4572a44b77332323bbe19a2a6e08380b840000000000000000000000000000000000a2605e5991fcf3e63728a7a1468d79bacaa5f23f3816aadcd38efdd330c6d4f5bbf450f92156e0e23e16e3252bcd04225a0657b163842ff923370bbe61b7ac306daa4f3a3098636f7a131534098df3cbf19a00c30b8ac028b8166bf31e2b4dd63d5624694a8e4fdc999d96e04adbe88c02585",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc291d982f0d4572a44b77332323bbe19a2a6e083": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xb76a3c853acd899a30971cf9a0ed2d70459a2a5f": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5efaa69c8583420be618cf99f0e52cca38af2dee700715fe6f708a87348f0788",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_4--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x41706fcf93bfd2141045523dd74bae182d493156": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0x53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000ec1d2551f80abe70136a7f42e52133ebddf9b619a88147ae422a98e57581f2b0961dc019c74599f12a1b5513649a2e8"
+            ],
+            "sender": "0x41706fcf93bfd2141045523dd74bae182d493156",
+            "secretKey": "0x01e3c1d86f6804096c44dcfb53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xf492ab4ce3343214bb81553559736a983cb0d0a645a799e92ba5fdc884f8d005",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a9453ebee25e6d96ebeaee6e5b0b757aa6a967b8b1680b840000000000000000000000000000000000ec1d2551f80abe70136a7f42e52133ebddf9b619a88147ae422a98e57581f2b0961dc019c74599f12a1b5513649a2e825a00d2873d1e9c1568e5b78e9a7ea322f356d25462d98ed10ae6a86c58142b69305a00a65d30129336d57aaaf4dc47ffef8dd33ec6398ac3f41afdf427c7aed668229",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x53ebee25e6d96ebeaee6e5b0b757aa6a967b8b16": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0x41706fcf93bfd2141045523dd74bae182d493156": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xd1e6174bb2d5fc778a3c39346e3f90d2d26f8f04e3cc6650d475c23f647e67e2",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_5--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x9932308426c0b59c3d6c2dd889a608a413cf04a5": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x56d404275719b7d5705f69c4e388c2f472b9b247": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0x9932308426c0b59c3d6c2dd889a608a413cf04a5",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x00000000000000000000000000000000146850b3bdc2495ed73bb803dfaa951a88abff0acb5c7aeac52b48f3c808e87ce3885b98ce916e17caef21a6cbc6b598"
+            ],
+            "sender": "0x56d404275719b7d5705f69c4e388c2f472b9b247",
+            "secretKey": "0x964e32e1c81f4acec32ee5d99932308426c0b59c3d6c2dd889a608a413cf04a5"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x22c1f73a8c8e2a3416e5d2822066fd6d703c6366b23aa193a6ad2741bab8d6d3",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a949932308426c0b59c3d6c2dd889a608a413cf04a580b84000000000000000000000000000000000146850b3bdc2495ed73bb803dfaa951a88abff0acb5c7aeac52b48f3c808e87ce3885b98ce916e17caef21a6cbc6b59825a08d8f6e9996dc88c880a3992364da2cf310b51050ccc66d216f9975c8c7c5cb5fa03ef53fc1c7804ee1e30f45724ddbaa4740c7ba088850c19bb6c4722970a62e6c",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x9932308426c0b59c3d6c2dd889a608a413cf04a5": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0x56d404275719b7d5705f69c4e388c2f472b9b247": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x285fbc93f7352cbc4718a38906fa7fa58c4a27c069c13fe623eb953955b2e39f",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_6--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc252d7375f3c05b4ee859a7bd27d9067b07aac9b": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xa00675af7fdf46ec23a0edd9274056b0bdfea901": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f64a"
+            ],
+            "to": "0xc252d7375f3c05b4ee859a7bd27d9067b07aac9b",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000001377c0192d99508a317127abf17c64205c7aad448380027efb47ae73ea231dbd6ecd3f2841b63d309c35bb8fd13e48f0"
+            ],
+            "sender": "0xa00675af7fdf46ec23a0edd9274056b0bdfea901",
+            "secretKey": "0x6408fc78071f8b4120c37b1ec252d7375f3c05b4ee859a7bd27d9067b07aac9b"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0x4089a4d98391f1efb147f6ae948dc7d8b4801c88c5fa4fd6203c40a3c68f83fa",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f64a94c252d7375f3c05b4ee859a7bd27d9067b07aac9b80b840000000000000000000000000000000001377c0192d99508a317127abf17c64205c7aad448380027efb47ae73ea231dbd6ecd3f2841b63d309c35bb8fd13e48f026a06b6594b6795cc49ab190282387a46372d0caa46aff3d1e103707d79c0c19e0eca079c0b74ebee0ab2cfba6f77e6261dfac5ffc6512c10d87f8e4416fe28e4f05af",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc252d7375f3c05b4ee859a7bd27d9067b07aac9b": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xa00675af7fdf46ec23a0edd9274056b0bdfea901": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad0c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044c16",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xc5c7cc616c670a33f9a6200ae3306f7343325b0fabe68163614263bb509db9b4",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py::test_isogeny_kernel_values[fork_Prague-state_test-isogeny_kernel_7--]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xe065731f49425466d65bfb8958bda988950be4ac": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0xcc1dc09b8be9934f6c3adfd291b00923f010d1bf": {
+                "nonce": "0x00",
+                "balance": "0x0de0b6b3a7640000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x01f62c"
+            ],
+            "to": "0xe065731f49425466d65bfb8958bda988950be4ac",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000fdb0c04a060175be7a91d3c2ee2d53bb7ccec610003a81199f7e2c3c3a488d4c2ecbaef1f3e91f1961d91cdad42da69"
+            ],
+            "sender": "0xcc1dc09b8be9934f6c3adfd291b00923f010d1bf",
+            "secretKey": "0x62f313a0e8dc83eea30fc535e065731f49425466d65bfb8958bda988950be4ac"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xebf1421d2002db98001551b3674887c673d02ae2e9a855815dc89425c810fa28",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8a1800a8301f62c94e065731f49425466d65bfb8958bda988950be4ac80b840000000000000000000000000000000000fdb0c04a060175be7a91d3c2ee2d53bb7ccec610003a81199f7e2c3c3a488d4c2ecbaef1f3e91f1961d91cdad42da6926a098b2119a8e10ca1898b06dc6a8452c14533affad9ff164f803c54c547f95aee0a069997860e89652e599a41bb9d31f4117cdca65467c68de55e4a8453bcaf88760",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xe065731f49425466d65bfb8958bda988950be4ac": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000601061157cf16000553d6001553d600060003e3d600020600255",
+                            "storage": {
+                                "0x00": "0x01",
+                                "0x01": "0x80",
+                                "0x02": "0x012893657d8eb2efad4de0a91bcd0e39ad9837745dec3ea923737ea803fc8e3d"
+                            }
+                        },
+                        "0xcc1dc09b8be9934f6c3adfd291b00923f010d1bf": {
+                            "nonce": "0x01",
+                            "balance": "0x0de0b6b3a755ad84",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x044bf2",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x2f2dad458baeceaece9af7e709d6df74971551ee1fd76893c4810c978fc6c146",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test the BLS12_MAP_FP_TO_G1 precompile with isogeny kernel inputs.\n\n    The isogeny kernel is simply the set of special field values, that after the two step mapping\n    (first SWU onto an auxiliary curve, then an 11-degree isogeny back to G1), collapse exactly\n    to the identity point.\n\n    Please proceed to the generator in `helpers.py` to see how the isogeny kernel values are\n    generated.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip2537_bls_12_381_precompiles/test_bls12_map_fp_to_g1.py#L74",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2537.md",
+            "reference-spec-version": "c561ec1426fe5ec470eade499a0bd4174f270583",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    }
+}
