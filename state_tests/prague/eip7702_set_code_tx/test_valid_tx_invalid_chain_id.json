@@ -123,7 +123,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test sending a transaction where the chain id field does not match\n    the current chain's id.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2271",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2286",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "99f1be49f37c034bdd5c082946f5968710dbfc87",
@@ -134,7 +134,7 @@
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_chain_id[fork_Osaka-state_test-chain_id=2]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_chain_id[fork_Osaka-state_test-auth_chain_id=correct_chain_id+1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
             "currentGasLimit": "0x055d4a80",
@@ -146,19 +146,19 @@
             "currentExcessBlobGas": "0x00"
         },
         "pre": {
-            "0xdc033c9fb1b89097a01615df2a9febca89d9fa1c": {
+            "0x50b9c384164f5e6661105c8ae3f027c4b1bafd60": {
                 "nonce": "0x01",
                 "balance": "0x00",
                 "code": "0x60016000f3",
                 "storage": {}
             },
-            "0xdc033c9fb1b89097a01615df2a9febca89d9fb1c": {
+            "0x50b9c384164f5e6661105c8ae3f027c4b1bafe60": {
                 "nonce": "0x01",
                 "balance": "0x00",
-                "code": "0x60016001556000600060006000600073c4fcc5907df57f8dbb9f9b717ff24e98e0d93fa35af13d600255",
+                "code": "0x600160015560006000600060006000738f7505cbc430200f9d89031c1ff04b173c7aae8c5af13d600255",
                 "storage": {}
             },
-            "0xea4d431b1fa77d722f462c1bb85713be229f1d34": {
+            "0xf529056785015530c4aa5289679bbe3a28a3ac08": {
                 "nonce": "0x00",
                 "balance": "0x3635c9adc5dea00000",
                 "code": "0x",
@@ -172,7 +172,7 @@
             "gasLimit": [
                 "0x0186a0"
             ],
-            "to": "0xdc033c9fb1b89097a01615df2a9febca89d9fb1c",
+            "to": "0x50b9c384164f5e6661105c8ae3f027c4b1bafe60",
             "value": [
                 "0x00"
             ],
@@ -185,45 +185,45 @@
             "authorizationList": [
                 {
                     "chainId": "0x02",
-                    "address": "0xdc033c9fb1b89097a01615df2a9febca89d9fa1c",
+                    "address": "0x50b9c384164f5e6661105c8ae3f027c4b1bafd60",
                     "nonce": "0x00",
                     "v": "0x00",
-                    "r": "0x481c2fb62f2abddffa62156402a41f8d2fcb0503f43c95b6559dafa8a9b1e068",
-                    "s": "0x500329bbc04ae72e81f2388371b5b91069a2047449ef80d57304abfbec12a065",
-                    "signer": "0xc4fcc5907df57f8dbb9f9b717ff24e98e0d93fa3",
+                    "r": "0xf080b24a6efecf5d717f424317641d4761f9847dd2970e847a67d702c0684be1",
+                    "s": "0x2ef776897f3a46f98ab0d7df175f5891ae6e69c1d060b25744d77eda2641480a",
+                    "signer": "0x8f7505cbc430200f9d89031c1ff04b173c7aae8c",
                     "yParity": "0x00"
                 }
             ],
-            "sender": "0xea4d431b1fa77d722f462c1bb85713be229f1d34",
-            "secretKey": "0xcf04ef85d7f97801fd3bf27cdc033c9fb1b89097a01615df2a9febca89d9fa1d"
+            "sender": "0xf529056785015530c4aa5289679bbe3a28a3ac08",
+            "secretKey": "0x9e5251beecc299c36c9e492e50b9c384164f5e6661105c8ae3f027c4b1bafd61"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x21bb8c712a7d861527f9508a8bb88d76eeacb5548f8b5237e4b2c8a4ca9bd661",
+                    "hash": "0x9e36aa03e0023755ad35a1c04008dcfb5496aa1ea9fa83e96105c9d21896466f",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0x04f8c101808007830186a094dc033c9fb1b89097a01615df2a9febca89d9fb1c8080c0f85cf85a0294dc033c9fb1b89097a01615df2a9febca89d9fa1c8080a0481c2fb62f2abddffa62156402a41f8d2fcb0503f43c95b6559dafa8a9b1e068a0500329bbc04ae72e81f2388371b5b91069a2047449ef80d57304abfbec12a06501a018853fb234ce6edcc72f87f23238193662add4180882a63b3d794ad26717300fa00d7f6a79299d087f12e2467160bc3401cbbf1217c741bb1ce6e4ee216dc4d6e0",
+                    "txbytes": "0x04f8c101808007830186a09450b9c384164f5e6661105c8ae3f027c4b1bafe608080c0f85cf85a029450b9c384164f5e6661105c8ae3f027c4b1bafd608080a0f080b24a6efecf5d717f424317641d4761f9847dd2970e847a67d702c0684be1a02ef776897f3a46f98ab0d7df175f5891ae6e69c1d060b25744d77eda2641480a80a049cad5f3dc3d9ed1289c7f36c87da810c5315230a26b93912bc569b57be57de4a03d85848400f7d719dd62000c319159195d24e3f25fd8bbad0de84cde9972fcb1",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
                         "value": 0
                     },
                     "state": {
-                        "0xdc033c9fb1b89097a01615df2a9febca89d9fa1c": {
+                        "0x50b9c384164f5e6661105c8ae3f027c4b1bafd60": {
                             "nonce": "0x01",
                             "balance": "0x00",
                             "code": "0x60016000f3",
                             "storage": {}
                         },
-                        "0xdc033c9fb1b89097a01615df2a9febca89d9fb1c": {
+                        "0x50b9c384164f5e6661105c8ae3f027c4b1bafe60": {
                             "nonce": "0x01",
                             "balance": "0x00",
-                            "code": "0x60016001556000600060006000600073c4fcc5907df57f8dbb9f9b717ff24e98e0d93fa35af13d600255",
+                            "code": "0x600160015560006000600060006000738f7505cbc430200f9d89031c1ff04b173c7aae8c5af13d600255",
                             "storage": {
                                 "0x01": "0x01"
                             }
                         },
-                        "0xea4d431b1fa77d722f462c1bb85713be229f1d34": {
+                        "0xf529056785015530c4aa5289679bbe3a28a3ac08": {
                             "nonce": "0x01",
                             "balance": "0x3635c9adc5de9835cb",
                             "code": "0x",
@@ -254,11 +254,11 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x4faec3bf6e173ba4869741d208fc03ac9edbe012acaeb6bc5747a5770083ef6e",
+            "hash": "0x89f0ed7420ae044a4549ae325339d3e9b1b1d21017e36fd412e88c5cdcc0391a",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test sending a transaction where the chain id field does not match\n    the current chain's id.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2271",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2286",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "99f1be49f37c034bdd5c082946f5968710dbfc87",
@@ -388,7 +388,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test sending a transaction where the chain id field does not match\n    the current chain's id.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2271",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2286",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "99f1be49f37c034bdd5c082946f5968710dbfc87",
@@ -399,7 +399,7 @@
             }
         }
     },
-    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_chain_id[fork_Prague-state_test-chain_id=2]": {
+    "tests/prague/eip7702_set_code_tx/test_set_code_txs.py::test_valid_tx_invalid_chain_id[fork_Prague-state_test-auth_chain_id=correct_chain_id+1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
             "currentGasLimit": "0x055d4a80",
@@ -411,19 +411,19 @@
             "currentExcessBlobGas": "0x00"
         },
         "pre": {
-            "0xdc033c9fb1b89097a01615df2a9febca89d9fa1c": {
+            "0x50b9c384164f5e6661105c8ae3f027c4b1bafd60": {
                 "nonce": "0x01",
                 "balance": "0x00",
                 "code": "0x60016000f3",
                 "storage": {}
             },
-            "0xdc033c9fb1b89097a01615df2a9febca89d9fb1c": {
+            "0x50b9c384164f5e6661105c8ae3f027c4b1bafe60": {
                 "nonce": "0x01",
                 "balance": "0x00",
-                "code": "0x60016001556000600060006000600073c4fcc5907df57f8dbb9f9b717ff24e98e0d93fa35af13d600255",
+                "code": "0x600160015560006000600060006000738f7505cbc430200f9d89031c1ff04b173c7aae8c5af13d600255",
                 "storage": {}
             },
-            "0xea4d431b1fa77d722f462c1bb85713be229f1d34": {
+            "0xf529056785015530c4aa5289679bbe3a28a3ac08": {
                 "nonce": "0x00",
                 "balance": "0x3635c9adc5dea00000",
                 "code": "0x",
@@ -437,7 +437,7 @@
             "gasLimit": [
                 "0x0186a0"
             ],
-            "to": "0xdc033c9fb1b89097a01615df2a9febca89d9fb1c",
+            "to": "0x50b9c384164f5e6661105c8ae3f027c4b1bafe60",
             "value": [
                 "0x00"
             ],
@@ -450,45 +450,45 @@
             "authorizationList": [
                 {
                     "chainId": "0x02",
-                    "address": "0xdc033c9fb1b89097a01615df2a9febca89d9fa1c",
+                    "address": "0x50b9c384164f5e6661105c8ae3f027c4b1bafd60",
                     "nonce": "0x00",
                     "v": "0x00",
-                    "r": "0x481c2fb62f2abddffa62156402a41f8d2fcb0503f43c95b6559dafa8a9b1e068",
-                    "s": "0x500329bbc04ae72e81f2388371b5b91069a2047449ef80d57304abfbec12a065",
-                    "signer": "0xc4fcc5907df57f8dbb9f9b717ff24e98e0d93fa3",
+                    "r": "0xf080b24a6efecf5d717f424317641d4761f9847dd2970e847a67d702c0684be1",
+                    "s": "0x2ef776897f3a46f98ab0d7df175f5891ae6e69c1d060b25744d77eda2641480a",
+                    "signer": "0x8f7505cbc430200f9d89031c1ff04b173c7aae8c",
                     "yParity": "0x00"
                 }
             ],
-            "sender": "0xea4d431b1fa77d722f462c1bb85713be229f1d34",
-            "secretKey": "0xcf04ef85d7f97801fd3bf27cdc033c9fb1b89097a01615df2a9febca89d9fa1d"
+            "sender": "0xf529056785015530c4aa5289679bbe3a28a3ac08",
+            "secretKey": "0x9e5251beecc299c36c9e492e50b9c384164f5e6661105c8ae3f027c4b1bafd61"
         },
         "post": {
             "Prague": [
                 {
-                    "hash": "0x21bb8c712a7d861527f9508a8bb88d76eeacb5548f8b5237e4b2c8a4ca9bd661",
+                    "hash": "0x9e36aa03e0023755ad35a1c04008dcfb5496aa1ea9fa83e96105c9d21896466f",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0x04f8c101808007830186a094dc033c9fb1b89097a01615df2a9febca89d9fb1c8080c0f85cf85a0294dc033c9fb1b89097a01615df2a9febca89d9fa1c8080a0481c2fb62f2abddffa62156402a41f8d2fcb0503f43c95b6559dafa8a9b1e068a0500329bbc04ae72e81f2388371b5b91069a2047449ef80d57304abfbec12a06501a018853fb234ce6edcc72f87f23238193662add4180882a63b3d794ad26717300fa00d7f6a79299d087f12e2467160bc3401cbbf1217c741bb1ce6e4ee216dc4d6e0",
+                    "txbytes": "0x04f8c101808007830186a09450b9c384164f5e6661105c8ae3f027c4b1bafe608080c0f85cf85a029450b9c384164f5e6661105c8ae3f027c4b1bafd608080a0f080b24a6efecf5d717f424317641d4761f9847dd2970e847a67d702c0684be1a02ef776897f3a46f98ab0d7df175f5891ae6e69c1d060b25744d77eda2641480a80a049cad5f3dc3d9ed1289c7f36c87da810c5315230a26b93912bc569b57be57de4a03d85848400f7d719dd62000c319159195d24e3f25fd8bbad0de84cde9972fcb1",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
                         "value": 0
                     },
                     "state": {
-                        "0xdc033c9fb1b89097a01615df2a9febca89d9fa1c": {
+                        "0x50b9c384164f5e6661105c8ae3f027c4b1bafd60": {
                             "nonce": "0x01",
                             "balance": "0x00",
                             "code": "0x60016000f3",
                             "storage": {}
                         },
-                        "0xdc033c9fb1b89097a01615df2a9febca89d9fb1c": {
+                        "0x50b9c384164f5e6661105c8ae3f027c4b1bafe60": {
                             "nonce": "0x01",
                             "balance": "0x00",
-                            "code": "0x60016001556000600060006000600073c4fcc5907df57f8dbb9f9b717ff24e98e0d93fa35af13d600255",
+                            "code": "0x600160015560006000600060006000738f7505cbc430200f9d89031c1ff04b173c7aae8c5af13d600255",
                             "storage": {
                                 "0x01": "0x01"
                             }
                         },
-                        "0xea4d431b1fa77d722f462c1bb85713be229f1d34": {
+                        "0xf529056785015530c4aa5289679bbe3a28a3ac08": {
                             "nonce": "0x01",
                             "balance": "0x3635c9adc5de9835cb",
                             "code": "0x",
@@ -514,11 +514,11 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x0f80a6a5ca9640e5b0284d9f5d3fac99822a90237e85d6926b28fa3f33e105e1",
+            "hash": "0x9fef15694502495e6cd010acf86cae2e78f30d8ca153fcddcbf951add8427d3b",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test sending a transaction where the chain id field does not match\n    the current chain's id.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2271",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/prague/eip7702_set_code_tx/test_set_code_txs.py#L2286",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "99f1be49f37c034bdd5c082946f5968710dbfc87",

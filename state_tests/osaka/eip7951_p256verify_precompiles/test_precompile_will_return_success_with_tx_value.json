@@ -1,5 +1,5 @@
 {
-    "tests/osaka/eip7951_p256verify_precompiles/test_p256verify_before_fork.py::test_precompile_before_fork[fork_Prague-state_test--P256VERIFY]": {
+    "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_precompile_will_return_success_with_tx_value[fork_Osaka-state_test-valid_input_with_value_transfer]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
             "currentGasLimit": "0x055d4a80",
@@ -11,16 +11,16 @@
             "currentExcessBlobGas": "0x00"
         },
         "pre": {
-            "0x76d0c94cd2d40a84b06576d1409cdde942cb4ecc": {
-                "nonce": "0x01",
-                "balance": "0x00",
-                "code": "0x366000600037600060003660006000610100611af4f13d6001556000553d600060003e3d600020600255",
-                "storage": {}
-            },
-            "0xb5cd7417b44adb58b90258cd647ed3c2e051fc77": {
+            "0x4b042c0c24596ba3d7f6a27cc6a0465fe1083cf3": {
                 "nonce": "0x00",
                 "balance": "0x3635c9adc5dea00000",
                 "code": "0x",
+                "storage": {}
+            },
+            "0x488b362fdb8091102a526cea7da03f44b9b9e26e": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000376020600036600034610100611af4f1806000556000516001553d60025500",
                 "storage": {}
             }
         },
@@ -28,48 +28,55 @@
             "nonce": "0x00",
             "gasPrice": "0x0a",
             "gasLimit": [
-                "0x020c6f"
+                "0x0f4240"
             ],
-            "to": "0x76d0c94cd2d40a84b06576d1409cdde942cb4ecc",
+            "to": "0x488b362fdb8091102a526cea7da03f44b9b9e26e",
             "value": [
-                "0x00"
+                "0x03e8"
             ],
             "data": [
                 "0xbb5a52f42f9c9261ed4361f59422a1e30036e7c32b270c8807a419feca6050232ba3a8be6b94d5ec80a6d9d1190a436effe50d85a1eee859b8cc6af9bd5c2e184cd60b855d442f5b3c7b11eb6c4e0ae7525fe710fab9aa7c77a67f79e6fadd762927b10512bae3eddcfe467828128bad2903269919f7086069c8c4df6c732838c7787964eaac00e5921fb1498a60f4606766b3d9685001558d1a974e7341513e"
             ],
-            "sender": "0xb5cd7417b44adb58b90258cd647ed3c2e051fc77",
-            "secretKey": "0xa811bd18aaf68f8d2a2854a776d0c94cd2d40a84b06576d1409cdde942cb4ecc"
+            "sender": "0x4b042c0c24596ba3d7f6a27cc6a0465fe1083cf3",
+            "secretKey": "0x49ea21d4fab7f7d7d3c8dcb5488b362fdb8091102a526cea7da03f44b9b9e26e"
         },
         "post": {
-            "Prague": [
+            "Osaka": [
                 {
-                    "hash": "0xc02bc431f50fb4e539953e5f47ff70f912462bec170f69945ab9572f4748e2f6",
+                    "hash": "0xe7ce35cafef006f257ee0552292508c733180f0c20b63f6e61a803ef55174fa9",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020c6f9476d0c94cd2d40a84b06576d1409cdde942cb4ecc80b8a0bb5a52f42f9c9261ed4361f59422a1e30036e7c32b270c8807a419feca6050232ba3a8be6b94d5ec80a6d9d1190a436effe50d85a1eee859b8cc6af9bd5c2e184cd60b855d442f5b3c7b11eb6c4e0ae7525fe710fab9aa7c77a67f79e6fadd762927b10512bae3eddcfe467828128bad2903269919f7086069c8c4df6c732838c7787964eaac00e5921fb1498a60f4606766b3d9685001558d1a974e7341513e25a0b011d4e9df664ab758578bf0f560a957f0c6e94cdd3956bb13ce063ea5a34670a067886ea18165019e712950ad839a56abda8439c7a6d1be287494bed5fd7605c9",
+                    "txbytes": "0xf90103800a830f424094488b362fdb8091102a526cea7da03f44b9b9e26e8203e8b8a0bb5a52f42f9c9261ed4361f59422a1e30036e7c32b270c8807a419feca6050232ba3a8be6b94d5ec80a6d9d1190a436effe50d85a1eee859b8cc6af9bd5c2e184cd60b855d442f5b3c7b11eb6c4e0ae7525fe710fab9aa7c77a67f79e6fadd762927b10512bae3eddcfe467828128bad2903269919f7086069c8c4df6c732838c7787964eaac00e5921fb1498a60f4606766b3d9685001558d1a974e7341513e26a06fd87fe4f511f349294ffa3f0ec79434b00671877aaae5eb23e6a58fbc227b8da061b19adef9a9824cb6c2730fdbb9bab35d831d2b78ae4193a752e27ec372dca0",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
                         "value": 0
                     },
                     "state": {
-                        "0x76d0c94cd2d40a84b06576d1409cdde942cb4ecc": {
+                        "0x4b042c0c24596ba3d7f6a27cc6a0465fe1083cf3": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8c5c08",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x488b362fdb8091102a526cea7da03f44b9b9e26e": {
                             "nonce": "0x01",
                             "balance": "0x00",
-                            "code": "0x366000600037600060003660006000610100611af4f13d6001556000553d600060003e3d600020600255",
+                            "code": "0x3660006000376020600036600034610100611af4f1806000556000516001553d60025500",
                             "storage": {
                                 "0x00": "0x01",
-                                "0x02": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+                                "0x01": "0x01",
+                                "0x02": "0x20"
                             }
                         },
-                        "0xb5cd7417b44adb58b90258cd647ed3c2e051fc77": {
-                            "nonce": "0x01",
-                            "balance": "0x3635c9adc5de94e9f4",
+                        "0x0000000000000000000000000000000000000100": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
                             "code": "0x",
                             "storage": {}
                         },
                         "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
                             "nonce": "0x00",
-                            "balance": "0x03536a",
+                            "balance": "0x05e338",
                             "code": "0x",
                             "storage": {}
                         }
@@ -88,16 +95,21 @@
                     "target": "0x06",
                     "max": "0x09",
                     "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
                 }
             },
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x04ade7d422437115f268db88a6d1773f8b091f969730fec0295aa923ba8be4f6",
+            "hash": "0xf60ed9d3d972b38a60b54e5fb0172ca5091565cbb5521b8b8251bcb011f8b0c5",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test P256VERIFY precompiles before the Osaka hard fork is active.\n\n    The call must succeed but the output must be empty.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify_before_fork.py#L19",
+            "description": "Test P256Verify precompile will not fail if value is sent.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L305",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
             "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",

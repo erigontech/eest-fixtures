@@ -91,7 +91,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -194,7 +194,116 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_Berlin-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x022e6e"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "Berlin": [
+                {
+                    "hash": "0xe30ca4c67e381a16c17c5711fccd62afb0c8c4fe2b042a062889e7797fed6a08",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a83022e6e9400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a03cb31413056bf46ad1dfa8c5d89ef8579c4a559be89166eeaa5b6a3b7a769d96a051a7bbce3436b9036bc05661953d2d542e0ee2ca3a31d88e0ac15eb2a8100eb2",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c7c00",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x038018",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xd65f8bac04dc7197fa64c52049a92bd7c312c81fa3e149ba59173a931cdc0559",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -297,7 +406,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -410,7 +519,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -523,7 +632,126 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_Cancun-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x022e6e"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "Cancun": [
+                {
+                    "hash": "0x480e4357f9412cef52dc7d77e0820c00d04d0b5ff8383089201f943e2d563e70",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a83022e6e9400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a03cb31413056bf46ad1dfa8c5d89ef8579c4a559be89166eeaa5b6a3b7a769d96a051a7bbce3436b9036bc05661953d2d542e0ee2ca3a31d88e0ac15eb2a8100eb2",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c7c00",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x010cd4",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7aa0a4e68393cf8fcadc279fa779b0ab4611f6d2dfdbeb049bfa9411eee619e1",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -636,7 +864,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -740,7 +968,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -844,7 +1072,117 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_London-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentDifficulty": "0x020000",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x022e6e"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "London": [
+                {
+                    "hash": "0x480e4357f9412cef52dc7d77e0820c00d04d0b5ff8383089201f943e2d563e70",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a83022e6e9400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a03cb31413056bf46ad1dfa8c5d89ef8579c4a559be89166eeaa5b6a3b7a769d96a051a7bbce3436b9036bc05661953d2d542e0ee2ca3a31d88e0ac15eb2a8100eb2",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c7c00",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x010cd4",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x128f61ef2ed53807b04d6fffafff1dada71947bc64c2eea1b748e598cd93e414",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -948,7 +1286,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1071,7 +1409,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1194,7 +1532,136 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_Osaka-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a60006000366000600060056104b0f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x023c88"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xef8854035c495a4515b1589fb9f3257fdbef1ab26f0671e8b9f8949abece1d37",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a83023c889400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a0b4895291e3d87b269866e3d489b08d79134f48916b18daab02f8c095bb97cff7a005cc26e06ce00df44e29deb8513d9a0aef66ebbe78c41f132e207a2f9bd8987d",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a60006000366000600060056104b0f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c1ddc",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x012912",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x52806d70461ab14e6a7b4d8733cb4a16b0ef7397c3135ded056ad21e2e5ba9d0",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1317,7 +1784,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1422,7 +1889,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1527,7 +1994,118 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_Paris-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x022e6e"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "Paris": [
+                {
+                    "hash": "0x480e4357f9412cef52dc7d77e0820c00d04d0b5ff8383089201f943e2d563e70",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a83022e6e9400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a03cb31413056bf46ad1dfa8c5d89ef8579c4a559be89166eeaa5b6a3b7a769d96a051a7bbce3436b9036bc05661953d2d542e0ee2ca3a31d88e0ac15eb2a8100eb2",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c7c00",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x010cd4",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x11367d499c229d887cc7ae246cdc3bb2aaab9bb398718333981778cdaf192194",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1632,7 +2210,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1750,7 +2328,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1868,7 +2446,131 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_Prague-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0238a0"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "Prague": [
+                {
+                    "hash": "0xc7d6a1b09675830dc2afdc1950c1b67bb6bc604aeb109fa718f9441668a3f908",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a830238a09400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a02d87263d6213e5fcfba75bde34faed457702894c2a1fe6817f135a208c8b9c90a0139a0a22e607567bfa6a318b26a5824df7690de9e5d5963798ccaf9b03c511b9",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c1ddc",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x012912",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0750191ffc6510f091e785496d891c063f2bf2a2a9157acb450db2471b735687",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -1986,7 +2688,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -2091,7 +2793,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -2196,7 +2898,118 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
+            "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
+            "eels-resolution": {
+                "git-url": "https://github.com/marioevz/execution-specs.git",
+                "branch": "forks/bpo1",
+                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+            }
+        }
+    },
+    "tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py::test_modexp_used_in_transaction_entry_points[fork_Shanghai-state_test-extra_value]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x055d4a80",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07"
+        },
+        "pre": {
+            "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                "storage": {}
+            },
+            "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x022e6e"
+            ],
+            "to": "0x0000000000000000000000000000000000000005",
+            "value": [
+                "0x03e8"
+            ],
+            "data": [
+                "0x000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c950001020304050607"
+            ],
+            "sender": "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc",
+            "secretKey": "0xafb5d797913fe1c578953d841ff6313b44a8a6f8292adf7c6c81e18d2e93d058"
+        },
+        "post": {
+            "Shanghai": [
+                {
+                    "hash": "0x480e4357f9412cef52dc7d77e0820c00d04d0b5ff8383089201f943e2d563e70",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf90117800a83022e6e9400000000000000000000000000000000000000058203e8b8b4000000000000000000000000000000000000000000000000000000000000002800000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000028e8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c000102030405060701fffffff01681d2220bfea4bb888a5543db8c0916274ddb1ea93b144c042c01d8164c95000102030405060726a03cb31413056bf46ad1dfa8c5d89ef8579c4a559be89166eeaa5b6a3b7a769d96a051a7bbce3436b9036bc05661953d2d542e0ee2ca3a31d88e0ac15eb2a8100eb2",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x1ff6313b44a8a6f8292adf7c6c81e18d2e93d057": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x3660006000375a600060003660006000600560c8f15a906000553d60015561007a0190036002553d600060003e3d600020600355",
+                            "storage": {}
+                        },
+                        "0xdd342c5ae71c44816ecd070fc1af2d66eb885804": {
+                            "nonce": "0x00",
+                            "balance": "0x3635c9adc5dea00000",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xbc448b591280234f0d9cdee5c12847c90fe2d1dc": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c7c00",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0000000000000000000000000000000000000005": {
+                            "nonce": "0x00",
+                            "balance": "0x03e8",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x010cd4",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xd415e3f2bf0d39256f57fadea55f63d64775fff58a878e136ba289bf64f5dcbc",
+            "comment": "`execution-spec-tests` generated test",
+            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
@@ -2301,7 +3114,7 @@
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
             "description": "Test ModExp using in transaction entry points with different precompile gas modifiers.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.0.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L237",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/osaka/eip7883_modexp_gas_increase/test_modexp_thresholds.py#L261",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7883.md",
             "reference-spec-version": "13aa65810336d4f243d4563a828d5afe36035d23",
