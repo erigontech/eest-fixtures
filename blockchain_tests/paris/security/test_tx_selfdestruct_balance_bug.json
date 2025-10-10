@@ -181,13 +181,13 @@
             "hash": "0x662ce53e6ace0b25f3614c39ca932753c1b07f0a305ba5d73baba7eb33655fcc",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -405,13 +405,13 @@
             "hash": "0x4361425322a77e30580157f2cd30a2d389f3a182e4311301ea57463b808a0f38",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -597,13 +597,13 @@
             "hash": "0xf47b992fc93613b1c95c642aaaaa499ba4aedd337963319c489d803dda5cfd86",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -789,13 +789,13 @@
             "hash": "0x93bb6467478d7bd3470f8824a674d84a02b5973eeebcc3d0c32ad8f12037bb2d",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -983,13 +983,13 @@
             "hash": "0x795286f4e9b82836e5a5eb8b2b053e34c92997c142d11c87894e57dd0669b2c9",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1333,13 +1333,13 @@
             "hash": "0xd757307c0cfe1f46969c0f4b2ef68589178e5d4b2cd6e347ac67f5a2ab16a6ff",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1527,13 +1527,13 @@
             "hash": "0x6bb688f26ff892dee0cae40078a2c5660986531e5eaef676456d9b2e1fa0e9bc",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1872,13 +1872,13 @@
             "hash": "0x19396de5f85134c2b5865f64bdff3d68f9d4864ae33162a52f5befba9cb22719",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2069,13 +2069,13 @@
             "hash": "0x0751671b88ca32bf83298e7eaa4514dce5d2ab03977f287b773900e1cf47f984",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n        `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which\n        has a balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction\n        is processed. `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction\n        is processed. No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/paris/security/test_selfdestruct_balance_bug.py#L29",
+            "description": "Test that the vulnerability is not present by checking the balance of the\n    `0xaa` contract after executing specific transactions.\n\n    1. Start with contract `0xaa` which has initial balance of 3 wei.\n    `0xaa` contract code simply performs a self-destruct to itself.\n\n    2. Send a transaction (tx 1) to invoke caller contract `0xcc` (which has a\n    balance of 1 wei), which in turn invokes `0xaa` with a 1 wei call.\n\n    3. Store the balance of `0xaa` after the first transaction is processed.\n    `0xaa` self-destructed. Expected outcome: 0 wei.\n\n    4. Send another transaction (tx 2) to call 0xaa with 5 wei.\n\n    5. Store the balance of `0xaa` after the second transaction is processed.\n    No self-destruct. Expected outcome: 5 wei.\n\n    6. Verify that:\n        - Call within tx 1 is successful, i.e `0xaa` self-destructed.\n        - The balances of `0xaa` after each tx are correct.\n        - During tx 2, code in `0xaa` does not execute,\n            hence self-destruct mechanism does not trigger.\n\n    TODO: EOF - This test could be parametrized for EOFCREATE",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/paris/security/test_selfdestruct_balance_bug.py#L31",
             "fixture-format": "blockchain_test",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     }

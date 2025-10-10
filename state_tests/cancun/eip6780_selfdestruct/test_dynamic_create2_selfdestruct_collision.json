@@ -138,15 +138,15 @@
             "hash": "0x5effaa4954273f5326d58b32e456346d7bcfbdc7ac4daa8c08ec83985a26118b",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -298,15 +298,15 @@
             "hash": "0x1ea9df3fce05523004173f97cbbebb2d6af28d5e764b1d328b1167c556854311",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -449,15 +449,15 @@
             "hash": "0x4873d80540f85fd453947e8c7f6ade669c822f04be5a279f81e4c3e26fc42ee7",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -609,15 +609,15 @@
             "hash": "0x57f3821030e3a87a127b0ca95d08020028904c0effc8c54e985bb00e7c2c9e76",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -754,15 +754,15 @@
             "hash": "0xcd745d217cec25228b19ebd7eed4d39f9f2e00b9f17d9f62e44f2e6e6a131e05",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -908,15 +908,15 @@
             "hash": "0xe33d909af045b29790376f49128b6d96bf4f5a3ab5826e5ef69539ad2f32a8d9",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1069,15 +1069,15 @@
             "hash": "0xcb128a6d91b4f5d6978849fc43575af2e907bf7d2be9db80666bebab9afab258",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1239,15 +1239,15 @@
             "hash": "0x3c6da59a13b342675ecad84ee839acc275a5e71ad8290bc8913908ce3986a245",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1400,15 +1400,15 @@
             "hash": "0x5d519be2b6b1cee39deb6719af9a90d3c8715ea97f0fa635f9809d04bd1a886e",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1570,15 +1570,15 @@
             "hash": "0xe740d91c0ffe264f6b07082495660bc640d5b807b0d3b7fff34109bc1d2f97ed",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1725,15 +1725,15 @@
             "hash": "0xfa14cdae1660b2d48d83704c2df913dbf853e5400f87fe0781cd2a340fea887f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -1889,15 +1889,15 @@
             "hash": "0x55424f93cc6f3ae1dc5b4dc261ab9b2d1fdde8640a2eefdfa319c2fb9643a794",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2032,15 +2032,15 @@
             "hash": "0x4556699716dc8495721eace14d4ddec655890c91a62c965d569d17750296e9d4",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2178,15 +2178,15 @@
             "hash": "0x7dddc00ed38dcde7848172f1d85c0de8aea8595b37f23f3eb95fe3533bdba8e7",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2321,15 +2321,15 @@
             "hash": "0x8acee6e317f1771609f5cbe8dee80a9390006e637a1aac9609168daa26cf1ef5",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2467,15 +2467,15 @@
             "hash": "0x27b03573ffe7bf845acc899e09624f2456246037b7d1284ebc119e54cecc4a9f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2604,15 +2604,15 @@
             "hash": "0xc5270762b5c808995203a0f26d6d2fbcc1bc60472fe44a38dec176abfa4215a8",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2744,15 +2744,15 @@
             "hash": "0x5f9f52ec92a01fad36081119e29a8509f30ce7831ab5b135521bf24143b0221d",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -2900,15 +2900,15 @@
             "hash": "0xd14f553f64c2a5417048bb7d05c0b786cf379b014b3669dab2663e8bbccb6f68",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3065,15 +3065,15 @@
             "hash": "0x70d773f30f8a0859008d31253353002490dd2cb33bd76edb19feb79ed5f42c0e",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3221,15 +3221,15 @@
             "hash": "0xff7b677718f90cf1a68a88a16e08f927ed7abc9c81c39c848492ad36b67d6fe1",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3386,15 +3386,15 @@
             "hash": "0x880d94e01bee9b12705633a43bedf90ae6df32d82752c858c4f0a7e24e5e1b78",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3536,15 +3536,15 @@
             "hash": "0x95458c8e99e3ff9c2dec45fa5f7f0fb00dc95008cb722b50252b80b316ab9b89",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3695,15 +3695,15 @@
             "hash": "0x6757cf5398100f48531fb91a9da4dce77e2274c0d108aeea794886f782a12d58",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3838,15 +3838,15 @@
             "hash": "0xf405a9685ce953e5bce388ac4ebedee7250a414fdc91c20cfc155aac510ebe35",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -3984,15 +3984,15 @@
             "hash": "0x0f041208c6ae4e1f797f891e663bbc57a431fe00834ee6bb7829391336100d6f",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -4127,15 +4127,15 @@
             "hash": "0x43dc180a2be084d48abab7e0f492a0d769edd7ee9d2dbaef52ad1ffa31d6a1e3",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -4273,15 +4273,15 @@
             "hash": "0x371c6d3b92422bc0825d857a43ff5ace99d4e632852ad71726b8b10a81bbc78c",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -4410,15 +4410,15 @@
             "hash": "0x779c15c6a0104dde894bede19c8819835bd94ff4541262f3012a1ab06456d385",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     },
@@ -4550,15 +4550,15 @@
             "hash": "0x42e0244c0d11ad05d102d7b2d44d1045b5dbf847ea60869b536f2d427be27da7",
             "comment": "`execution-spec-tests` generated test",
             "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
-            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then on a different call, in the same tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract   <=== Covered in this test\n            1) and create2 contract already in the state\n            2) and create2 contract is not in the state\n        b) on a different tx, attempt to recreate the contract\n    Perform a CREATE2, make sure that the initcode sets at least a couple of storage keys,\n    then in a different tx, perform a self-destruct.\n    Then:\n        a) on the same tx, attempt to recreate the contract\n        b) on a different tx, attempt to recreate the contract\n    Verify that the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.1.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
+            "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple of\n    storage keys, then on a different call, in the same tx, perform a\n    self-destruct.\n    Then:\n      a) on the same tx, attempt to recreate the contract\n         -> Covered in this test\n           1) and create2 contract already in the state\n           2) and create2 contract is not in the state\n      b) on a different tx, attempt to recreate the contract\n\n    Perform a CREATE2, make sure that the initcode sets at least a couple\n    of storage keys, then in a different tx, perform a self-destruct.\n\n    Then:\n      a) on the same tx, attempt to recreate the contract\n      b) on a different tx, attempt to recreate the contract\n\n    Check the test case described in\n    https://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/\n    22156575/2024-01-06+Mainnet+Halting+Event",
+            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L30",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a",
             "eels-resolution": {
-                "git-url": "https://github.com/marioevz/execution-specs.git",
-                "branch": "forks/bpo1",
-                "commit": "3387e5f4aedfe99becfdc39b444d6371e25e0924"
+                "git-url": "https://github.com/ethereum/execution-specs.git",
+                "branch": "forks/bpos",
+                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
             }
         }
     }
