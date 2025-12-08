@@ -1,8 +1,116 @@
 {
+    "tests/osaka/eip7951_p256verify_precompiles/test_eip_mainnet.py::test_valid[fork_Osaka-state_test--valid_r1_sig-]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xa6161780cbbfa6d7cc6a82163197b2965203d4b0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x366000600037600060003660006000610100611af4f13d6001556000553d600060003e3d600020600255",
+                "storage": {}
+            },
+            "0x9fc62ba3ae3039334dbafa67d0520843587e45ed": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x020cab"
+            ],
+            "to": "0xa6161780cbbfa6d7cc6a82163197b2965203d4b0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0xb94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9434287fa699ff2be2a4475ccd9c063d1a22a424b6ab357d9bb0b31f7a71307b9be6af716032d408183c53f6f76945363144555fad2a5ff7854159166e52fc1d0da3c553a4215893e6d95d5818df2519e13233a1e0e56e0ea7b4817a92a6973f9d8c8877a49383e20c3fdc21d4e8e280ef1feeb72c333036770369a4387168d33"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x9fc62ba3ae3039334dbafa67d0520843587e45ed",
+            "secretKey": "0x891d849eeda91e533ffaa156a6161780cbbfa6d7cc6a82163197b2965203d4b0"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x82b51316763a35509020ee1067647d8938160509537c5018f8a3d217d7f7b9c5",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f901040180800783020cab94a6161780cbbfa6d7cc6a82163197b2965203d4b080b8a0b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9434287fa699ff2be2a4475ccd9c063d1a22a424b6ab357d9bb0b31f7a71307b9be6af716032d408183c53f6f76945363144555fad2a5ff7854159166e52fc1d0da3c553a4215893e6d95d5818df2519e13233a1e0e56e0ea7b4817a92a6973f9d8c8877a49383e20c3fdc21d4e8e280ef1feeb72c333036770369a4387168d33c080a097a1cb419e4d723b478db9bf16c77c201e451335e02d8daa0fa66d0a8926f8a6a03788255f0da7ed3cd42eb0c56d69f38bdfcf588b0ec263a3f972734826a4a80e",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa6161780cbbfa6d7cc6a82163197b2965203d4b0": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x366000600037600060003660006000610100611af4f13d6001556000553d600060003e3d600020600255",
+                            "storage": {
+                                "0x01": "0x20",
+                                "0x00": "0x01",
+                                "0x02": "0xb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6"
+                            }
+                        },
+                        "0x9fc62ba3ae3039334dbafa67d0520843587e45ed": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de95a403",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x99493966eaab77b25e6962de851640a460e20ca2ce95c4701dbf2d5bf22eed13",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Positive mainnet test for the P256VERIFY precompile.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_eip_mainnet.py#L17",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
+        }
+    },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---hash_0]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -26,7 +134,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x0208eb"
             ],
@@ -37,15 +146,18 @@
             "data": [
                 "0x00000000000000000000000000000000000000000000000000000000000000006b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x03098c6f5ecc5dd1888da9a0e22c6744dc8c87a9",
             "secretKey": "0xcad210e3528ea0393f0b1a2a1a464ed4c6856d69c25e74a31f61d235d532a08f"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0xef44cc712f4180400763347b4fa18d0c68b47660e81af818b45b44e372f2fa67",
+                    "hash": "0xf98aa53f5575d4edd7d71c7a8e2541a029523b11756f5b36efa10ee18261ba16",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a830208eb941a464ed4c6856d69c25e74a31f61d235d532a08f80b8a000000000000000000000000000000000000000000000000000000000000000006b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a001ff8dba86c124acd6248675d8ba0341ac6befd21f1aede95cc9c10246a25caba03370d27f5a2ffc3f088f3861c32cdfd74c1323bd3f2f53211cc764194d3b7d8b",
+                    "txbytes": "0x02f9010401808007830208eb941a464ed4c6856d69c25e74a31f61d235d532a08f80b8a000000000000000000000000000000000000000000000000000000000000000006b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c001a00edfc6b5423b517b24924d60aba95bab6a48f6d6347a70eb071399cc689768e9a01cbe863eb4008ccdaae5708c14ee75dece6b73c457993afe1c7f371f4baa2a22",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -64,13 +176,7 @@
                         },
                         "0x03098c6f5ecc5dd1888da9a0e22c6744dc8c87a9": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de914272",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046c11",
+                            "balance": "0x3635c9adc5de95ae83",
                             "code": "0x",
                             "storage": {}
                         }
@@ -99,25 +205,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0xb5533e6050a5710f6d487b1b606fcfc5b1d6fd78a0ffc5fc052a23b6c8dad3ba",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xbbff810867b7eecd890c3d45c82c70fe0b67ce2e78f0db0377fadf1cdaaf43ae",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---hash_N]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -141,7 +242,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020c33"
             ],
@@ -152,15 +254,18 @@
             "data": [
                 "0xffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325516b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xc85baba1f992034c99f22165050af9c4698013d2",
             "secretKey": "0x75de2cb7f6d61d7e0b52482e5260408122c19f4672eb7e9facfce7a929ed053c"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x642494976c909321ee428ba9222dcffea636afa056c0c9db1abb2374735862c9",
+                    "hash": "0x7ed879916ac8853705b49767bf1b91ab130cc6c3a5484f40e86f04e3d12d53c8",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020c33945260408122c19f4672eb7e9facfce7a929ed053c80b8a0ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325516b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a080232b955657ca2a8f38ad7d8955c717e54618a4bb0db4af4ba735ac49f954cea040e16efe89df102ec932f9abaa155a579ca23effa5ac441014d7ac9e437f6fb7",
+                    "txbytes": "0x02f901040180800783020c33945260408122c19f4672eb7e9facfce7a929ed053c80b8a0ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325516b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c080a0760f979f4814b5bf2198d4c4942420dc3d54920b4c02e0a5054c3232d9f2a93aa0628070474b2058451ab9a4e931e6124bd84f1c1ba57f17bca1bf6f65bd74607f",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -179,13 +284,7 @@
                         },
                         "0xc85baba1f992034c99f22165050af9c4698013d2": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913552",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x047001",
+                            "balance": "0x3635c9adc5de95a553",
                             "code": "0x",
                             "storage": {}
                         }
@@ -214,25 +313,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0xde53c5a5cb9dc8ce733b18ba7185e1dc514010db6cf8ac9e7958c1eeb41e3bbc",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x4038377efa1550735c6324a72dfc3106a27eea7d95e97e872f140cd3858297b1",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---hash_N_minus_1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -256,7 +350,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020c33"
             ],
@@ -267,15 +362,18 @@
             "data": [
                 "0xffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325506b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2956b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x10ff6e301192d4806cef06324b62752fe5975a51",
             "secretKey": "0xee6829488908ff18d74fdcc69ad4e54ed354f821c05ea40b3db8c2862eb2acac"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x6bacb4c8b2264633962a1e9cfb372b71a81b8851d4291ec07d0eec7e281b2700",
+                    "hash": "0xa7bb26618aeede14845ce65c8947c2089bb8310073aa979b9e868f8f7fe4ffd1",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020c33949ad4e54ed354f821c05ea40b3db8c2862eb2acac80b8a0ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325506b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2956b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f525a069aae10be214905d343d84301dbbf35b9a9f804265773598954e4917b3456858a0403854f5d6306755b00911bbd5dc0625183adb844b73f316a2257a44c8e58d84",
+                    "txbytes": "0x02f901040180800783020c33949ad4e54ed354f821c05ea40b3db8c2862eb2acac80b8a0ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325506b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2956b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c080a080d8b0071c39198712edc07224223daf94e80eaaa9228ddb5f8e41f844380ac8a0194436a57c4abdb0a6d61113eb07a689f657fbe72c875cf0a7af741a49e48da4",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -294,13 +392,7 @@
                         },
                         "0x10ff6e301192d4806cef06324b62752fe5975a51": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913552",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x047001",
+                            "balance": "0x3635c9adc5de95a553",
                             "code": "0x",
                             "storage": {}
                         }
@@ -329,25 +421,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x41a08710e622e8e6d744c002679a30ae7bb92699ef4bd30b80ad3255b5cf132e",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x05d7a8f71a875833e2e2db9d5fee29e4cd3e2e0c20dddf1b1ac5ee82db61efae",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---hash_P]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -371,7 +458,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020acb"
             ],
@@ -382,15 +470,18 @@
             "data": [
                 "0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f2ba1c82d486d3951c00e76e82dc359d446b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xe37261340d53279633de45ea38a722be40609105",
             "secretKey": "0x0f1217c27ffefe1bfe9b8eae7e298195cc9353cc707d8d4d1dfe8db859712a14"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0xfea7075172d7c4eaa45b0462a3b51b3febb36f17da89a0dbb66c9ebfa49cf499",
+                    "hash": "0x12665bab7b4763905fa7f60773e010fdcbf3314605ae54131df729ebc73ee22a",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020acb947e298195cc9353cc707d8d4d1dfe8db859712a1480b8a0ffffffff00000001000000000000000000000000ffffffffffffffffffffffff6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f2ba1c82d486d3951c00e76e82dc359d446b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a068ac8753fc4bc05e1473d4493b8c91c88077975c5c6d66eba0f6ed8bb379afeca0238449afada10715212311e12f0db96b34823542ada08b83c7c4caf52db9f4de",
+                    "txbytes": "0x02f901040180800783020acb947e298195cc9353cc707d8d4d1dfe8db859712a1480b8a0ffffffff00000001000000000000000000000000ffffffffffffffffffffffff6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f2ba1c82d486d3951c00e76e82dc359d446b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c001a0ab7a11370b15522036275812368f1da34365e9506441603c6c1fbba934c49c4ba042b856eea9e15113df6935e700890f5827a9146af42375d5e59afed858751e2d",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -409,13 +500,7 @@
                         },
                         "0xe37261340d53279633de45ea38a722be40609105": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913af2",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046e51",
+                            "balance": "0x3635c9adc5de95a943",
                             "code": "0x",
                             "storage": {}
                         }
@@ -444,25 +529,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x57d7123b79d47bdba0c8378845f85b27e0b3da93d942be7f9480b073ca200881",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x32f19ab5c4ecdc4630656a38d674e635752a955f9eed4c9d83d1e3a3591697c8",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---hash_P_minus_1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -486,7 +566,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020acb"
             ],
@@ -497,15 +578,18 @@
             "data": [
                 "0xffffffff00000001000000000000000000000000fffffffffffffffffffffffe6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f2ba1c82d486d3951c00e76e82dc359d436b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xeba7217b8c476e83845140815e03dcc916cf4044",
             "secretKey": "0xe9a4d0b45421cbb03318e98f832e77fa7a81f6bb8459b9111152aae46399667b"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0xd9cb06fbce0289f1274f8a5c828efd43cb5d2e6dc3bde1d0cd9f6a64708271f4",
+                    "hash": "0x9952cfe751eb1df9d64e558eb87c05df7d36ade054abf5c8ea55a79245a80655",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020acb94832e77fa7a81f6bb8459b9111152aae46399667b80b8a0ffffffff00000001000000000000000000000000fffffffffffffffffffffffe6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f2ba1c82d486d3951c00e76e82dc359d436b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f525a07113047c39f2fdf4e3b2ccdf93da1327546631a41f6e5829ab23bad942d8bd8fa07ce70920e896bd7fbe8050e6614a08c3dab370d42e3988bd4e2768112bbf02b9",
+                    "txbytes": "0x02f901040180800783020acb94832e77fa7a81f6bb8459b9111152aae46399667b80b8a0ffffffff00000001000000000000000000000000fffffffffffffffffffffffe6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f2e12c4247f8bce6e563a440f2ba1c82d486d3951c00e76e82dc359d436b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c080a06b4f9a977393941f9f8e7bfdc355ad909d0d7198f0567757123fc28af0d5204ba06cb8906ef5b8f7ba501d694adfa1bdff73fd0c07c0ba385152d3b9849bef818c",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -524,13 +608,7 @@
                         },
                         "0xeba7217b8c476e83845140815e03dcc916cf4044": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913af2",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046e51",
+                            "balance": "0x3635c9adc5de95a943",
                             "code": "0x",
                             "storage": {}
                         }
@@ -559,25 +637,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x479096db4386bb3deb369bac2331cfa120865a779c5c67ab68a22e4341f23974",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x4709c8bd9420a9db963c1cfb8f57a4a632512409757ec49896957cbe70040669",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---hash_max]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -601,7 +674,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020c8d"
             ],
@@ -612,15 +686,18 @@
             "data": [
                 "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f3e12c4246f8bce6e563a440f2ba1c82d386d3951c00e76e82dc359d446b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x885da47793da19945ee1e438e48627966b82cd0f",
             "secretKey": "0xad0d3e941f24712900eea1941fb945a44ae69433e8269758a8e12c505fcc902b"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x19809d94c8199504f37c9629da563e1cad209214269380b14354c68446fc6ae0",
+                    "hash": "0xd6c5a8a6146d15e7aae5ba9bafcd0653c9c577c7d82ea710307d167d8317bbe1",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90100800a83020c8d941fb945a44ae69433e8269758a8e12c505fcc902b80b8a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f3e12c4246f8bce6e563a440f2ba1c82d386d3951c00e76e82dc359d446b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a05a64be590383a50eebff35f45f4f8642c92e0aa2cd60c7b106cb675a749158aa9f3a47a494805a5e48686484ef31f04161134f5870b86b5517ea601cf7e0945a",
+                    "txbytes": "0x02f901040180800783020c8d941fb945a44ae69433e8269758a8e12c505fcc902b80b8a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2966b17d1f3e12c4246f8bce6e563a440f2ba1c82d386d3951c00e76e82dc359d446b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c080a0857d460d5b2a602e19c73d00f24b5edbf7f024506338d13829d0a5e4136c254ba0179875cd777b4765e84c4e98152ef1c9156f7391715ceb798c81b559358d3b22",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -639,13 +716,7 @@
                         },
                         "0x885da47793da19945ee1e438e48627966b82cd0f": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de9133ea",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x04706d",
+                            "balance": "0x3635c9adc5de95a457",
                             "code": "0x",
                             "storage": {}
                         }
@@ -674,25 +745,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x7fbd25d81bc40a27c2e2f36dbd5a494e1e1abe76ff177d09e7d4c81c5778ff44",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x3298b195bddce69880a62bfd0c6709c9887f7b700b9681fe2b5c1c3a46c25abb",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---s_1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -716,7 +782,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020909"
             ],
@@ -727,15 +794,18 @@
             "data": [
                 "0x94e82e0c1ed3bdb90743191a9c5bbf0d45e37d2c792c6ae3ff18917d23ca62bc6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c29600000000000000000000000000000000000000000000000000000000000000016b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x30537e3c21ea920d59fb2e9b4deed4a337095a21",
             "secretKey": "0x2f7fee6ec86656046c0bd76e6a39b7b15ac1e0bd20d3cea664e2cc61cddb2c8e"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x46c3b258d19c7378610c6335165b116db893821ef33f881f12a2f0cff61d63ef",
+                    "hash": "0xe3f8811b240fc65fbfe927d5b572a42a8918446b243a10475a878fb8546cd3e8",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020909946a39b7b15ac1e0bd20d3cea664e2cc61cddb2c8e80b8a094e82e0c1ed3bdb90743191a9c5bbf0d45e37d2c792c6ae3ff18917d23ca62bc6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c29600000000000000000000000000000000000000000000000000000000000000016b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f525a017d09c287606886f8be6d6ce44c27d16ef6d9e1190498d4b8588ca8803a050aaa026a1423ebfb33f366823c953bbd08094c2d7c983987fc537fd47fcebfaa15f59",
+                    "txbytes": "0x02f901040180800783020909946a39b7b15ac1e0bd20d3cea664e2cc61cddb2c8e80b8a094e82e0c1ed3bdb90743191a9c5bbf0d45e37d2c792c6ae3ff18917d23ca62bc6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c29600000000000000000000000000000000000000000000000000000000000000016b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c001a05598b0e539a0b294c7141434ae8c018a1c4bd05700a30ccd1e5a56821f98eadaa01ed9432ec09eb3dfe7adf8ab3df15396c978aaf0a80f46d60d8b035c9b5cdeed",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -754,13 +824,7 @@
                         },
                         "0x30537e3c21ea920d59fb2e9b4deed4a337095a21": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de9141fa",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046c35",
+                            "balance": "0x3635c9adc5de95ae2f",
                             "code": "0x",
                             "storage": {}
                         }
@@ -789,25 +853,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x341203cc3c857247feee2ff36909388b816d5aa7e34ff038da2df5299ad51d42",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x9eab43d5760346b8533ae73aae0edee8031762916d3688156e638fe2c688c9c6",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---s_N_minus_1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -831,7 +890,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020c33"
             ],
@@ -842,15 +902,18 @@
             "data": [
                 "0x94e82e0c1ed3bdb90743191a9c5bbf0d45e37d2c792c6ae3ff18917d23ca62ba6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325506b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x4acb47f6e83a831193931f502293129755d44e5d",
             "secretKey": "0xc8731655a9a29caea18db5b1d0e58db9ec844cb43e780735e65609c3eda3138d"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0xaa4814e5743edfaf759978b03795acd74a87d2cb26f04bc0ec3c794ae05d20e0",
+                    "hash": "0x85420c81eb0fcf4ac788360f0c05f8814b5704fdc34db23abd07f525aa8a6daa",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020c3394d0e58db9ec844cb43e780735e65609c3eda3138d80b8a094e82e0c1ed3bdb90743191a9c5bbf0d45e37d2c792c6ae3ff18917d23ca62ba6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325506b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a0d45cf3838b11d9cce81654503632916cf6dada7d198877f0c04f0adddaa29640a046c63e3e913e4662b39b0d89da07e3abd335b8b60cf3b74f158c5328ef0bd08c",
+                    "txbytes": "0x02f901040180800783020c3394d0e58db9ec844cb43e780735e65609c3eda3138d80b8a094e82e0c1ed3bdb90743191a9c5bbf0d45e37d2c792c6ae3ff18917d23ca62ba6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc6325506b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c001a05c78ced92185786f479e03b478480a35284b3f8eecb0af4eb7c5a2baaf2a6114a04f56d81b084a152cc52e7cf073d16b9bbd88b726fae97002f03e643d8f4820c9",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -869,13 +932,7 @@
                         },
                         "0x4acb47f6e83a831193931f502293129755d44e5d": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913552",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x047001",
+                            "balance": "0x3635c9adc5de95a553",
                             "code": "0x",
                             "storage": {}
                         }
@@ -904,25 +961,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x87b52b863033f59144da5dc866705c7a77e044dc78f5e6fd74a32960d1edbfe1",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x12f9cd81d81f8dfe3c731242303d580ecb932130c44cbf60e68a276dbaf955e0",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---s_max_mod_N]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -946,7 +998,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020b43"
             ],
@@ -957,15 +1010,18 @@
             "data": [
                 "0x94e82e0d1ed3bdb80743191a9c5bbf0d88fc827ed214cc5f0b5ec6ba27673d696b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c29600000000ffffffff00000000000000004319055258e8617b0c46353d039cdaae6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x08a468f7a5a56e43812a603e6cf7e831aa21aff1",
             "secretKey": "0x32b8c94ecffab47a5bc40c6de5f0ca759814a792e155bce58595fe4e903afa1a"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x588c6db55ecdcc580c23441cfaff4ee670cadbea3db22c6fa80690dad88266df",
+                    "hash": "0x0a05668fcd303cd12cc6a8a42de5cc0fe9fb65585c536f9b06c197797b9278cb",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020b4394e5f0ca759814a792e155bce58595fe4e903afa1a80b8a094e82e0d1ed3bdb80743191a9c5bbf0d88fc827ed214cc5f0b5ec6ba27673d696b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c29600000000ffffffff00000000000000004319055258e8617b0c46353d039cdaae6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a02956723c02ee089aa10bc4c9df66b4063e1da7bfaebca901c9ab3b8b5a06a5caa07a5c153d440c7539c12cf78a03a99d4f7c21d946a6aec3a2cd4053d52e7f06f7",
+                    "txbytes": "0x02f901040180800783020b4394e5f0ca759814a792e155bce58595fe4e903afa1a80b8a094e82e0d1ed3bdb80743191a9c5bbf0d88fc827ed214cc5f0b5ec6ba27673d696b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c29600000000ffffffff00000000000000004319055258e8617b0c46353d039cdaae6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c001a05ee611cc08b2a00964ed46688e8e27f1976e8e3cb3509349cbf463572c8cc0e3a07569515684c7b04a3ba56235326b906defbd52cf6305dec133aeb13d44c37e59",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -984,13 +1040,7 @@
                         },
                         "0x08a468f7a5a56e43812a603e6cf7e831aa21aff1": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913912",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046ee1",
+                            "balance": "0x3635c9adc5de95a7f3",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1019,25 +1069,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x67430eea368592df57d4f714dff0ea2409a764e0272f966518fdc8a217d1896a",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xe34ebaf433a45bf95ca523e97e07f854cf85daf059880db1e6825f7776a54522",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---u1_eq_u2_and_Q_eq_G]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1061,7 +1106,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020cab"
             ],
@@ -1072,15 +1118,18 @@
             "data": [
                 "0x7cf27b188d034f7e8a52380304b51ac3c08969e277f21b35a60b48fc476699787cf27b188d034f7e8a52380304b51ac3c08969e277f21b35a60b48fc47669978830d84e672fcb08275adc7fcfb4ae53bfc5d90cb2f25834f4dae81c6b4fc8bd96b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xbc0d835e6e609373a11ae0b11086a16437414a84",
             "secretKey": "0x754a4fd5e74825ba0bdefae754118290039675bc85ae9983d400808be7abe9e8"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0xa3522ee5995aa0a07026185f6ade8ffeb7fc503b3b3bb3283471c8930620c399",
+                    "hash": "0x4e310da7ae8cbccbb76a731006c6f0db958e34cae595e9058667421ff8b4f687",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020cab9454118290039675bc85ae9983d400808be7abe9e880b8a07cf27b188d034f7e8a52380304b51ac3c08969e277f21b35a60b48fc476699787cf27b188d034f7e8a52380304b51ac3c08969e277f21b35a60b48fc47669978830d84e672fcb08275adc7fcfb4ae53bfc5d90cb2f25834f4dae81c6b4fc8bd96b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f526a0b5cee9aeb45822c776561b0670e56b2f0af0959be2ed179a8490db379f05570ea01048bc5f1ad0172240618c87160c988569c3b420e77b875125039e8cf9b7e9e3",
+                    "txbytes": "0x02f901040180800783020cab9454118290039675bc85ae9983d400808be7abe9e880b8a07cf27b188d034f7e8a52380304b51ac3c08969e277f21b35a60b48fc476699787cf27b188d034f7e8a52380304b51ac3c08969e277f21b35a60b48fc47669978830d84e672fcb08275adc7fcfb4ae53bfc5d90cb2f25834f4dae81c6b4fc8bd96b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c2964fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5c001a092c6481da6f153baabd50ec57b18d3b65c3ea456dfb477f3379f05ea10fcee61a059cc892bce8bdd43efae083d9910c4b0915ab22524b85963442483d2c88ed754",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1099,13 +1148,7 @@
                         },
                         "0xbc0d835e6e609373a11ae0b11086a16437414a84": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913372",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x047091",
+                            "balance": "0x3635c9adc5de95a403",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1134,25 +1177,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x399b0e83f20f0ee61e373164d11dae62e5a2912c289167e77708e2d2c7013a3e",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xcac6854a03ecca40a47411041eafe317b6897d7e0e3cb2b416587af3e895c6f7",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---u1_eq_u2_and_Q_ne_G]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1176,7 +1214,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020c8d"
             ],
@@ -1187,15 +1226,18 @@
             "data": [
                 "0x65fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a165fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a165fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a12927b10512bae3eddcfe467828128bad2903269919f7086069c8c4df6c732838c7787964eaac00e5921fb1498a60f4606766b3d9685001558d1a974e7341513e"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xa2495b9edec0b8876b675d0b203e8a06a1c837f1",
             "secretKey": "0xc0ef2ef1bb980fac905f5d22000c5a6947dde0315f1163e0527e7760d46b15b0"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x00029c4d1c121da31f562409f86125bf24a6c93631f8b3d47b25867bcb8cd402",
+                    "hash": "0x168106ad1413a456dad32829380fc1a1f4c83dd66ecdab7563c9361b6df6a48e",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020c8d94000c5a6947dde0315f1163e0527e7760d46b15b080b8a065fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a165fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a165fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a12927b10512bae3eddcfe467828128bad2903269919f7086069c8c4df6c732838c7787964eaac00e5921fb1498a60f4606766b3d9685001558d1a974e7341513e26a0beaa20e2692fd3598c98c99b88b2765a4be12a6760def8048ebf96e450c6242fa0661f00690c6f0140f27740d7c95274c489059d628414c3b1f50de3c4d7b28347",
+                    "txbytes": "0x02f901040180800783020c8d94000c5a6947dde0315f1163e0527e7760d46b15b080b8a065fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a165fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a165fb4407bcb2a33ae2e486366baa79b3a8a17a83dde0fed6f09014a8ac6f78a12927b10512bae3eddcfe467828128bad2903269919f7086069c8c4df6c732838c7787964eaac00e5921fb1498a60f4606766b3d9685001558d1a974e7341513ec001a08718fb183ecdcfadd4d1200e16fb3bc10e6f4e628f1b082a0842d2457031947ea06e89fee571aa0de635e3b89fda157557031c618eb64b6376a26481ca058bbec0",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1214,13 +1256,7 @@
                         },
                         "0xa2495b9edec0b8876b675d0b203e8a06a1c837f1": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de9133ea",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x04706d",
+                            "balance": "0x3635c9adc5de95a457",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1249,25 +1285,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0xac84d49c219159c28c29b0db89cd84f953a15404935b578e248595a67999f311",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x29265454d6f52bf511f548bc037c2239f2bb3ba2068002d2bc8f8acbbe676a81",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---x_0_y_negative]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1291,7 +1322,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x0208cd"
             ],
@@ -1302,15 +1334,18 @@
             "data": [
                 "0xf98a88895cb0866c5bad58cf03000ddf9d21cb9407892ff54d637e6a046afbb381dc074973d3222f3930981ad98d022517c91063ffb83cfd620e29b86dc30a8f365e4cd085617a265765062a2d9954ed86309dfa33cf5ae1464fe119419fc34a000000000000000000000000000000000000000000000000000000000000000099b7a386f1d07c29dbcc42a27b5f9449abe3d50de25178e8d7407a95e8b06c0b"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x734f3384e1ab7c9663ba2c6d7e0388f20dbd272a",
             "secretKey": "0x0f26fdcf8d0b357b6bacbdbb2bb1253af7a916280e44412c081b377a1e398c43"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0xb3d0c36b61df2b34829806391b520f3d1343f36a1c44aa9a73bd94084779beb6",
+                    "hash": "0xf90805ada8e19702295e924efa4dacb1a0261d58de8dc4a2963121055e45535d",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a830208cd942bb1253af7a916280e44412c081b377a1e398c4380b8a0f98a88895cb0866c5bad58cf03000ddf9d21cb9407892ff54d637e6a046afbb381dc074973d3222f3930981ad98d022517c91063ffb83cfd620e29b86dc30a8f365e4cd085617a265765062a2d9954ed86309dfa33cf5ae1464fe119419fc34a000000000000000000000000000000000000000000000000000000000000000099b7a386f1d07c29dbcc42a27b5f9449abe3d50de25178e8d7407a95e8b06c0b26a0e4bfe945b8ea599dad5c3247b5b5f96fbc78430ba61813e9f357fc93167e6beca008f99460808d4d4f6e092e6ab687c44b11796a0301aceaa0be6ad9025ee84aea",
+                    "txbytes": "0x02f9010401808007830208cd942bb1253af7a916280e44412c081b377a1e398c4380b8a0f98a88895cb0866c5bad58cf03000ddf9d21cb9407892ff54d637e6a046afbb381dc074973d3222f3930981ad98d022517c91063ffb83cfd620e29b86dc30a8f365e4cd085617a265765062a2d9954ed86309dfa33cf5ae1464fe119419fc34a000000000000000000000000000000000000000000000000000000000000000099b7a386f1d07c29dbcc42a27b5f9449abe3d50de25178e8d7407a95e8b06c0bc080a042c811870071e76fcb1313d561f76d6d133d7c72a294ea88cc494c044525373aa00ede255f15265910d9a2736f729be6f1c45544885c0732576c35843df9157dd9",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1329,13 +1364,7 @@
                         },
                         "0x734f3384e1ab7c9663ba2c6d7e0388f20dbd272a": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de9142ea",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046bed",
+                            "balance": "0x3635c9adc5de95aed7",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1364,25 +1393,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x9d6446b5378ca261eb7cd6b939bfa244f040a1880cb3953d73de26a92c84d0a9",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xb7b83e7c51a4ceaa037fe8f53ade444bc1c11e735b5400e382d132784c5667c1",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---x_0_y_positive]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1406,7 +1430,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x0208eb"
             ],
@@ -1417,15 +1442,18 @@
             "data": [
                 "0xc3d3be9eb3577f217ae0ab360529a30b18adc751aec886328593d7d6fe0428093a4e97b44cbf88b90e6205a45ba957e520f63f3c6072b53c244653278a1819d86a184aa037688a5ebd25081fd2c0b10bb64fa558b671bd81955ca86e09d9d722000000000000000000000000000000000000000000000000000000000000000066485c780e2f83d72433bd5d84a06bb6541c2af31dae871728bf856a174f93f4"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x0069100e26d73d458495e364d592e5492c6feade",
             "secretKey": "0x78757a8a9c31eeb2d5648fccbde5b46da2004c1f6439835e605993ccae2680ac"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x8f25947caca4fe752fc4f8df5bddd699fe89dfb19cd462e7d3618f357d215d11",
+                    "hash": "0x897fce4d1a5a1d35648863eb1ff7306b35effa52a88610716e8fe265b96d0da6",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a830208eb94bde5b46da2004c1f6439835e605993ccae2680ac80b8a0c3d3be9eb3577f217ae0ab360529a30b18adc751aec886328593d7d6fe0428093a4e97b44cbf88b90e6205a45ba957e520f63f3c6072b53c244653278a1819d86a184aa037688a5ebd25081fd2c0b10bb64fa558b671bd81955ca86e09d9d722000000000000000000000000000000000000000000000000000000000000000066485c780e2f83d72433bd5d84a06bb6541c2af31dae871728bf856a174f93f425a0b5630f04b2a520c300a08f8fc3039e5c60c67adec7af501eacfe40c9d48166c9a07c6a62b85ce50480625ed2b13aeb1f8255ed11f102f5927b3e2b04feef844efa",
+                    "txbytes": "0x02f9010301808007830208eb94bde5b46da2004c1f6439835e605993ccae2680ac80b8a0c3d3be9eb3577f217ae0ab360529a30b18adc751aec886328593d7d6fe0428093a4e97b44cbf88b90e6205a45ba957e520f63f3c6072b53c244653278a1819d86a184aa037688a5ebd25081fd2c0b10bb64fa558b671bd81955ca86e09d9d722000000000000000000000000000000000000000000000000000000000000000066485c780e2f83d72433bd5d84a06bb6541c2af31dae871728bf856a174f93f4c0809f68accf8beef4a7139d457e7089cc4a24071385fb39291fe230feb9e6d3f5a0a00e1673f801cc81a9c1ccf555076579eecae228637383261d52ed761b09396b66",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1444,13 +1472,7 @@
                         },
                         "0x0069100e26d73d458495e364d592e5492c6feade": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de914272",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046c11",
+                            "balance": "0x3635c9adc5de95ae83",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1479,25 +1501,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x95144de0cb64ebf288b66743c314b502fba79ea83d2bbf1a93e6746cffc360f2",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x2b4b81822f9c651f397e636103c101eca4e330f7ffddcb6279ab9fa9edbcf5bd",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---x_5_y_negative]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1521,7 +1538,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x0208eb"
             ],
@@ -1532,15 +1550,18 @@
             "data": [
                 "0x31ce0b00fa8dd61ef28c7dc5f839c78cf70d60e625e0670bf9c9fce25e89d99f0fa19cbe154513ba348f2db951afb6e135bac5bd8891282781a032103c3f1289d9abf5c4e61098a6e653f265770bdba36ecc8073cef99548d89fe2c39a7afa9b0000000000000000000000000000000000000000000000000000000000000005ba6dbc4555a7e7fa016ec431667e8521ee35afc49b265c3accbea3f7cdb70433"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xcb5287474155da62425493a019e55503cca7a60c",
             "secretKey": "0xc50b2e4af281c1430885d50b0695481ca3fa12624ba407f321d225dcccba6d05"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x46e210eb21a5d277bc36a4c989eaf6ffbaa0500a6a0db6f9a56997de4b2f54f3",
+                    "hash": "0xb1125e3742f7992dad578dc2ccbc65c62bfc214b4a3eba9cc9a2f7718f4e9508",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a830208eb940695481ca3fa12624ba407f321d225dcccba6d0580b8a031ce0b00fa8dd61ef28c7dc5f839c78cf70d60e625e0670bf9c9fce25e89d99f0fa19cbe154513ba348f2db951afb6e135bac5bd8891282781a032103c3f1289d9abf5c4e61098a6e653f265770bdba36ecc8073cef99548d89fe2c39a7afa9b0000000000000000000000000000000000000000000000000000000000000005ba6dbc4555a7e7fa016ec431667e8521ee35afc49b265c3accbea3f7cdb7043326a0eaf27f44c073afa9d433ec12cefe972c99c173590e5758d2d99bce96eb8029a9a03582c1f85e12f669a07f7280a722195d8a8bb4784218ea3e2561e10642e7e9e8",
+                    "txbytes": "0x02f9010401808007830208eb940695481ca3fa12624ba407f321d225dcccba6d0580b8a031ce0b00fa8dd61ef28c7dc5f839c78cf70d60e625e0670bf9c9fce25e89d99f0fa19cbe154513ba348f2db951afb6e135bac5bd8891282781a032103c3f1289d9abf5c4e61098a6e653f265770bdba36ecc8073cef99548d89fe2c39a7afa9b0000000000000000000000000000000000000000000000000000000000000005ba6dbc4555a7e7fa016ec431667e8521ee35afc49b265c3accbea3f7cdb70433c080a0272f6e0dd02ff917926be2e2039111db60ad02f81eef5eb6b130da98b5e516d7a002a2d41f98215f85d59ff1e6e914241070785cddf856e9c52dbf4c2d99e64419",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1559,13 +1580,7 @@
                         },
                         "0xcb5287474155da62425493a019e55503cca7a60c": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de914272",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046c11",
+                            "balance": "0x3635c9adc5de95ae83",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1594,25 +1609,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x8c961395dc272243f984bc8aea53e3c01b95a29372611cb6c518159af7f4e0d9",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0x630c9eb486ba8c587e165f5c8cded98cbd790c1dd65b1caee033384aaa70cb80",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---x_5_y_positive]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1636,7 +1646,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020909"
             ],
@@ -1647,15 +1658,18 @@
             "data": [
                 "0x5f95dcd6e41662d1e0aefccdb7877877c1fd88c9e67fc3cda0d1d520fa8a3ac2af5dfddb7edc789d7c9c42a44afbbf13c8f1d77d576b6ee5f11fea4f33e2cb39a28f8c5625ad622950f2fce9672784b287ef9e032ade8c23ba218413a1cf65220000000000000000000000000000000000000000000000000000000000000005459243b9aa581806fe913bce99817ade11ca503c64d9a3c533415c083248fbcc"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x73dc5bbae2a0f552c0c38aed95e3de75ef3b1637",
             "secretKey": "0x4e03fcc61ee7e186849c46a492d613cf7d76f9dc9db4daeb31f102223d4472ac"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x1c3a8cd91ce70985a903edfcea38b0579a86b5a119bae7581108464df1beca8f",
+                    "hash": "0x2e12070e3d4d9dd4ccaa74e65e824ca5cd0d5396648ddaf6cadb17ff20675ab5",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a830209099492d613cf7d76f9dc9db4daeb31f102223d4472ac80b8a05f95dcd6e41662d1e0aefccdb7877877c1fd88c9e67fc3cda0d1d520fa8a3ac2af5dfddb7edc789d7c9c42a44afbbf13c8f1d77d576b6ee5f11fea4f33e2cb39a28f8c5625ad622950f2fce9672784b287ef9e032ade8c23ba218413a1cf65220000000000000000000000000000000000000000000000000000000000000005459243b9aa581806fe913bce99817ade11ca503c64d9a3c533415c083248fbcc26a0c7ee38ba5ac0814892a188095739267425cb8ab9a942fd8c3da631a4e7f639dda065af98b61d09223240885b60ec88d9952012a122cab3a7fb18128ffeafca923f",
+                    "txbytes": "0x02f9010401808007830209099492d613cf7d76f9dc9db4daeb31f102223d4472ac80b8a05f95dcd6e41662d1e0aefccdb7877877c1fd88c9e67fc3cda0d1d520fa8a3ac2af5dfddb7edc789d7c9c42a44afbbf13c8f1d77d576b6ee5f11fea4f33e2cb39a28f8c5625ad622950f2fce9672784b287ef9e032ade8c23ba218413a1cf65220000000000000000000000000000000000000000000000000000000000000005459243b9aa581806fe913bce99817ade11ca503c64d9a3c533415c083248fbccc001a0a62437dad83ac306952f29fbcb007e60d57e13a85b12f7ae13a35dbddc64c4aca048b8d36570242e57d3d16149e1eafe4b59b4839c546620da6886a4bfafb33fd9",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1674,13 +1688,7 @@
                         },
                         "0x73dc5bbae2a0f552c0c38aed95e3de75ef3b1637": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de9141fa",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046c35",
+                            "balance": "0x3635c9adc5de95ae2f",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1709,25 +1717,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0xddbb6bb39f8f2d5fe30fe5563b92e25df42b4c9ea8305574d76705add58cf9f8",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xc15af68835c5c1dd0628b1766f2d19b52d7e052c7010f18e8888de4aecfd07de",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---y_1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1751,7 +1754,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020909"
             ],
@@ -1762,15 +1766,18 @@
             "data": [
                 "0x65b0e03e7a27e6f9f4989c72486fcaf0a3ecf3ef60d14f1c11fb5bf071a8fd1b0b0cc9e314e4180fe18d205010dd1c4410632d472cc4e7ab56cbc04091abe0068d12c4f19ac41d7877705453a247ab96394e7c093f57ec073a9d150cde6b68c609e78d4ef60d05f750f6636209092bc43cbdd6b47e11a9de20a9feb2a50bb96c0000000000000000000000000000000000000000000000000000000000000001"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0xbcdc95ddb8a9b4d4cead784c3ea92e072666faa6",
             "secretKey": "0x9dfa3acb51ccd33a38ad0b350b43ecea12c0a9a13ee3843d2534b4c8eafb85be"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x1c4c7627d7827e849cc37b745efb300c28d3a43aa4e11174d9630bddb46196cd",
+                    "hash": "0xbc1507870108f607e7dabd1d3b8a610e7828fdf05fcd33654ba266b5098b5cd1",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020909940b43ecea12c0a9a13ee3843d2534b4c8eafb85be80b8a065b0e03e7a27e6f9f4989c72486fcaf0a3ecf3ef60d14f1c11fb5bf071a8fd1b0b0cc9e314e4180fe18d205010dd1c4410632d472cc4e7ab56cbc04091abe0068d12c4f19ac41d7877705453a247ab96394e7c093f57ec073a9d150cde6b68c609e78d4ef60d05f750f6636209092bc43cbdd6b47e11a9de20a9feb2a50bb96c000000000000000000000000000000000000000000000000000000000000000126a0ea0cace6f92fd0476c0d37f683aa86bfb92887a7bec5156ab3588ffa8bbe70a5a0511b7b051b6e3b1d91b9cc05e5f288646a716eb6bd071d3e7ac1d0cc1d1dc638",
+                    "txbytes": "0x02f901040180800783020909940b43ecea12c0a9a13ee3843d2534b4c8eafb85be80b8a065b0e03e7a27e6f9f4989c72486fcaf0a3ecf3ef60d14f1c11fb5bf071a8fd1b0b0cc9e314e4180fe18d205010dd1c4410632d472cc4e7ab56cbc04091abe0068d12c4f19ac41d7877705453a247ab96394e7c093f57ec073a9d150cde6b68c609e78d4ef60d05f750f6636209092bc43cbdd6b47e11a9de20a9feb2a50bb96c0000000000000000000000000000000000000000000000000000000000000001c001a0e2d9f124c884e0d5aef569d844ddd4595aad248515c980077eb87ec4544f378fa058a83dbcb79aff679a9a32f3c6d568b7934fd952d8859ad5628538d79e45d56b",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1789,13 +1796,7 @@
                         },
                         "0xbcdc95ddb8a9b4d4cead784c3ea92e072666faa6": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de9141fa",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046c35",
+                            "balance": "0x3635c9adc5de95ae2f",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1824,25 +1825,20 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0x621b5c53e763a19337e0edf70298aa9b1282a43d4ad79c04fe3e234133ce5d05",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xc4d9d3288031b4892f13786cf1e7eda567ecf9a6539cfba606d77f552bfa8e5c",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     },
     "tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py::test_valid[fork_Osaka-state_test---y_P_minus_1]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-            "currentGasLimit": "0x055d4a80",
+            "currentGasLimit": "0x07270e00",
             "currentNumber": "0x01",
             "currentTimestamp": "0x03e8",
             "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1866,7 +1862,8 @@
         },
         "transaction": {
             "nonce": "0x00",
-            "gasPrice": "0x0a",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
             "gasLimit": [
                 "0x020ae9"
             ],
@@ -1877,15 +1874,18 @@
             "data": [
                 "0x744084ad41ee67ed1802a6868ace7815fd6fc0585a3479ff68e69adb8dd2b420b481c7650cbe85bcd15565811966da2da4e4e2931f0892d911520b6a06c340d8e4c2d9fb9a4e3e29b7414f0408b2ebc4421d5bc8addccf864aff9e7e10da31bb09e78d4ef60d05f750f6636209092bc43cbdd6b47e11a9de20a9feb2a50bb96cffffffff00000001000000000000000000000000fffffffffffffffffffffffe"
             ],
+            "accessLists": [
+                []
+            ],
             "sender": "0x840dd3e802e79183cf3f41c97d1d0a67bd9bd24c",
             "secretKey": "0x1533a82935f9ee26dceadbc90e4310272430c1d60504346c45aa2bb6c02c1337"
         },
         "post": {
             "Osaka": [
                 {
-                    "hash": "0x2593f09d78f1ed4109a103c2571e27ed2dc19112eb2d697bd74dbdbdcdfdd55b",
+                    "hash": "0x6e1af1c780f4c363032681400ac10b2820e2642fdfe0db27dcc9accd19de180d",
                     "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes": "0xf90101800a83020ae9940e4310272430c1d60504346c45aa2bb6c02c133780b8a0744084ad41ee67ed1802a6868ace7815fd6fc0585a3479ff68e69adb8dd2b420b481c7650cbe85bcd15565811966da2da4e4e2931f0892d911520b6a06c340d8e4c2d9fb9a4e3e29b7414f0408b2ebc4421d5bc8addccf864aff9e7e10da31bb09e78d4ef60d05f750f6636209092bc43cbdd6b47e11a9de20a9feb2a50bb96cffffffff00000001000000000000000000000000fffffffffffffffffffffffe26a0e4ca0a8d51d43bc181e26e38a42d9a778d029780cb9270f193bac883e9378b90a07a23f4577013be93ecb6c05c8b8dfd700154cdb8f1bea7f3e2c0fa402ecec90d",
+                    "txbytes": "0x02f901040180800783020ae9940e4310272430c1d60504346c45aa2bb6c02c133780b8a0744084ad41ee67ed1802a6868ace7815fd6fc0585a3479ff68e69adb8dd2b420b481c7650cbe85bcd15565811966da2da4e4e2931f0892d911520b6a06c340d8e4c2d9fb9a4e3e29b7414f0408b2ebc4421d5bc8addccf864aff9e7e10da31bb09e78d4ef60d05f750f6636209092bc43cbdd6b47e11a9de20a9feb2a50bb96cffffffff00000001000000000000000000000000fffffffffffffffffffffffec080a090592c0fdf8ff9cf076df250e19cfce5fa6ad5ba3bc44e7ad81398d3cea0f60ca04fa6c3b4407a814eb6955f0c4213de107819018b500da625c8276ad997cc0799",
                     "indexes": {
                         "data": 0,
                         "gas": 0,
@@ -1904,13 +1904,7 @@
                         },
                         "0x840dd3e802e79183cf3f41c97d1d0a67bd9bd24c": {
                             "nonce": "0x01",
-                            "balance": "0x3635c9adc5de913a7a",
-                            "code": "0x",
-                            "storage": {}
-                        },
-                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
-                            "nonce": "0x00",
-                            "balance": "0x046e75",
+                            "balance": "0x3635c9adc5de95a8ef",
                             "code": "0x",
                             "storage": {}
                         }
@@ -1939,19 +1933,14 @@
             "chainid": "0x01"
         },
         "_info": {
-            "hash": "0xce831f996e74cf9350bc119ee11c787fe1253b41989dba1cfe4c95a65f39de02",
-            "comment": "`execution-spec-tests` generated test",
-            "filling-transition-tool": "ethereum-spec-evm-resolver 0.0.5",
+            "hash": "0xa89f915277828ffae9b01d20fef9f423905de6ecbfdde41467893cd2e36b2261",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
             "description": "Positive tests for the P256VERIFY precompile.",
-            "url": "https://github.com/ethereum/execution-spec-tests/tree/v5.3.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L92",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/osaka/eip7951_p256verify_precompiles/test_p256verify.py#L97",
             "fixture-format": "state_test",
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7951.md",
-            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38",
-            "eels-resolution": {
-                "git-url": "https://github.com/ethereum/execution-specs.git",
-                "branch": "forks/bpos",
-                "commit": "7aacb2c54111391af5e98c505d5010b5698a770f"
-            }
+            "reference-spec-version": "06aadd458ee04ede80498db55927b052eb5bef38"
         }
     }
 }
