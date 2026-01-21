@@ -1,0 +1,1528 @@
+{
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_100M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0xad62980ce43f5f4ca7a76302d8ee4e2aea63be5af3fdaee34126061c4dd0f2c4",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x5a3f4ef1bf48793e88a2b1e717b056a87bb2a48772d80239ddbc5850b04bbb8f",
+                        "receiptsRoot": "0x9764a9b29133339b51f219a18d3bc2b617ce983cb602f95df5647fa4d7362828",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x5f5e100",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xad62980ce43f5f4ca7a76302d8ee4e2aea63be5af3fdaee34126061c4dd0f2c4",
+                        "transactions": [
+                            "0xf881800a8405f5e100946ac63774106ec85d0885d2bd39e198565e75464480a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a007975d8aaf242983a19216b0d8b3ba055f5a6f081ce8b51737d47530c2661f40a0203d4293cccac076ba6c934060041ad0694650ddddeea34b97dfe40600edadb7"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0xfd6660694a5d46e39b8a97b76dd51bd68b4ce72bb861c1d7b785f7c94edd8363",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 8329275,
+                "SAR": 8329274,
+                "CALLER": 4,
+                "CALLDATALOAD": 1360,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 1363,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 1359,
+                "JUMPI": 14,
+                "JUMPDEST": 1376,
+                "PUSH0": 18,
+                "PUSH1": 2755,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 1109405,
+                "DUP3": 1143343,
+                "DUP4": 1099885,
+                "DUP5": 1059140,
+                "DUP6": 1106664,
+                "DUP7": 1120253,
+                "DUP8": 1156925,
+                "DUP9": 1076817,
+                "DUP10": 1178650,
+                "DUP11": 1076804,
+                "DUP12": 1116196,
+                "DUP13": 1124330,
+                "DUP14": 1128403,
+                "DUP15": 1057799,
+                "DUP16": 1103947,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_100M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0xd32c43c036037515289c221d46d5e8a0281ebd00ca55d61d133a23d9d2610aed",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x7ad405cb16d1b4ff27c77727611e6e6a1b775e7df1a00dd6c253e05a4e6d4402",
+                        "receiptsRoot": "0x9764a9b29133339b51f219a18d3bc2b617ce983cb602f95df5647fa4d7362828",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x5f5e100",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xd32c43c036037515289c221d46d5e8a0281ebd00ca55d61d133a23d9d2610aed",
+                        "transactions": [
+                            "0xf881800a8405f5e1009460aa734185b7e83cafd139839f741b1e916683e180a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff26a0d27efd3b1f347c59aaf970b807961b7e6ba6bcad5851ebccf2b3ec1d88c7aa5fa00c5e6e03a78b6840c1b2f8f6f7bd254c8101c0ae5f5ff3e6fe6009815414e84d"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x15e8098979f4dd85eec714fa5e95d7e8b6eac07c3ba19941c2adfb1db39cb1b7",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 8329275,
+                "SHR": 8329274,
+                "CALLER": 4,
+                "CALLDATALOAD": 1360,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 1363,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 1359,
+                "JUMPI": 14,
+                "JUMPDEST": 1376,
+                "PUSH0": 18,
+                "PUSH1": 2755,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 1075453,
+                "DUP3": 1109398,
+                "DUP4": 1091726,
+                "DUP5": 1052350,
+                "DUP6": 1086306,
+                "DUP7": 1102601,
+                "DUP8": 1160996,
+                "DUP9": 1071385,
+                "DUP10": 1170511,
+                "DUP11": 1090382,
+                "DUP12": 1116196,
+                "DUP13": 1151490,
+                "DUP14": 1159634,
+                "DUP15": 1087667,
+                "DUP16": 1132466,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_10M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0xe4d44b99645d441aa9754236ad033582c69b57e16d9dc22b96c9fe3e9e8234ad",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x0a2ed6d5eaca212645602cf6f49393facce36e93c28f69cc8772dea15b1859a4",
+                        "receiptsRoot": "0xf5ec96c7e72e405c1f576103b23b6711441a16630cbb5048067830194bf8f49e",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x989680",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xe4d44b99645d441aa9754236ad033582c69b57e16d9dc22b96c9fe3e9e8234ad",
+                        "transactions": [
+                            "0xf880800a83989680946f4dbd722cb1a9fb77f15954a16ed77741f603f780a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a019391cb29d3f682ca6c3f40195907c6d1379aea9a6b6f9f346e3830e37d1dac7a048ce2d4a08d97b24083250adb9774f112d965729c46ee44789aba289065c3add"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x56dfbffab820a48ec3760e65c48b8879f129b0aa216b3866574f669a8bc171aa",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 831312,
+                "SAR": 831311,
+                "CALLER": 4,
+                "CALLDATALOAD": 138,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 141,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 137,
+                "JUMPI": 14,
+                "JUMPDEST": 154,
+                "PUSH0": 18,
+                "PUSH1": 311,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 110714,
+                "DUP3": 114115,
+                "DUP4": 109783,
+                "DUP5": 105713,
+                "DUP6": 110436,
+                "DUP7": 111822,
+                "DUP8": 115495,
+                "DUP9": 107451,
+                "DUP10": 117634,
+                "DUP11": 107470,
+                "DUP12": 111423,
+                "DUP13": 112209,
+                "DUP14": 112612,
+                "DUP15": 105575,
+                "DUP16": 110182,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_10M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0xc0398593d391c939a6a4cadc5f8de13b426fcf6b6583f9b28b84f13f53b8a75a",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x40e1ed89a5e21bb87145dafad5b158762a5026d05c4b48803accb222bdd949c6",
+                        "receiptsRoot": "0xf5ec96c7e72e405c1f576103b23b6711441a16630cbb5048067830194bf8f49e",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x989680",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xc0398593d391c939a6a4cadc5f8de13b426fcf6b6583f9b28b84f13f53b8a75a",
+                        "transactions": [
+                            "0xf880800a8398968094079f4a5ed622d98a755d5a9272be792e60bea4cd80a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a0be979eb1d65dd8b249038c2062b70d9d12e38e2a051284acec3ae7009c963113a0436a9ffcf8d35443c7b18f82b7df42ed44e9ae2bc2ad40c1fc981ab3ad3e5e75"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x06ac6fe293c04c390d294c21e5f2c11cd980b8d4aac6ffc0d2c7649250300cf9",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 831312,
+                "SHR": 831311,
+                "CALLER": 4,
+                "CALLDATALOAD": 138,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 141,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 137,
+                "JUMPI": 14,
+                "JUMPDEST": 154,
+                "PUSH0": 18,
+                "PUSH1": 311,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 107325,
+                "DUP3": 110720,
+                "DUP4": 108967,
+                "DUP5": 105041,
+                "DUP6": 108407,
+                "DUP7": 110057,
+                "DUP8": 115896,
+                "DUP9": 106914,
+                "DUP10": 116822,
+                "DUP11": 108829,
+                "DUP12": 111423,
+                "DUP13": 114916,
+                "DUP14": 115732,
+                "DUP15": 108554,
+                "DUP16": 113031,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_150M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0xffc0355c2a0f922e34dff17e55d8d8b6bfb93c8bb134b66ce0a7c3f97dc5957f",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0xbc5413f0172deadee454747e5ddcfa3c232d16ca04251e32cad72c2f5798a6be",
+                        "receiptsRoot": "0x4999064e3026d4d95acad703b602529a9e17cd036aaa4608a966124bbee51b3b",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x8f0d180",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xffc0355c2a0f922e34dff17e55d8d8b6bfb93c8bb134b66ce0a7c3f97dc5957f",
+                        "transactions": [
+                            "0xf881800a8408f0d18094e7397f9e065e0646b86ce8edd32e0fa25fe7e61180a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a0e43e91cc8c6864238e974f30119f2dd4c181087b5766796983cecf2038eb6dfaa050f771ad8bdf4d4bae3bf61e3b1f29faadb41a4fe4504a8fe81f2868b699764e"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x4e4b0af5e3ce8467c83cca6dce96a8fd4683c0a8dfa063b15fe4f025dd298c3f",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 12494810,
+                "SAR": 12494809,
+                "CALLER": 4,
+                "CALLDATALOAD": 2039,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 2042,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 2038,
+                "JUMPI": 14,
+                "JUMPDEST": 2055,
+                "PUSH0": 18,
+                "PUSH1": 4113,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 1664217,
+                "DUP3": 1715138,
+                "DUP4": 1649950,
+                "DUP5": 1588841,
+                "DUP6": 1660132,
+                "DUP7": 1680505,
+                "DUP8": 1735503,
+                "DUP9": 1615325,
+                "DUP10": 1768093,
+                "DUP11": 1615323,
+                "DUP12": 1674399,
+                "DUP13": 1686619,
+                "DUP14": 1692726,
+                "DUP15": 1586806,
+                "DUP16": 1656054,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_150M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0x92a4f9143f2699574bc3f5213a518876b287b57b390ac5e3116a790bcd6c5f04",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x31ff1c0df59adcebbe2c41646beb8e89db70e32ddd4fb875f90e97a2b72ad921",
+                        "receiptsRoot": "0x4999064e3026d4d95acad703b602529a9e17cd036aaa4608a966124bbee51b3b",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x8f0d180",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x92a4f9143f2699574bc3f5213a518876b287b57b390ac5e3116a790bcd6c5f04",
+                        "transactions": [
+                            "0xf881800a8408f0d180940818e98d7c43e5b4dd93d05472904ccc8f73252b80a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a02c03f9b3e6769f9acd92678f221c940fda27e549ecb19174e72e89f5b4e0925ea06b20270c46046d5f0f57b94290ea99c3dd9af050635d3defba6beaf6de589480"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x845d3171c65b14631d6dcffaceb7693ccb7d210ba21e827f3abec4e348252430",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 12494810,
+                "SHR": 12494809,
+                "CALLER": 4,
+                "CALLDATALOAD": 2039,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 2042,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 2038,
+                "JUMPI": 14,
+                "JUMPDEST": 2055,
+                "PUSH0": 18,
+                "PUSH1": 4113,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 1613289,
+                "DUP3": 1664215,
+                "DUP4": 1637722,
+                "DUP5": 1578654,
+                "DUP6": 1629587,
+                "DUP7": 1654023,
+                "DUP8": 1741614,
+                "DUP9": 1607179,
+                "DUP10": 1755880,
+                "DUP11": 1635690,
+                "DUP12": 1674397,
+                "DUP13": 1727355,
+                "DUP14": 1739573,
+                "DUP15": 1631616,
+                "DUP16": 1698837,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_1M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0xdc24de04f7727246d34437e7bc18eb3314cebc5f5dc6d90679edc855831eca21",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x99ebd954f0113d915fcd5019330cd83398d828a7bfdd37f9d41ebf987e759b54",
+                        "receiptsRoot": "0x6ebeb82e2fd4ad8ef581ba011ed8590752fbb658e86bb4f29d186cba3f7b1357",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0xf4240",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xdc24de04f7727246d34437e7bc18eb3314cebc5f5dc6d90679edc855831eca21",
+                        "transactions": [
+                            "0xf880800a830f4240943ed136a3c3c4dc7ffce60b66d36c376a96a3aaf980a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff26a03c114ccc2dac92d9236e72db3875c0754804f47e6616fe73c51fe441f9a4fc62a02fa02b7ee196195a8b25ac6489168222e79bc846a2efe4fe75a6f0ddeea3a252"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x5e846ec329c6a8d7a73f150df724c2271daf7cdfaa38a540196f466a2c3556a0",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 81515,
+                "SAR": 81514,
+                "CALLER": 4,
+                "CALLDATALOAD": 16,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 19,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 15,
+                "JUMPI": 14,
+                "JUMPDEST": 32,
+                "PUSH0": 18,
+                "PUSH1": 67,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 10865,
+                "DUP3": 11191,
+                "DUP4": 10768,
+                "DUP5": 10373,
+                "DUP6": 10827,
+                "DUP7": 10963,
+                "DUP8": 11353,
+                "DUP9": 10510,
+                "DUP10": 11518,
+                "DUP11": 10545,
+                "DUP12": 10943,
+                "DUP13": 10995,
+                "DUP14": 11031,
+                "DUP15": 10359,
+                "DUP16": 10800,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_1M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0x2279344262e56ac03a10ea7b3b3e4456649bd2fb494e5a540408a66fca543cc3",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x65435fb5dfd7889d916db50053b4e6a345a6e775f97408abbc9c71b5718d3dd3",
+                        "receiptsRoot": "0x6ebeb82e2fd4ad8ef581ba011ed8590752fbb658e86bb4f29d186cba3f7b1357",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0xf4240",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x2279344262e56ac03a10ea7b3b3e4456649bd2fb494e5a540408a66fca543cc3",
+                        "transactions": [
+                            "0xf880800a830f424094ebafbb3aaa2095deb6d78cfa24033378cda6543780a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a060f3a42755b68d07ff95afb5bf35b00e4177c4a97ee72a0ca91ca7571922381ea02025f9fd143ef67c50694d3e446c0c168f05d00df68fba248692924acf71f043"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0xf9f1af0138b2a9973173791e3a2a2201ec33ef210261f15d4b00f6e7225948ba",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 81515,
+                "SHR": 81514,
+                "CALLER": 4,
+                "CALLDATALOAD": 16,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 19,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 15,
+                "JUMPI": 14,
+                "JUMPDEST": 32,
+                "PUSH0": 18,
+                "PUSH1": 67,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 10520,
+                "DUP3": 10854,
+                "DUP4": 10682,
+                "DUP5": 10311,
+                "DUP6": 10631,
+                "DUP7": 10792,
+                "DUP8": 11393,
+                "DUP9": 10465,
+                "DUP10": 11447,
+                "DUP11": 10678,
+                "DUP12": 10948,
+                "DUP13": 11258,
+                "DUP14": 11335,
+                "DUP15": 10649,
+                "DUP16": 11078,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_30M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0x943904b200d54e506bf266783b161fe78bec8e669cd69a031e981e6f52e18ea2",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x4a5c2b1aeefb4774b2f998e52510536f571e538567db482c32514fe11c0ac8e2",
+                        "receiptsRoot": "0x46c8878e80643aac6e528fdaf76907eadd5bfa815dd5f87a027eab6c7ff94629",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x1c9c380",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x943904b200d54e506bf266783b161fe78bec8e669cd69a031e981e6f52e18ea2",
+                        "transactions": [
+                            "0xf881800a8401c9c380941011c86f159fe8cd9b9b00c31b861eac22f239d980a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff26a0b8d266128cb8435688c9828ebf61d46cd1fbd9e797a4a54c02ce48165d7605fba0052d35a8081c5982fe9bfd150b0523ae12125c805342110eb06c9a4c4febaea3"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0xc86ef990d287162bfdaf9379770b7c7815ffaf7d0104e263847c82cd43a0dbdd",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 2497525,
+                "SAR": 2497524,
+                "CALLER": 4,
+                "CALLDATALOAD": 410,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 413,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 409,
+                "JUMPI": 14,
+                "JUMPDEST": 426,
+                "PUSH0": 18,
+                "PUSH1": 855,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 332660,
+                "DUP3": 342832,
+                "DUP4": 329802,
+                "DUP5": 317596,
+                "DUP6": 331831,
+                "DUP7": 335905,
+                "DUP8": 346920,
+                "DUP9": 322870,
+                "DUP10": 353412,
+                "DUP11": 322869,
+                "DUP12": 334707,
+                "DUP13": 337120,
+                "DUP14": 338339,
+                "DUP15": 317184,
+                "DUP16": 331014,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_30M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0x2eb90de51789c903eab2600626dd8f46b1eb515b9509093d462804e0e0c52f5a",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0xc5aeee7e96585d19488bbe9229cae3722fe980c622832343b138eaf738e63183",
+                        "receiptsRoot": "0x46c8878e80643aac6e528fdaf76907eadd5bfa815dd5f87a027eab6c7ff94629",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x1c9c380",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x2eb90de51789c903eab2600626dd8f46b1eb515b9509093d462804e0e0c52f5a",
+                        "transactions": [
+                            "0xf881800a8401c9c38094fe2ebaf3ec3f27b129c1f053f6562c29677e85dc80a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a0dbaf461d6c7b95951e28976df925cadcf97ee51dd3755589333e527e103902aca01163388371fdb377f9637ac20744d669655615cdf386458fe110b403306f7c42"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0xfc5c2ffb5315de0b6d40c4237cd3229fd16bc2ca48db138720b64e43273a0d96",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 2497525,
+                "SHR": 2497524,
+                "CALLER": 4,
+                "CALLDATALOAD": 410,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 413,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 409,
+                "JUMPI": 14,
+                "JUMPDEST": 426,
+                "PUSH0": 18,
+                "PUSH1": 855,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 322485,
+                "DUP3": 332657,
+                "DUP4": 327360,
+                "DUP5": 315561,
+                "DUP6": 325726,
+                "DUP7": 330614,
+                "DUP8": 348141,
+                "DUP9": 321242,
+                "DUP10": 350970,
+                "DUP11": 326939,
+                "DUP12": 334707,
+                "DUP13": 345260,
+                "DUP14": 347700,
+                "DUP15": 326138,
+                "DUP16": 339561,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_45M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0xfb8af17a638351e1c0c971aed367237b17f146d44c3ce887812bd8b664d3a800",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x9021759d76bf5c0e09aae9c1a474510ba082b276dfca1040a49e51d4dbba8d98",
+                        "receiptsRoot": "0xb8fb36a1f7f1e895c8d725e304ec98ae93877f5c9a43df733b1cd60ae1e8c690",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x2aea540",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0xfb8af17a638351e1c0c971aed367237b17f146d44c3ce887812bd8b664d3a800",
+                        "transactions": [
+                            "0xf881800a8402aea54094c43a5eb24d8aa56aa409acb85ee9578fd63584c980a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a072508c2bf5b861e3870dedb12e28af7cfd2230712a40fb04e2701d8dae45091fa059111db9f349a3e8010fd7ce46a043515ab6c9a7a9021510eac131ec82eeda73"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0xf86dd07795a7a9c09113174035f5dacbdfd587eed5284c797ab9a8053a466581",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 3747187,
+                "SAR": 3747186,
+                "CALLER": 4,
+                "CALLDATALOAD": 613,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 616,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 612,
+                "JUMPI": 14,
+                "JUMPDEST": 629,
+                "PUSH0": 18,
+                "PUSH1": 1261,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 499107,
+                "DUP3": 514373,
+                "DUP4": 494817,
+                "DUP5": 476480,
+                "DUP6": 497860,
+                "DUP7": 503979,
+                "DUP8": 520481,
+                "DUP9": 484446,
+                "DUP10": 530255,
+                "DUP11": 484434,
+                "DUP12": 502163,
+                "DUP13": 505816,
+                "DUP14": 507648,
+                "DUP15": 475888,
+                "DUP16": 496637,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_45M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0x892190fee7057a901c1b5c2a7578d5585ca3b130cf92fafdc7028e8e4a8639f7",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0xa3fcbe063e9da85aa1eb2df5df5131924dc322476c7ba5d013ab164b5e285a98",
+                        "receiptsRoot": "0xb8fb36a1f7f1e895c8d725e304ec98ae93877f5c9a43df733b1cd60ae1e8c690",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x2aea540",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x892190fee7057a901c1b5c2a7578d5585ca3b130cf92fafdc7028e8e4a8639f7",
+                        "transactions": [
+                            "0xf881800a8402aea540943ce6af8765c60bd073a56e46c27e9a4d31b9126580a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a0a6ba9c4f03db34637842572aebd39a8228c3087329cc36d43527ff8175c96ad4a015bfb7f4a4c31511cd38dc1876749b2069d8ceb86a216c03f9f114b02097f64f"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x90d70d9bad79350aa634ff3b2fc1f19ca8c390a435b8973a3dffb0e4a7d706e4",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 3747187,
+                "SHR": 3747186,
+                "CALLER": 4,
+                "CALLDATALOAD": 613,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 616,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 612,
+                "JUMPI": 14,
+                "JUMPDEST": 629,
+                "PUSH0": 18,
+                "PUSH1": 1261,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 483830,
+                "DUP3": 499100,
+                "DUP4": 491140,
+                "DUP5": 473426,
+                "DUP6": 488707,
+                "DUP7": 496039,
+                "DUP8": 522312,
+                "DUP9": 482003,
+                "DUP10": 526599,
+                "DUP11": 490541,
+                "DUP12": 502162,
+                "DUP13": 518036,
+                "DUP14": 521697,
+                "DUP15": 489321,
+                "DUP16": 509471,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_60M-blockchain_test_engine_x-shift_right_SAR]": {
+        "network": "Prague",
+        "lastblockhash": "0x6d83641ef485abafd56d3d0b8c1e20b81e65d30b077332b9f239a3129904b818",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x376f53dff2110b231b7c5affe7700344bc06dea94cf3e58ec86c60b81ffa369d",
+                        "receiptsRoot": "0xe4dbfab20a97cc479f6566ae0aee4de994501ed48ba4964338253053c431d94e",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x3938700",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x6d83641ef485abafd56d3d0b8c1e20b81e65d30b077332b9f239a3129904b818",
+                        "transactions": [
+                            "0xf881800a840393870094274c4888fdff7b4426e81047b68c35832ab0437080a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff26a08aa56bd049d3b437d124fdb515fc057920a0c70c1c0ced5e47643fad9fddc501a003262feb4179daf69ec3bff00d395771cee1b668f87668fc2e1d1b6b104369ed"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0xf3ab436a12dbc8df470a8cdcfe0217cf97c942a5216f690b19766250efb144e1",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 4996847,
+                "SAR": 4996846,
+                "CALLER": 4,
+                "CALLDATALOAD": 817,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 820,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 816,
+                "JUMPI": 14,
+                "JUMPDEST": 833,
+                "PUSH0": 18,
+                "PUSH1": 1669,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 665544,
+                "DUP3": 685905,
+                "DUP4": 659842,
+                "DUP5": 635407,
+                "DUP6": 663900,
+                "DUP7": 672058,
+                "DUP8": 694066,
+                "DUP9": 645972,
+                "DUP10": 707081,
+                "DUP11": 645984,
+                "DUP12": 669637,
+                "DUP13": 674496,
+                "DUP14": 676941,
+                "DUP15": 634590,
+                "DUP16": 662281,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    },
+    "tests/benchmark/compute/instruction/test_bitwise.py::test_shifts[fork_Prague-benchmark-gas-value_60M-blockchain_test_engine_x-shift_right_SHR]": {
+        "network": "Prague",
+        "lastblockhash": "0x7153d8e051fd0f3913e208a0991d47a878391bc0c750a898dff381fadccb53d7",
+        "config": {
+            "network": "Prague",
+            "chainid": "0x01",
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            }
+        },
+        "preHash": "0x398fa63f55cfbafc",
+        "engineNewPayloads": [
+            {
+                "params": [
+                    {
+                        "parentHash": "0x735b792d4d2243120cd783a74406859db45a2049a87f9b53fe18d22acb2ea22e",
+                        "feeRecipient": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+                        "stateRoot": "0x33463f2162261dc86963cfce79b99823fbc72ebe57aaa705f36916d3bf5526bd",
+                        "receiptsRoot": "0xe4dbfab20a97cc479f6566ae0aee4de994501ed48ba4964338253053c431d94e",
+                        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "blockNumber": "0x1",
+                        "gasLimit": "0xe8d4a51000",
+                        "gasUsed": "0x3938700",
+                        "timestamp": "0xc",
+                        "extraData": "0x",
+                        "prevRandao": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                        "baseFeePerGas": "0x7",
+                        "blobGasUsed": "0x0",
+                        "excessBlobGas": "0x0",
+                        "blockHash": "0x7153d8e051fd0f3913e208a0991d47a878391bc0c750a898dff381fadccb53d7",
+                        "transactions": [
+                            "0xf881800a8403938700941cd17a63e5057f9e6f03307c6b16a6b597173c9f80a0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff25a00d5b09c812263799bdc5d3bdd3dabecdd5597d3582712fff2b703f8bed848307a06b99d8d706e01dc18c28a6867ec01c62c967be68c40e257a9d8d2e7d387c9e40"
+                        ],
+                        "withdrawals": []
+                    },
+                    [],
+                    "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    []
+                ],
+                "newPayloadVersion": "4",
+                "forkchoiceUpdatedVersion": "3"
+            }
+        ],
+        "_info": {
+            "hash": "0x80262bf38876cdd760724c138537d36ef1f15f996336ae4e808acd25ad795912",
+            "opcode_count": {
+                "STOP": 2,
+                "ADD": 5,
+                "MUL": 2,
+                "SUB": 3,
+                "MOD": 2,
+                "GT": 4,
+                "EQ": 10,
+                "ISZERO": 2,
+                "SHL": 4996847,
+                "SHR": 4996846,
+                "CALLER": 4,
+                "CALLDATALOAD": 817,
+                "TIMESTAMP": 2,
+                "NUMBER": 1,
+                "POP": 820,
+                "SLOAD": 8,
+                "SSTORE": 11,
+                "JUMP": 816,
+                "JUMPI": 14,
+                "JUMPDEST": 833,
+                "PUSH0": 18,
+                "PUSH1": 1669,
+                "PUSH2": 11,
+                "PUSH3": 2,
+                "PUSH20": 4,
+                "PUSH32": 2,
+                "DUP1": 8,
+                "DUP2": 645175,
+                "DUP3": 665542,
+                "DUP4": 654949,
+                "DUP5": 631337,
+                "DUP6": 651690,
+                "DUP7": 661469,
+                "DUP8": 696503,
+                "DUP9": 642721,
+                "DUP10": 702197,
+                "DUP11": 654132,
+                "DUP12": 669639,
+                "DUP13": 690787,
+                "DUP14": 695671,
+                "DUP15": 652507,
+                "DUP16": 679385,
+                "SWAP1": 3,
+                "SWAP2": 2,
+                "SWAP3": 2,
+                "RETURN": 2
+            },
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "evmone-t8n 0.18.0+commit.23ec84ab",
+            "description": "Benchmark shift instructions with non-trivial arguments.\n\n    This generates left-right pairs of shifts to avoid zeroing the argument.\n    Shift amounts are randomly selected from constant pool of 15 stack values.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-benchmark@v0.0.6/tests/benchmark/compute/instruction/test_bitwise.py#L123",
+            "fixture-format": "blockchain_test_engine_x"
+        }
+    }
+}
