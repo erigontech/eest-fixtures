@@ -737,7 +737,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\nPerform a CREATE2, make sure that the initcode sets at least a couple of\nstorage keys, then on a different call, in the same tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n    1) and create2 contract already in the state\n    2) and create2 contract is not in the state\n  b) on a different tx, attempt to recreate the contract\n     -> Covered in this test\n\nPerform a CREATE2, make sure that the initcode sets at\nleast a couple of storage keys, then in a different tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n  b) on a different tx, attempt to recreate the contract\n\nCheck the test case described in\nhttps://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06\n+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a"
@@ -1007,7 +1007,7 @@
                 "storage": {}
             }
         },
-        "lastblockhash": "0x1b54edfb4822f4edc3eeb291a6927bb70a437f4de74dfaf01fb6c21008745419",
+        "lastblockhash": "0x9c47850248102e23bfb6197e445eb569b6c62d366294a142eed97f65d884f31e",
         "config": {
             "network": "Amsterdam",
             "chainid": "0x01",
@@ -1058,7 +1058,7 @@
                     "difficulty": "0x00",
                     "number": "0x01",
                     "gasLimit": "0x07270e00",
-                    "gasUsed": "0x0b2da0",
+                    "gasUsed": "0x0ce903",
                     "timestamp": "0x0c",
                     "extraData": "0x",
                     "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -1071,7 +1071,7 @@
                     "requestsHash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                     "blockAccessListHash": "0x59888d4a8fffc4aec88d2302f970bfe8eb0bb4d7bc9d2365f523b89c0a1d52b5",
                     "slotNumber": "0x00",
-                    "hash": "0x1b54edfb4822f4edc3eeb291a6927bb70a437f4de74dfaf01fb6c21008745419"
+                    "hash": "0x9c47850248102e23bfb6197e445eb569b6c62d366294a142eed97f65d884f31e"
                 },
                 "transactions": [
                     {
@@ -1433,18 +1433,18 @@
                         "storageReads": []
                     }
                 ],
-                "rlp": "0xf903d8f9027ca0ae34c1e4db1f862677f1a4b348d3da61c6472352dc42b8f6086b6fb0cd5cde5fa01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa045146d9e138be92a23498f2fb9513b8d57831e45dcca167d53052bddaa23d662a0fdfcbedb232ba314d72bbd8c93e8cdc825551ee4c666119d3aac0420389ee5fba0fb2ec93aec8ecbe9d4c2da40938387bc9e52f39f5d034b5afd8cddf5c0e629d8b901000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000400000000000000002000000200000080000080800000000000000000000001010000000010000000800000000000400000000000000000000000000000000000000040000220000000040000000200000000000000000000000000000000000000000000000000200000000000800000000000000000000000040000000000000002040000000000000000000000000002022000000800000000000000000000000000080018407270e00830b2da00c80a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a059888d4a8fffc4aec88d2302f970bfe8eb0bb4d7bc9d2365f523b89c0a1d52b580f90154f8a8800a834c4b409458406220c8cf47e450d0e64e72f5b05d15ecd83380b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff26a0a1435c3608086a7565e7f39e20c1dc35bbe180a6111107baf5b0e8d20eb5d9d8a006cdca17d02e3ccc4e8330e6c45eb5510f64f298a1440c703bce0131a05f0ac7f8a8010a834c4b409488db6d6f4c356a6406bafd8d6da52fe825a9ea2980b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff25a0e156f709301fde3944f40ee789a8b501624e0f833c748c997c9f91c1f7492bd6a064bb182922b2e89b0122154dca80f9266b8c0b85403190f0985b6fb121a89f45c0c0",
+                "rlp": "0xf903d8f9027ca0ae34c1e4db1f862677f1a4b348d3da61c6472352dc42b8f6086b6fb0cd5cde5fa01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa045146d9e138be92a23498f2fb9513b8d57831e45dcca167d53052bddaa23d662a0fdfcbedb232ba314d72bbd8c93e8cdc825551ee4c666119d3aac0420389ee5fba0fb2ec93aec8ecbe9d4c2da40938387bc9e52f39f5d034b5afd8cddf5c0e629d8b901000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000400000000000000002000000200000080000080800000000000000000000001010000000010000000800000000000400000000000000000000000000000000000000040000220000000040000000200000000000000000000000000000000000000000000000000200000000000800000000000000000000000040000000000000002040000000000000000000000000002022000000800000000000000000000000000080018407270e00830ce9030c80a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a059888d4a8fffc4aec88d2302f970bfe8eb0bb4d7bc9d2365f523b89c0a1d52b580f90154f8a8800a834c4b409458406220c8cf47e450d0e64e72f5b05d15ecd83380b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff26a0a1435c3608086a7565e7f39e20c1dc35bbe180a6111107baf5b0e8d20eb5d9d8a006cdca17d02e3ccc4e8330e6c45eb5510f64f298a1440c703bce0131a05f0ac7f8a8010a834c4b409488db6d6f4c356a6406bafd8d6da52fe825a9ea2980b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff25a0e156f709301fde3944f40ee789a8b501624e0f833c748c997c9f91c1f7492bd6a064bb182922b2e89b0122154dca80f9266b8c0b85403190f0985b6fb121a89f45c0c0",
                 "blocknumber": "1"
             }
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xeb1c7eadf047c93ba04e8ce92e46f4aaf2f457498bdf2bcd0179caadb5369b90",
+            "hash": "0x2d9e034ecef947535167b8590ed874cdeb39b6f4e0e574db50e1898c81491ef8",
             "fixture-format": "blockchain_test",
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\nPerform a CREATE2, make sure that the initcode sets at least a couple of\nstorage keys, then on a different call, in the same tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n    1) and create2 contract already in the state\n    2) and create2 contract is not in the state\n  b) on a different tx, attempt to recreate the contract\n     -> Covered in this test\n\nPerform a CREATE2, make sure that the initcode sets at\nleast a couple of storage keys, then in a different tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n  b) on a different tx, attempt to recreate the contract\n\nCheck the test case described in\nhttps://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06\n+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a"
@@ -2151,7 +2151,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\nPerform a CREATE2, make sure that the initcode sets at least a couple of\nstorage keys, then on a different call, in the same tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n    1) and create2 contract already in the state\n    2) and create2 contract is not in the state\n  b) on a different tx, attempt to recreate the contract\n     -> Covered in this test\n\nPerform a CREATE2, make sure that the initcode sets at\nleast a couple of storage keys, then in a different tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n  b) on a different tx, attempt to recreate the contract\n\nCheck the test case described in\nhttps://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06\n+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a"
@@ -2415,7 +2415,7 @@
                 "storage": {}
             }
         },
-        "lastblockhash": "0x4228a577dfa30710a643c2083b7147a86ef84f7dac4a3ba1dae28ab5c0daef1e",
+        "lastblockhash": "0xb3a2b4676ee9c4587a5de6aa43aa3478126fc072ba39462259ddd157b557c63c",
         "config": {
             "network": "Amsterdam",
             "chainid": "0x01",
@@ -2466,7 +2466,7 @@
                     "difficulty": "0x00",
                     "number": "0x01",
                     "gasLimit": "0x07270e00",
-                    "gasUsed": "0x092c00",
+                    "gasUsed": "0x0cfcf2",
                     "timestamp": "0x0c",
                     "extraData": "0x",
                     "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -2479,7 +2479,7 @@
                     "requestsHash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                     "blockAccessListHash": "0x94f18a9122d24789701323aae1a4c0b1bd01f2af5703f4c1f0b20aa720da1213",
                     "slotNumber": "0x00",
-                    "hash": "0x4228a577dfa30710a643c2083b7147a86ef84f7dac4a3ba1dae28ab5c0daef1e"
+                    "hash": "0xb3a2b4676ee9c4587a5de6aa43aa3478126fc072ba39462259ddd157b557c63c"
                 },
                 "transactions": [
                     {
@@ -2841,18 +2841,18 @@
                         "storageReads": []
                     }
                 ],
-                "rlp": "0xf903d8f9027ca05cf1ac38fc1275a7dcd5720a1851031d4a44c51c55e9586346d268eb83ff8df9a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0aa0516e27bceedd62f4a8382fa84d288b509d094c0924190cc5ceb3f286d7b81a0328de3601cb01f73be8cbaa29e9b45d29fe3add7cab2f4a641d2e7082f44e9b2a01587b31b9f689f73cd33a846ad5838b4792f8edcde0e946eb0d57389a38b276ab901000000004000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000400000000000000000000000200000080000000800000000000000000000001010000000010000000800000000000400000000000000008000000000000000000000000000220000000040000000200000000000000000000000000000000000000000000000000200000000000800000000000000000000000440000000000000000040000000000000000000000000000002000000800000000000000000000000000080018407270e0083092c000c80a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a094f18a9122d24789701323aae1a4c0b1bd01f2af5703f4c1f0b20aa720da121380f90154f8a8800a834c4b409458406220c8cf47e450d0e64e72f5b05d15ecd83380b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff26a0a1435c3608086a7565e7f39e20c1dc35bbe180a6111107baf5b0e8d20eb5d9d8a006cdca17d02e3ccc4e8330e6c45eb5510f64f298a1440c703bce0131a05f0ac7f8a8010a834c4b4094c328ad9c2908009dba8184097e912a1ebcad107880b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff26a0a840b511e91c36636aec7ae535c7d5b1b4f1efde17e9f72484813093a34420ffa04ca216b6b479f83a744e1b8a1604595049b828a23df15318fba6743222fac6c4c0c0",
+                "rlp": "0xf903d8f9027ca05cf1ac38fc1275a7dcd5720a1851031d4a44c51c55e9586346d268eb83ff8df9a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0aa0516e27bceedd62f4a8382fa84d288b509d094c0924190cc5ceb3f286d7b81a0328de3601cb01f73be8cbaa29e9b45d29fe3add7cab2f4a641d2e7082f44e9b2a01587b31b9f689f73cd33a846ad5838b4792f8edcde0e946eb0d57389a38b276ab901000000004000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000400000000000000000000000200000080000000800000000000000000000001010000000010000000800000000000400000000000000008000000000000000000000000000220000000040000000200000000000000000000000000000000000000000000000000200000000000800000000000000000000000440000000000000000040000000000000000000000000000002000000800000000000000000000000000080018407270e00830cfcf20c80a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a094f18a9122d24789701323aae1a4c0b1bd01f2af5703f4c1f0b20aa720da121380f90154f8a8800a834c4b409458406220c8cf47e450d0e64e72f5b05d15ecd83380b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff26a0a1435c3608086a7565e7f39e20c1dc35bbe180a6111107baf5b0e8d20eb5d9d8a006cdca17d02e3ccc4e8330e6c45eb5510f64f298a1440c703bce0131a05f0ac7f8a8010a834c4b4094c328ad9c2908009dba8184097e912a1ebcad107880b847600160015560006000600060006000737eba20986e056b8f56bc3577bb98aee0e8467b875af161001660008160318239f373c0f6dc9e5836f54caadbf59cc69346c508e1992bff26a0a840b511e91c36636aec7ae535c7d5b1b4f1efde17e9f72484813093a34420ffa04ca216b6b479f83a744e1b8a1604595049b828a23df15318fba6743222fac6c4c0c0",
                 "blocknumber": "1"
             }
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0x0e81d59c2d5e5d6879a7c4e697633d59a1f71207fcc807d9d76fbe4dde6f2719",
+            "hash": "0x3aeabda3eba175edaaf7e6f186421178444dd9f10df246fee214698a886575cd",
             "fixture-format": "blockchain_test",
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Dynamic Create2->Suicide->Create2 collision scenario.\n\nPerform a CREATE2, make sure that the initcode sets at least a couple of\nstorage keys, then on a different call, in the same tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n    1) and create2 contract already in the state\n    2) and create2 contract is not in the state\n  b) on a different tx, attempt to recreate the contract\n     -> Covered in this test\n\nPerform a CREATE2, make sure that the initcode sets at\nleast a couple of storage keys, then in a different tx, perform a\nself-destruct.\n\nThen:\n  a) on the same tx, attempt to recreate the contract\n  b) on a different tx, attempt to recreate the contract\n\nCheck the test case described in\nhttps://lf-hyperledger.atlassian.net/wiki/spaces/BESU/pages/22156575/2024-01-06\n+Mainnet+Halting+Event",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.3.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/cancun/eip6780_selfdestruct/test_dynamic_create2_selfdestruct_collision.py#L261",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6780.md",
             "reference-spec-version": "1b6a0e94cc47e859b9866e570391cf37dc55059a"
