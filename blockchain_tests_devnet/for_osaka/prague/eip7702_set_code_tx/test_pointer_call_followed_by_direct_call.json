@@ -315,7 +315,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "If we first call by pointer then direct call, will the\ncall/sload be hot.\n\nThe direct call will warm because pointer access marks it warm.\nBut the sload is still cold because storage marked hot from\npointer's account in a pointer call.\n\nRedundant from Amsterdam: EIP-8037 replaces one-dimensional\nSSTORE gas costs with a 2D split (regular + state gas), changing\nwhat the GAS opcode reports. See\ntest_gas_diff_pointer_vs_direct_call for details.\n\nTODO: Add Amsterdam-specific variant in tests/amsterdam/ that\nverifies pointer warming behavior with 2D gas cost measurements.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/prague/eip7702_set_code_tx/test_set_code_txs_2.py#L911",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.5.1/tests/prague/eip7702_set_code_tx/test_set_code_txs_2.py#L911",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7702.md",
             "reference-spec-version": "99f1be49f37c034bdd5c082946f5968710dbfc87"

@@ -150,7 +150,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test SELFDESTRUCT during initcode execution where beneficiary is self.\n\nUnlike test_selfdestruct_to_self, this tests the case where the initcode\nitself executes SELFDESTRUCT(ADDRESS) during contract creation, before\nany code is deployed.\n\nKey characteristics:\n- During initcode, the contract has no code yet\n- Contract has nonce=1 (post-EIP-161) making it non-empty\n- Beneficiary is always warm (it's the executing contract)\n- No G_NEW_ACCOUNT charge (contract has nonce > 0)\n- No cold access charge (>=Berlin)\n\nNote: Gas boundary testing not possible for initcode since CREATE\ndoesn't accept a gas parameter - it uses all available gas.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/tangerine_whistle/eip150_operation_gas_costs/test_eip150_selfdestruct.py#L1122",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.5.1/tests/tangerine_whistle/eip150_operation_gas_costs/test_eip150_selfdestruct.py#L1122",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-150.md",
             "reference-spec-version": "34acf72522b989d86e76efcaf42eba4cdb0b31ad"
@@ -307,7 +307,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test SELFDESTRUCT during initcode execution where beneficiary is self.\n\nUnlike test_selfdestruct_to_self, this tests the case where the initcode\nitself executes SELFDESTRUCT(ADDRESS) during contract creation, before\nany code is deployed.\n\nKey characteristics:\n- During initcode, the contract has no code yet\n- Contract has nonce=1 (post-EIP-161) making it non-empty\n- Beneficiary is always warm (it's the executing contract)\n- No G_NEW_ACCOUNT charge (contract has nonce > 0)\n- No cold access charge (>=Berlin)\n\nNote: Gas boundary testing not possible for initcode since CREATE\ndoesn't accept a gas parameter - it uses all available gas.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.4.0/tests/tangerine_whistle/eip150_operation_gas_costs/test_eip150_selfdestruct.py#L1122",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.5.1/tests/tangerine_whistle/eip150_operation_gas_costs/test_eip150_selfdestruct.py#L1122",
             "opcode_count": {},
             "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-150.md",
             "reference-spec-version": "34acf72522b989d86e76efcaf42eba4cdb0b31ad"
