@@ -162,7 +162,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test TSTORE is rolled back after failed CREATE/CREATE2 initcode.\n\nRegression test for\nhttps://github.com/ethereum/execution-specs/issues/917\n\nInitcode does TLOAD(1) to compute a return size, then does\nTSTORE(1, max_code_size), then returns data of the computed size.\nWhen TLOAD(1) is 0, the return size is max_code_size + 0x0a\n(exceeds max code size), so creation fails.\n\nThe caller invokes CREATE/CREATE2 twice with the same initcode.\nIf TSTORE from the first (failed) creation is properly rolled\nback, the second creation also sees TLOAD(1)==0 and fails the\nsame way. If not rolled back, TLOAD(1)==max_code_size and the\nsecond creation succeeds.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.6.0/tests/cancun/eip1153_tstore/test_tstorage_create_contexts.py#L265",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.6.1/tests/cancun/eip1153_tstore/test_tstorage_create_contexts.py#L265",
             "metadata": {
                 "opcode_count": {}
             },
@@ -333,7 +333,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test TSTORE is rolled back after failed CREATE/CREATE2 initcode.\n\nRegression test for\nhttps://github.com/ethereum/execution-specs/issues/917\n\nInitcode does TLOAD(1) to compute a return size, then does\nTSTORE(1, max_code_size), then returns data of the computed size.\nWhen TLOAD(1) is 0, the return size is max_code_size + 0x0a\n(exceeds max code size), so creation fails.\n\nThe caller invokes CREATE/CREATE2 twice with the same initcode.\nIf TSTORE from the first (failed) creation is properly rolled\nback, the second creation also sees TLOAD(1)==0 and fails the\nsame way. If not rolled back, TLOAD(1)==max_code_size and the\nsecond creation succeeds.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.6.0/tests/cancun/eip1153_tstore/test_tstorage_create_contexts.py#L265",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.6.1/tests/cancun/eip1153_tstore/test_tstorage_create_contexts.py#L265",
             "metadata": {
                 "opcode_count": {}
             },
