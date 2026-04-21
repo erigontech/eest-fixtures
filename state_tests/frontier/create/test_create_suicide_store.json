@@ -1177,6 +1177,222 @@
             "fixture-format": "state_test"
         }
     },
+    "tests/frontier/create/test_create_suicide_store.py::test_create_suicide_store[fork_Osaka-create_opcode_CREATE-evm_code_type_LEGACY-state_test]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x09e274a2d5c27e7912ebc151ef9eb710d827943b": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x00aa5c5e92e4fc35a69dc3ffeecc0c25c5ae0cb0": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x3660006000373660006000f0600055600260405260006000602060406000600054620493e05a03f1600160405260006000602060406000600054620493e05a03f1600260405260006000602060406000600054620493e05a03f1600360405260206064602060406000600054620493e05a03f16064516001556001600255",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0f4240"
+            ],
+            "to": "0x00aa5c5e92e4fc35a69dc3ffeecc0c25c5ae0cb0",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x610070600081600b8239f3600160003514604b58015760026000351460285801576003600035146008580157604c5801565b60015c6001540160005260206000f360375801565b601260015401600155601260015c0160015d601f5801565b733754a7c46d920cac5da84258a3c0e13df1809fffff60035801565b"
+            ],
+            "sender": "0x09e274a2d5c27e7912ebc151ef9eb710d827943b",
+            "secretKey": "0x27808b3ca845774f7c42d47f00aa5c5e92e4fc35a69dc3ffeecc0c25c5ae0cb1"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xcf12f5a8aa1b24c407a6fc74723353dbb83b9cdbeb76842c1d962a400b9e3a63",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8dc800a830f42409400aa5c5e92e4fc35a69dc3ffeecc0c25c5ae0cb080b87b610070600081600b8239f3600160003514604b58015760026000351460285801576003600035146008580157604c5801565b60015c6001540160005260206000f360375801565b601260015401600155601260015c0160015d601f5801565b733754a7c46d920cac5da84258a3c0e13df1809fffff60035801565b26a057fd785669d54d93e5dd98300177c82b8a251e188a50898b0be07bd2b546eecca021544b6f90952798ea422de6efec1ad7ce71cdfb4b9e029c26ea19ab3e13b21d",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x09e274a2d5c27e7912ebc151ef9eb710d827943b": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8538e2",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x00aa5c5e92e4fc35a69dc3ffeecc0c25c5ae0cb0": {
+                            "nonce": "0x02",
+                            "balance": "0x00",
+                            "code": "0x3660006000373660006000f0600055600260405260006000602060406000600054620493e05a03f1600160405260006000602060406000600054620493e05a03f1600260405260006000602060406000600054620493e05a03f1600360405260206064602060406000600054620493e05a03f16064516001556001600255",
+                            "storage": {
+                                "0x00": "0x9104ce42a5cde1f2a09ade1600223ef1066df7b8",
+                                "0x01": "0x48",
+                                "0x02": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x080889",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xc9a44be41ab90051acb7de7508e6b58a0a4ff3facf2c37c569ee470893455756",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Create dynamic contract that suicides, then called to push some storage\n    and then called to return that storage value.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/frontier/create/test_create_suicide_store.py#L33",
+            "fixture-format": "state_test"
+        }
+    },
+    "tests/frontier/create/test_create_suicide_store.py::test_create_suicide_store[fork_Osaka-create_opcode_CREATE2-evm_code_type_LEGACY-state_test]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc02461b248e55b50f4ce8cf1d87d59ed1afcac7a": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x85e34a3d620c941f1dd838674c0007016764116b": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x36600060003760003660006000f5600055600260405260006000602060406000600054620493e05a03f1600160405260006000602060406000600054620493e05a03f1600260405260006000602060406000600054620493e05a03f1600360405260206064602060406000600054620493e05a03f16064516001556001600255",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0f4240"
+            ],
+            "to": "0x85e34a3d620c941f1dd838674c0007016764116b",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x610070600081600b8239f3600160003514604b58015760026000351460285801576003600035146008580157604c5801565b60015c6001540160005260206000f360375801565b601260015401600155601260015c0160015d601f5801565b739014db03d92d8a9a9dfbf02c75bb5bf0f9cbc6c0ff60035801565b"
+            ],
+            "sender": "0xc02461b248e55b50f4ce8cf1d87d59ed1afcac7a",
+            "secretKey": "0xc9baa9b508490f65c40c67ca85e34a3d620c941f1dd838674c0007016764116c"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x307532641a42b793af3682618b472828f48baf88e6b4d7f372abf69ce7a12768",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf8dc800a830f42409485e34a3d620c941f1dd838674c0007016764116b80b87b610070600081600b8239f3600160003514604b58015760026000351460285801576003600035146008580157604c5801565b60015c6001540160005260206000f360375801565b601260015401600155601260015c0160015d601f5801565b739014db03d92d8a9a9dfbf02c75bb5bf0f9cbc6c0ff60035801565b25a0bc99e45698d35fdc53f20ce3cb86d4df986dca81034112511a2a45513a508f48a05728d63cb8c6e462f42fb4b79c508fcb18bc8179ae05c974ced01d1958e0a8df",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc02461b248e55b50f4ce8cf1d87d59ed1afcac7a": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8537d4",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x85e34a3d620c941f1dd838674c0007016764116b": {
+                            "nonce": "0x02",
+                            "balance": "0x00",
+                            "code": "0x36600060003760003660006000f5600055600260405260006000602060406000600054620493e05a03f1600160405260006000602060406000600054620493e05a03f1600260405260006000602060406000600054620493e05a03f1600360405260206064602060406000600054620493e05a03f16064516001556001600255",
+                            "storage": {
+                                "0x00": "0x1bc528fe5018b45ec4b6887bcaf0c43cb5e19d1c",
+                                "0x01": "0x48",
+                                "0x02": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0808da",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xb405e88fa7e79ef4604b11a31f02c26b34d71bc9a72467940a0539f4f0900348",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Create dynamic contract that suicides, then called to push some storage\n    and then called to return that storage value.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/frontier/create/test_create_suicide_store.py#L33",
+            "fixture-format": "state_test"
+        }
+    },
     "tests/frontier/create/test_create_suicide_store.py::test_create_suicide_store[fork_Paris-create_opcode_CREATE-evm_code_type_LEGACY-state_test]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

@@ -729,6 +729,119 @@
             "reference-spec-version": "c9db53a936c5c9cbe2db32ba0d1b86c4c6e73534"
         }
     },
+    "tests/berlin/eip2930_access_list/test_tx_type.py::test_eip2930_tx_validity[fork_Osaka-valid-state_test]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x31fea89c26d83e9ea40dc184bba2615d70f62e61": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x6001600055",
+                "storage": {
+                    "0x00": "0xdeadbeef"
+                }
+            },
+            "0x6b1e47fb067ebc889911102feb0ad0c41d601b81": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0186a0"
+            ],
+            "to": "0x31fea89c26d83e9ea40dc184bba2615d70f62e61",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x6b1e47fb067ebc889911102feb0ad0c41d601b81",
+            "secretKey": "0x89b2d164125e07bebb21a6cf31fea89c26d83e9ea40dc184bba2615d70f62e61"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x6a3faf41472b1636b0fba0a71d60b938845888e2501a932136622d583757bbbc",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86201800a830186a09431fea89c26d83e9ea40dc184bba2615d70f62e618080c001a0420ec3a60fe63fd752acc303108e456757e3a7b7aebf68d6fdda824b70d6d3f2a07ed785cc2340b497d091d477d3d3e13d268630a1f4f2d6787fea067a1a08b0ec",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x31fea89c26d83e9ea40dc184bba2615d70f62e61": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x6001600055",
+                            "storage": {
+                                "0x00": "0x01"
+                            }
+                        },
+                        "0x6b1e47fb067ebc889911102feb0ad0c41d601b81": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9c0824",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0130c2",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x01a54143ad29bf9f1b75cd2475ea570f003398a1b13691f70a29f2d6568c7ecf",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Tests that an EIP-2930 tx is correctly rejected before fork activation.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/berlin/eip2930_access_list/test_tx_type.py#L38",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2930.md",
+            "reference-spec-version": "c9db53a936c5c9cbe2db32ba0d1b86c4c6e73534"
+        }
+    },
     "tests/berlin/eip2930_access_list/test_tx_type.py::test_eip2930_tx_validity[fork_Paris-valid-state_test]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
