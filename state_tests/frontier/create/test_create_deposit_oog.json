@@ -1149,6 +1149,218 @@
             "fixture-format": "state_test"
         }
     },
+    "tests/frontier/create/test_create_deposit_oog.py::test_create_deposit_oog[fork_Osaka-create_opcode_CREATE-evm_code_type_LEGACY-state_test]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x4fc911b5ee4d9c104d76b7fdbccb6312d3442fca": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x02cf416fbb5692d3ca6b6133da9b74b46cd2c6bb": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x7f00000000000000000000000000000000000000000000000000006127106000f36000526006601a6000f060015500",
+                "storage": {
+                    "0x01": "0xdeadbeef"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0f4240"
+            ],
+            "to": "0x02cf416fbb5692d3ca6b6133da9b74b46cd2c6bb",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0x4fc911b5ee4d9c104d76b7fdbccb6312d3442fca",
+            "secretKey": "0xa2c72fc3e97fe312018521fc02cf416fbb5692d3ca6b6133da9b74b46cd2c6bb"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xbd08a657cbf6bbef4af1bc973e3670205c062a135e6eae663b0c4053232847e6",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a830f42409402cf416fbb5692d3ca6b6133da9b74b46cd2c6bb808026a0ece0dfa089cabb1cbe074b87afa206d2a0133ad028d424a8aab430b7be0869d1a07bf9714898ab7a2f00074757b752f06b29bd642a003ea3840e26625b231dfe5d",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x4fc911b5ee4d9c104d76b7fdbccb6312d3442fca": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de09a38a",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x02cf416fbb5692d3ca6b6133da9b74b46cd2c6bb": {
+                            "nonce": "0x02",
+                            "balance": "0x00",
+                            "code": "0x7f00000000000000000000000000000000000000000000000000006127106000f36000526006601a6000f060015500",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x2d1bbd",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x40be34250bbd8c4e940a3d944b730941e057f3bb483d65d3b6b6a1897c1412b9",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Run create deploys with a lot of deposited code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/frontier/create/test_create_deposit_oog.py#L23",
+            "fixture-format": "state_test"
+        }
+    },
+    "tests/frontier/create/test_create_deposit_oog.py::test_create_deposit_oog[fork_Osaka-create_opcode_CREATE2-evm_code_type_LEGACY-state_test]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xa0c8364e521309c0fcb189b5817f8db453d29e3d": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xf733af2aec0c71f783f4caae966df0aff7adc2de": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x7f00000000000000000000000000000000000000000000000000006127106000f360005260006006601a6000f560015500",
+                "storage": {
+                    "0x01": "0xdeadbeef"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x0f4240"
+            ],
+            "to": "0xf733af2aec0c71f783f4caae966df0aff7adc2de",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0xa0c8364e521309c0fcb189b5817f8db453d29e3d",
+            "secretKey": "0x7dda1c635d69c5156817b9c2f733af2aec0c71f783f4caae966df0aff7adc2de"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xc6f45f6baa3390cedb740b7748bf1d136a63d42004d554aa6f1e10e416e97f06",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a830f424094f733af2aec0c71f783f4caae966df0aff7adc2de808026a00559d420d3cfb3d0570a240663cae4bf1278b0643d2a87e81bf48be1b5bcf7cfa07db19b291315eb004c699db85ae11361195775e43778806008e6e2ebda8c7738",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa0c8364e521309c0fcb189b5817f8db453d29e3d": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de09a38a",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xf733af2aec0c71f783f4caae966df0aff7adc2de": {
+                            "nonce": "0x02",
+                            "balance": "0x00",
+                            "code": "0x7f00000000000000000000000000000000000000000000000000006127106000f360005260006006601a6000f560015500",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x2d1bbd",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xf9e32a9e55947fb749d301188a2d71fa6a5beffe5058908d7b2a40fd3005a826",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Run create deploys with a lot of deposited code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/frontier/create/test_create_deposit_oog.py#L23",
+            "fixture-format": "state_test"
+        }
+    },
     "tests/frontier/create/test_create_deposit_oog.py::test_create_deposit_oog[fork_Paris-create_opcode_CREATE-evm_code_type_LEGACY-state_test]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

@@ -452,6 +452,114 @@
             "reference-spec-version": "2762bfcff3e549ef263342e5239ef03ac2b07400"
         }
     },
+    "tests/istanbul/eip152_blake2/test_blake2_delegatecall.py::test_blake2_precompile_delegatecall[fork_Osaka-state_test]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x0a70add232a7bae9c56bf2f935f32df38f723758": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x600060006000600060096001f460005500",
+                "storage": {
+                    "0x00": "0xdeadbeef"
+                }
+            },
+            "0xca57896a16886c9079cac97b396c1c694b741ca8": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x015f90"
+            ],
+            "to": "0x0a70add232a7bae9c56bf2f935f32df38f723758",
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x"
+            ],
+            "sender": "0xca57896a16886c9079cac97b396c1c694b741ca8",
+            "secretKey": "0xea51f11bb228af34ae1c42600a70add232a7bae9c56bf2f935f32df38f723758"
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x7c62a3dc0c71e4bf4f50eee2a72d9b7f37c74346c2b104c4b9ca5f4ec81b38ac",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf860800a83015f90940a70add232a7bae9c56bf2f935f32df38f723758808025a0ff81af09a2dcbd8b7af916df9269408242a2a1092bd49f36001cfeefea3e3436a04c00cf6bd750a6436ba7ad6ad6481a3403c20e845d25c0322ded2e7d3bd3c244",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x0a70add232a7bae9c56bf2f935f32df38f723758": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x600060006000600060096001f460005500",
+                            "storage": {}
+                        },
+                        "0xca57896a16886c9079cac97b396c1c694b741ca8": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de9cbf1c",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0xf9de",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xcbc64c4d99708dd79ba13c9d0d9d579c413ef91e70982ff447b5160dcf4ed848",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test delegatecall consumes specified gas for the Blake2B precompile when it\n    exists.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/istanbul/eip152_blake2/test_blake2_delegatecall.py#L23",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-152.md",
+            "reference-spec-version": "2762bfcff3e549ef263342e5239ef03ac2b07400"
+        }
+    },
     "tests/istanbul/eip152_blake2/test_blake2_delegatecall.py::test_blake2_precompile_delegatecall[fork_Paris-state_test]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

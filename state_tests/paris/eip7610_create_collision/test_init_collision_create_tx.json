@@ -2708,6 +2708,2985 @@
             "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
         }
     },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-balance-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xe3de5736d9c44a74e9ba0303ed9f9b0d53bc1288": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xd78cb871d91ff838284aa852d9ea7fea2f8ec903": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "sender": "0xe3de5736d9c44a74e9ba0303ed9f9b0d53bc1288",
+            "secretKey": "0x1fd9b55432c206c36459116287751be92560cdc9dbd31dded6fec43ff390b2dc",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x495b678d6fdbf6f3313cb84513dac5e71c0e8b38c365cfd1681459db947d526b",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf862800a83030d408080966001600055600060015561000160008160158239f30025a0beafa2e25f2b2587060ad799ca375a98e293e83a28abee2134a8efcedaf1332aa0264c5f96c9b880cfa1f923f166faa9f171af459328e8371af9140f87fdacf24f",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xe3de5736d9c44a74e9ba0303ed9f9b0d53bc1288": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xd78cb871d91ff838284aa852d9ea7fea2f8ec903": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x19b2f869a50667b32404a658b1261181fba7981987001974d7c8947fd60413ce",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-balance-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xe8ad407904454f6d3f6753cb81068ebcb6f18ed3": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x7d5721b82e1989ecff04cd7193cdd5d14c0459ae": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "sender": "0xe8ad407904454f6d3f6753cb81068ebcb6f18ed3",
+            "secretKey": "0xb76f1b7d131f7cf2deec99e9f0430ec819c423e830abfe66ddd38963b0878464",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x54971eda9a7ddbd1053cf5ba8202337d80db3e3b0ac6b2762fad6e0bdb56daa3",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf85e800a83030d4080809260016d0fffffffffffffffffffffffffff5226a038daae5c83e6d490ee2e55ea60260e62c97bc4d13c74732624ad3d9772a08454a0041d9dfe3493d2b788b63bbf1c5e23035e3642cd24894744c6102069131104fd",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xe8ad407904454f6d3f6753cb81068ebcb6f18ed3": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x7d5721b82e1989ecff04cd7193cdd5d14c0459ae": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x98a68a032b3453bccc8528640b986d07518ce276712ff73e54c3eac44b769065",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-balance-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x228d3f1af9506137c09acb84ea87d23d267acd1d": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x4d1432f55ffee3955a6fbd077db68b5c510387b2": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "sender": "0x228d3f1af9506137c09acb84ea87d23d267acd1d",
+            "secretKey": "0xa852bc9912b0bdfb889420e12bbf1f1be12f7223ac6435ae1ed0f350ef80fe42",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x4bf5b536b80204668fbd51b904aae9ff4ba87a648370dddb026ce9290d8326a7",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf851800a83030d4080808560006000fd26a05898cff8b1d72c0d9fef2a838dc271f3c976f9f217ba78006acf3e2751d3b0c8a014883eb435e1782c62e6f190ca3448164fe56e100b8294a5c6a261489ca1fd4e",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x228d3f1af9506137c09acb84ea87d23d267acd1d": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x4d1432f55ffee3955a6fbd077db68b5c510387b2": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x37435a7cc431c4505b164720dcf688ff39bc140d036fc45a65ce5f000284a894",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-code-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x7a2e68e12a5895764c4a090a9268132394082248": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x6d7015fc59e81bfc2287c77c50eb7ba268b763e6": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "sender": "0x7a2e68e12a5895764c4a090a9268132394082248",
+            "secretKey": "0x207b2eb6c78dde4503f2cd7f5cb61b5ee11b31cbd0e6d49b4ddbc0b4957b5698",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xf51c1cc0ca4eb07940d838dc30bdd3aabcf8231a9c6145db893db1f707b4340a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf862800a83030d408080966001600055600060015561000160008160158239f30026a09495fb62a52069023612ba664cd15f3739075ea1a1dafb01e34b9161d57fa974a051b066f449494b0311c60f4f7af0c2e90f03197082804127d3a55c45b34cfb8f",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x7a2e68e12a5895764c4a090a9268132394082248": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x6d7015fc59e81bfc2287c77c50eb7ba268b763e6": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xdc22bb30322f4d45c8bc0dab0527878c2537dfdd1b937d0a622d1f77b85f3f4c",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-code-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x3da3d69b21dad79bb63b98e0b36d724fbc3a26cb": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x91e98efe8191622a122197c36c232d357b7da82a": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "sender": "0x3da3d69b21dad79bb63b98e0b36d724fbc3a26cb",
+            "secretKey": "0xec8d735ceecc823b9a264ee41e76993ddac182f9a8c3f4a4574940c421ef4a12",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xcdcf347aba67462c12829501aebaa339fb13614ccda08e0fd0b3f0af1391dc5a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf85e800a83030d4080809260016d0fffffffffffffffffffffffffff5226a072fb28bcf7727b04cbd331e89bf04e36e581bc3c8e3b73c85ed92bbb8bf55d56a07a853817ce747720859847751aa62941afe0a0116bfadae127b59b27751c7eb3",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x3da3d69b21dad79bb63b98e0b36d724fbc3a26cb": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x91e98efe8191622a122197c36c232d357b7da82a": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xbe36b0ce160305865b72185ea8b3e60c61ca672fd1942c106fde7c2d7c573f68",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-code-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x60ed8d677307f92073953682d62aa1fc2b874210": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xa83854a16d0316b95972f882bb36393bae4d5897": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "sender": "0x60ed8d677307f92073953682d62aa1fc2b874210",
+            "secretKey": "0x700f0134f03a4b254f6c19699b929a927a573fe19ef63fe41bd3e0ef665cf5d2",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xe4e9e1462ea2a9f0e5229371b42fd8ef3271ba942b4b11bdefc4e3b70727988a",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf851800a83030d4080808560006000fd26a031a2093746530bd51b6494f2f4ba65a3599542963bd703f900519f3e39614c99a03aa690b25baab1a712c2a774d0c74c2fc5ae354495ef257f045aaaf08959041d",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x60ed8d677307f92073953682d62aa1fc2b874210": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xa83854a16d0316b95972f882bb36393bae4d5897": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x316c2d8485ffd3a0fb747fa4782e3c9ca5e0170dd8888e182e882aae520ad6cf",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-nonce-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x601c281412871681c64a5d0ff7805b1518174d94": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x380508f270e0b653c0f48549bd462fea090e0a6f": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "sender": "0x601c281412871681c64a5d0ff7805b1518174d94",
+            "secretKey": "0x851d03c4979817d2160db9348da2dacd86855955e703f4259e7ee87067fed45f",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x49f8f76620fde4debc747c871c70c27590736ff1d5f1b14cb260fc7af8e0c192",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf862800a83030d408080966001600055600060015561000160008160158239f30026a066251705dab85841319eb46eca6c90ac35f31dc4928e357607d5a7f455e80aefa0360c5cc931749a2e3966546ea52c3a5c939f6df7577029ed3a65d82a9f4824d1",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x601c281412871681c64a5d0ff7805b1518174d94": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x380508f270e0b653c0f48549bd462fea090e0a6f": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xd2233bc51dbd5b6efd8e26bdb2eff5694542ecda777865291ac90a08f91405a0",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-nonce-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x42c80c9adeea52dc3997fdb61a0c981d3659b9f0": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x3f3d9cb1371566d56fb613518c3e9dca99285392": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "sender": "0x42c80c9adeea52dc3997fdb61a0c981d3659b9f0",
+            "secretKey": "0xdd090abef82a39e8890f750eca13873f739b424838fb3c7e9c4575e717857bf6",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x396ee82c6ccd17e07c33bf6af3953ebf61e5cba15c4daf770e5b11d99a19c3ee",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf85e800a83030d4080809260016d0fffffffffffffffffffffffffff5226a0e3e4eb01418be2731af216e00504596a92e4798707d4c27478c94e17187de1e5a04ffb82f43d4bb1ad0b29aca4040439b0d62e91f005471452d3719c300956a58f",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x42c80c9adeea52dc3997fdb61a0c981d3659b9f0": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x3f3d9cb1371566d56fb613518c3e9dca99285392": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xc938439ee43a25db97960e838cf0727e754e5c847a24a1883d5589b94af6f7ef",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_0-state_test-non-empty-nonce-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x817fdd74aaf55e22a166a75c402aa6e123823fdf": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x2638939e07fe045e9f3c44dd0ebab0e1ef58a98d": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "sender": "0x817fdd74aaf55e22a166a75c402aa6e123823fdf",
+            "secretKey": "0x7e0cb96193793cf4373980a864c88aad67c44ec3c51fb2232ceb9b82d684bb8d",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x6ebe5cd1e814e78da834564a8cdf96c66f34654367596e6072905688effb4d22",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0xf851800a83030d4080808560006000fd26a09bc5a1da43bad94cfb0b34a52583240ee46873de1531e358c4e76c1b6741a630a00900a8e4e73ff67198ac89a1381ef19e006903937ff4f795681f02072a6af29f",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x817fdd74aaf55e22a166a75c402aa6e123823fdf": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x2638939e07fe045e9f3c44dd0ebab0e1ef58a98d": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xb2a1261ae4e20786edb3ed75555366498453ea2317997a84a0e5d812444bf9fa",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-balance-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x5eacf191678525dc6f1794b0b7891c4dbedd4932": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xfa7219c35faf1b7351278757653436c36df17b12": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x5eacf191678525dc6f1794b0b7891c4dbedd4932",
+            "secretKey": "0x41d69c6d9ff80bf6522a0b8b1997d7679c78e5a5764aa9e1c491bb790ae6f48b",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x2d58f891222cdc35f1362cf0315237a9998499e8ad2aff33bd9c5e2dcf462bf2",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86401800a83030d408080966001600055600060015561000160008160158239f300c001a0b13dbb06388845d1921d1db85ed55c06becf28b1af72e6fd70a87e8000de1ddea034df6ed41c0cdd2ed8c41dda862a4ce8bd51f00ed3f7fdefee84063f4a361956",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x5eacf191678525dc6f1794b0b7891c4dbedd4932": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xfa7219c35faf1b7351278757653436c36df17b12": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x4fc3791f6303d95ed45b841e3df0c05da3c7d61e7aa7494e6b22360433825c1d",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-balance-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x99a426f7fdd58a1d7161e40a640b7f68864a170e": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x08347558c52b78ffd2f5f62e12b8ac8c3d625665": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x99a426f7fdd58a1d7161e40a640b7f68864a170e",
+            "secretKey": "0xd39019515eb58d319880b8bd8ed5fd79635945cd6113d6c7920d11a4dcec5b23",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x3f82c779df8dd80ee7cad348e9e6d42fa555d03b5ff86bf675483184862706f8",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86001800a83030d4080809260016d0fffffffffffffffffffffffffff52c001a0d7b32896a7091c58d8b0e77d6117e795e1546b3d8fa05601f133dea575d5812ba0189d61f5b23c61f7d9a43efa12d1c75c9587660bbd38bbf3952c104ffed7af42",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x99a426f7fdd58a1d7161e40a640b7f68864a170e": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x08347558c52b78ffd2f5f62e12b8ac8c3d625665": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x518cea9ffdb148b957eeb62c87d4bfe874d2e865f218ca0808ad02f4021ba993",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-balance-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xef9ae295b3c0e75b151190e32f920473bebe77a3": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x3e4c4ac13b6fb6ca96d71222bad5b7ba28c0018b": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xef9ae295b3c0e75b151190e32f920473bebe77a3",
+            "secretKey": "0x043c0ea7ee50d1743ad066ebe2608ca91820f96f60aa555198f536e034de322a",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x8b813aae49d35d0d5cfef54cebd7eef108400fd7aaa0d13ef55d34e0201a8506",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f85301800a83030d4080808560006000fdc001a0382cab212b22fc7cd3713b276b61985789470b6522798615502d0cce688316d6a0509f5906db537d7f34838c63d674cd861f414270d43a529efc58a83a59ea9bf1",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xef9ae295b3c0e75b151190e32f920473bebe77a3": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x3e4c4ac13b6fb6ca96d71222bad5b7ba28c0018b": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x71ee3205b89e5c3bfd1d7ac60d2e613ebb93d6959365456ba846905e09a4e1ad",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-code-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xf1733e6065718cbd56f74f8b62c1f5d12d6a5c6e": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x88acd5fa78a5579a6f90a9243b4a3dd8de850967": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xf1733e6065718cbd56f74f8b62c1f5d12d6a5c6e",
+            "secretKey": "0xd148b3c87e7218e96d848b704d6772c7abb85db989cabac915010ce6f6e56d25",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x653b1007b15049f2fb6979e98f6dd6cf0808ab900112ca21a2166ab6ef3d5ea8",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86401800a83030d408080966001600055600060015561000160008160158239f300c001a080e071f4c026673980df73528b527d88a5456c325efd02100f72fe3e0e4116b3a0147fe943b701c3af875482ad639471a835059fa15c41a24099b6ff50000ec954",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xf1733e6065718cbd56f74f8b62c1f5d12d6a5c6e": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x88acd5fa78a5579a6f90a9243b4a3dd8de850967": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5e0f4a63e117bf91bc7d67a107569e3b10af34075ef5597de47704bd480b6de4",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-code-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x9f47b9843d6bf2b1a8e3fcd23444baf370bbf1f5": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xacf464b53cef673c82c210ffcb59a937d6fb194e": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x9f47b9843d6bf2b1a8e3fcd23444baf370bbf1f5",
+            "secretKey": "0x24dc0edbf7c7b076348e650c82c7c65ce3039351552910785808dc658ecb857b",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x6f55e0a3bb67a7323020602659e5216af77a5b6cb2720c97c697f7fe82e95088",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86001800a83030d4080809260016d0fffffffffffffffffffffffffff52c080a0dec3032a79cb642ea9d27ffc84fc620f53ba91d401e10583fe36fac1346e6d63a03b6345b66b57c9f77e8e49687ffeb2c2b8f2900e821f97cf436aa1574c273c62",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x9f47b9843d6bf2b1a8e3fcd23444baf370bbf1f5": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xacf464b53cef673c82c210ffcb59a937d6fb194e": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x5d2ce3bca467b64bee88f9d0c92b51e56bcef56f4952c54048e06e6096f83359",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-code-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x0c89eda3eb3195fe7f5b6f97d2ccbcc811f46e52": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x0145bfb6218fbbe8c737a94b60f0be2124959021": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x0c89eda3eb3195fe7f5b6f97d2ccbcc811f46e52",
+            "secretKey": "0x7f61b8b673fa26d08a26b4d75974b004dc02fa5c239d0b07e6a27901d5102f06",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x3db3dc2213ceee4a536f20470bce1b6de771e655577c44fb9316bb7ce30442b9",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f85301800a83030d4080808560006000fdc001a09d49d347ee8e185d2d3c71d7235f0288416341a36118742de1eebe7940f3feb3a053969eb31e766c4654b4697080a111f77fb9b7c526863ef7c021f4c3c90414cd",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x0c89eda3eb3195fe7f5b6f97d2ccbcc811f46e52": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0145bfb6218fbbe8c737a94b60f0be2124959021": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x97589bfda14b2c4650a91ca9cbedb78f0e5c68953fe960b3abd755026653e5e6",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-nonce-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x762eb148c2bc567671d5fab500040bb91a52e542": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x5a3632ed84b500cfd7bdfdb06f385e052a6ff42f": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x762eb148c2bc567671d5fab500040bb91a52e542",
+            "secretKey": "0xa56145866eed093d4520021f9b55de6a926c298f3987aed2f1e9d0fea8a8fd01",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xe077907fc685b2f57b9b4f763780dd1d30548f61fd43a11ff4b78bd40d63c961",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86401800a83030d408080966001600055600060015561000160008160158239f300c001a0e010f8b5b5d6d754762883a3e55aa2bc4b507522ff799d288ff29b258ea72affa0228a4d5b051441f4b11237ad56bc7e2d5a86b1672115cdd0ed1a86be31772226",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x762eb148c2bc567671d5fab500040bb91a52e542": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x5a3632ed84b500cfd7bdfdb06f385e052a6ff42f": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x3d41af46b252cff4351b30e375029af81be645b7993563c28e3e6a5e876ac174",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-nonce-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x488f0886a1229e1e813b861a2e6ff3e53e01abce": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xf20f2ab5d1f2a7bbe136e7662f7d95a8cf9a8a44": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x488f0886a1229e1e813b861a2e6ff3e53e01abce",
+            "secretKey": "0x0e41f1a0d29530cf6fd2a5f4db37c95d67155af1254ade7204eec610c120b4f0",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x3f83d7ae8f4d58458049455dc3e20a55f199a573581e009b115118fa6039976b",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f86001800a83030d4080809260016d0fffffffffffffffffffffffffff52c080a056486f054d548b51171a46618f111123e22ae1b9fab26c1fce9c16c49f7865c1a02da6dd9db827b3252f47c5c9f5810efdfdf3be045d76cc41a4191e583ffd1b45",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x488f0886a1229e1e813b861a2e6ff3e53e01abce": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xf20f2ab5d1f2a7bbe136e7662f7d95a8cf9a8a44": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0417d2d329591f9bc9b33dbd174204c585d794fb9ab03b84d73ac1042e4ff0d8",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_1-state_test-non-empty-nonce-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xb7836805ee362aa8e4b29e2211da1d4c9253c0b6": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x772f91070cffaae085dd88940e9e9d2467629f75": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "gasPrice": "0x0a",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xb7836805ee362aa8e4b29e2211da1d4c9253c0b6",
+            "secretKey": "0x22a7fd5e23a1ae904d7640735be1058bfc272b9d1a64846d48a5dd5928bb8fb1",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x58a22c268c3185c7201e48c89dc916128ce061215db7f055f08dbda5609d9074",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x01f85301800a83030d4080808560006000fdc001a0da8f5d8d45818a1b82974302b185a27eed000f82ab52a17f528c154a56e30ab6a04f68360a2157311a845a4784fa93f8073937d8eaf7050e4ec10e8056432a84c7",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xb7836805ee362aa8e4b29e2211da1d4c9253c0b6": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de817b80",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x772f91070cffaae085dd88940e9e9d2467629f75": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        },
+                        "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                            "nonce": "0x00",
+                            "balance": "0x0927c0",
+                            "code": "0x",
+                            "storage": {}
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0025212eafeeb19882c6d647fd00cb223b6559cd49f4dc4b350072caf3249258",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-balance-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x2a13ad654d4c5f7550e11d4c36410b288e9eacb8": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xd145192ca25371fd05274513eff3b34332e72226": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x2a13ad654d4c5f7550e11d4c36410b288e9eacb8",
+            "secretKey": "0x313f64c368c44d365a73e53e29b82a3f75c3bac2b07f380909200f2336c84681",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x18fb8672b026e499b8412f0b3248f6d639125852ed4cb96c94f6fe0b91a5fbc4",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8650180800783030d408080966001600055600060015561000160008160158239f300c001a01ed53a150ae845ecfbcd4e9d6504b40d980e3bcfbbc050f0d0865786d94ebacca06ad5cd0c2c688c1fb5b5d88cb88f9778315c76caa45399d5586f613ad84de00c",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x2a13ad654d4c5f7550e11d4c36410b288e9eacb8": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xd145192ca25371fd05274513eff3b34332e72226": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x6a52ba5eaf5997f4d412dd73f9afe5294eee623e4d33ac4dde09b0b622239785",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-balance-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xacd2f4c2d7ed79f1b5d558a7ee0692c205b63bf7": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x73ac089b2ddd9774de55fa7ac8a59b708170312f": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xacd2f4c2d7ed79f1b5d558a7ee0692c205b63bf7",
+            "secretKey": "0x35497fc126d7fba1b14ce2f4c537397599dcb1078ccd3f6ca5c1ca259759b308",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x95d516ab9c60d987cfc7b780c505d059049288c5e273876efb5c2dcd615951b4",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8610180800783030d4080809260016d0fffffffffffffffffffffffffff52c001a09c6d7f4fe616dc3dce5c5db6baa630982cf480141967de13bc60733341297d9da03634ed40ab3d03c8281a697e1af47cf92be3dd6fd18af93a11c21b26ebeb8eee",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xacd2f4c2d7ed79f1b5d558a7ee0692c205b63bf7": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x73ac089b2ddd9774de55fa7ac8a59b708170312f": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xc7c1b45d0950e3bdddec556d570a3fac7c1ad0c2676fdf909bcb7dcb3058fc40",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-balance-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x0a8b6639a6a5cb968c752bbec740104655f503e4": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x4f46d3ac6410deceb87b87571e23d98779662684": {
+                "nonce": "0x00",
+                "balance": "0x01",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x0a8b6639a6a5cb968c752bbec740104655f503e4",
+            "secretKey": "0x518ae2639d6add1e1b8a7cdff73acb7019c32796952ac945a8a8ca33f183bab3",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xed213f949315507e9fa7ca3c080c50c64b6ccb0b4e9c4c8cdbd34b7b8487437f",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8540180800783030d4080808560006000fdc001a09beec4fc83e7f71cc57841428c7a7b5eabb2524bd2a1ec7277395cf88c5868ffa03222bb9fe574ee201324a5f82aeed795aacf9bad74cb5004cb34273e3fe584a7",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x0a8b6639a6a5cb968c752bbec740104655f503e4": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x4f46d3ac6410deceb87b87571e23d98779662684": {
+                            "nonce": "0x00",
+                            "balance": "0x01",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x79f118393b54942c9bb35834af0ae0151730c38277f943bf94ffdd79ae40050b",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-code-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x2f6e04261d10e4f952ccf0503aafda62718bed61": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xd1d74735b428f8fe800afaddd3d31b1a756b373f": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x2f6e04261d10e4f952ccf0503aafda62718bed61",
+            "secretKey": "0x6f09e671217c42f26e35369e3820a36180facfd475aa181eec3f01c29399e809",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x3dcda48da4bd9d13bad31e7bf42c5ce1653b4588241b01e07bc96fa31117efd5",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8650180800783030d408080966001600055600060015561000160008160158239f300c001a0bb84153f32713a5d58a34e62f17e66878eafede241e057708974d526c6cdcc64a0332a3d5de53472e475caa82e9b91d97d659e4bc26ac74a22b859c612744ccbcc",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x2f6e04261d10e4f952ccf0503aafda62718bed61": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xd1d74735b428f8fe800afaddd3d31b1a756b373f": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x579400d16ea57e736391e96a7ea5b6f050920e0821266dd8c2b93cd5fc5cfa8e",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-code-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xc8a82d137ad31c5ae4e14ede47f48cd6c5ea7fe2": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x150357aaf6f7456e9e0458adf2f5a181b058e2d8": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xc8a82d137ad31c5ae4e14ede47f48cd6c5ea7fe2",
+            "secretKey": "0x012ab789dfd28732754a8acee85e28877b32b222953a7a62afae2a3522e3903e",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x81e2996b1e69029dcf10860a437365c85e688a5b22254684f6d4262b95d1110b",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8610180800783030d4080809260016d0fffffffffffffffffffffffffff52c080a04b0c209796fdc8061a26c04d0e7e3ef13d2ffc14b253eaf5843403c06fc46d83a02857384e7e30a5905493460d03d23fe927bd87d90739a976f956b8ed000f229b",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xc8a82d137ad31c5ae4e14ede47f48cd6c5ea7fe2": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x150357aaf6f7456e9e0458adf2f5a181b058e2d8": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x7ecb1d21b36d5dc063f35d18a8c4bd24cbfc6fb00681fdbdec94dce48d9bddec",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-code-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xed99e1804169bc23b31492f24191f234951a68f0": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x0bd9880ecaea49ad90b4f001d4fe4c1930d18d67": {
+                "nonce": "0x00",
+                "balance": "0x00",
+                "code": "0x00",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xed99e1804169bc23b31492f24191f234951a68f0",
+            "secretKey": "0x53725e84e574f3d4c1ca9cad1446381ddff6254f12f8c7de4b13fff62af84c1d",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x492453542688636a2aa09c8440c9983c8253c152a0035c5d4dab300857310d2c",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8540180800783030d4080808560006000fdc001a050dd78b0a567d8f5fdbecf6358d56053b422b305a11115686543a5638fb810fba011b3c5b3fbd8cf73b0036e9ca07d2def3e931b29c262e2b8ce9fbe55ccb03346",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xed99e1804169bc23b31492f24191f234951a68f0": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x0bd9880ecaea49ad90b4f001d4fe4c1930d18d67": {
+                            "nonce": "0x00",
+                            "balance": "0x00",
+                            "code": "0x00",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x0c6e99926a18a65309396983e204a7f5ca83eba2da70642f757de9b5186990ce",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-nonce-correct-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0xa11c37f511c8a18f8a818f6868af8d88645f3b25": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xf25a8f8a356c253c56b66fbb321f49d24bcc889f": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x6001600055600060015561000160008160158239f300"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0xa11c37f511c8a18f8a818f6868af8d88645f3b25",
+            "secretKey": "0x9aaac047519b5e2708a16b1f4b2d3188d3b36ed8efa11ab50614630ce2c89835",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x0a5166bd2becb64442854fa1cb7de1e34daaeb504add871a64b24a67f2d9bd7b",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8650180800783030d408080966001600055600060015561000160008160158239f300c080a039a9f759344458ed25df471a6867a30984950fcd642284c0b61ed1c4a9caf5b4a05c512f76924f7aac90cfd26b82398299cfe97f8368f0351d64bddf73bf6f76bf",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0xa11c37f511c8a18f8a818f6868af8d88645f3b25": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xf25a8f8a356c253c56b66fbb321f49d24bcc889f": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x513b617ef8ee7eec25d5ebcf587f943ebf5870f5b064ef6eb1f54283b07011aa",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-nonce-oog-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x28d1433ba5c7bd09594fbb9c3df4b0847c07eea6": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0x312ebaaa42e8701e8618bd2f7cc615da48613190": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60016d0fffffffffffffffffffffffffff52"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x28d1433ba5c7bd09594fbb9c3df4b0847c07eea6",
+            "secretKey": "0x0d1497de594be244f0b65347a45ee3d0320d3049f5c51600c4dde4e997ce59f3",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0x87530491dc161c285e465189d115ce27665740cb2593bfcbd53e0aeb229cef66",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8610180800783030d4080809260016d0fffffffffffffffffffffffffff52c080a064d7fdbe8152cb5818710bc698c308c0e86a2fb55926babfe46340c0bc1f89a5a0212b27d0126dfbbf45bb482125e8bca118cd61cdd526798010b0fedc88b46955",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x28d1433ba5c7bd09594fbb9c3df4b0847c07eea6": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0x312ebaaa42e8701e8618bd2f7cc615da48613190": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0xca523e0c07f8417b57f4d1746cf57fbe1a6d9a67949a07e82b3a5415d1010d6c",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
+    "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Osaka-tx_type_2-state_test-non-empty-nonce-revert-initcode]": {
+        "env": {
+            "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentGasLimit": "0x07270e00",
+            "currentNumber": "0x01",
+            "currentTimestamp": "0x03e8",
+            "currentRandom": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "currentDifficulty": "0x00",
+            "currentBaseFee": "0x07",
+            "currentExcessBlobGas": "0x00"
+        },
+        "pre": {
+            "0x0801f1aa12ff1bac0c83648f089e1d4948ce0729": {
+                "nonce": "0x00",
+                "balance": "0x3635c9adc5dea00000",
+                "code": "0x",
+                "storage": {}
+            },
+            "0xf139f18c15b68527ba03b7dde4be6003a721e10d": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x",
+                "storage": {
+                    "0x01": "0x01"
+                }
+            }
+        },
+        "transaction": {
+            "nonce": "0x00",
+            "maxPriorityFeePerGas": "0x00",
+            "maxFeePerGas": "0x07",
+            "gasLimit": [
+                "0x030d40"
+            ],
+            "value": [
+                "0x00"
+            ],
+            "data": [
+                "0x60006000fd"
+            ],
+            "accessLists": [
+                []
+            ],
+            "sender": "0x0801f1aa12ff1bac0c83648f089e1d4948ce0729",
+            "secretKey": "0x8d25362f474305b16374439edf2417dd76704be509548f6b930195ab1cedec13",
+            "to": ""
+        },
+        "post": {
+            "Osaka": [
+                {
+                    "hash": "0xb104abecb6098add5aac68d30b41536093f3622094ce05b85e9adcf20efa8b80",
+                    "logs": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes": "0x02f8540180800783030d4080808560006000fdc080a02f314e907d5e3113e9796e0b7af2135811825f76ab5252680ddaa7d036ad0ea3a0762c3b9cfc65fa36eee337cc8b7fa15a1eda3f7c396fb86d311e50f15d0c30c1",
+                    "indexes": {
+                        "data": 0,
+                        "gas": 0,
+                        "value": 0
+                    },
+                    "state": {
+                        "0x0801f1aa12ff1bac0c83648f089e1d4948ce0729": {
+                            "nonce": "0x01",
+                            "balance": "0x3635c9adc5de8aa340",
+                            "code": "0x",
+                            "storage": {}
+                        },
+                        "0xf139f18c15b68527ba03b7dde4be6003a721e10d": {
+                            "nonce": "0x01",
+                            "balance": "0x00",
+                            "code": "0x",
+                            "storage": {
+                                "0x01": "0x01"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "config": {
+            "blobSchedule": {
+                "Cancun": {
+                    "target": "0x03",
+                    "max": "0x06",
+                    "baseFeeUpdateFraction": "0x32f0ed"
+                },
+                "Prague": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                },
+                "Osaka": {
+                    "target": "0x06",
+                    "max": "0x09",
+                    "baseFeeUpdateFraction": "0x4c6964"
+                }
+            },
+            "chainid": "0x01"
+        },
+        "_info": {
+            "hash": "0x3ccc169763c1133a739ebbda7af8db7f7b6495cbecd2e0dad4c7c22c72b27eee",
+            "comment": "`execution-specs` generated test",
+            "filling-transition-tool": "2.18.0rc6",
+            "description": "Test that a contract creation transaction exceptionally aborts when\n    the target address has a non-empty storage, balance, nonce, or code.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-v5.4.0/tests/paris/eip7610_create_collision/test_initcollision.py#L60",
+            "fixture-format": "state_test",
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-7610.md",
+            "reference-spec-version": "80ef48d0bbb5a4939ade51caaaac57b5df6acd4e"
+        }
+    },
     "tests/paris/eip7610_create_collision/test_initcollision.py::test_init_collision_create_tx[fork_Paris-tx_type_0-state_test-non-empty-balance-correct-initcode]": {
         "env": {
             "currentCoinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
