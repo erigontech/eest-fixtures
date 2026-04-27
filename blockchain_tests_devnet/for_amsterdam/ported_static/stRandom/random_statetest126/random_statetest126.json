@@ -114,7 +114,9 @@
                 "nonce": "0x01",
                 "balance": "0x00",
                 "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604657602036036042575f35600143038111604257611fff81430311604257611fff9006545f5260205ff35b5f5ffd5b5f35611fff60014303065500",
-                "storage": {}
+                "storage": {
+                    "0x00": "0xc69824e6c6dcba2bb8991de5b541b9fcf4c6e81010b9d62b829c081f3de5dd29"
+                }
             },
             "0x0000bbddc7ce488642fb579f8b00f3a590007251": {
                 "nonce": "0x01",
@@ -170,7 +172,9 @@
                 "nonce": "0x01",
                 "balance": "0x00",
                 "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
-                "storage": {}
+                "storage": {
+                    "0x03e8": "0x03e8"
+                }
             },
             "0x14d62b5f3407c5252cf14978b30aa72f1d70c9b7": {
                 "nonce": "0x00",
@@ -191,7 +195,7 @@
                 "storage": {}
             }
         },
-        "lastblockhash": "0x8f6cc04a4658107e78f0a4d7f444b7ec52fca1c09f16b9787264d20b987b7d12",
+        "lastblockhash": "0x3dd745a9db28a05b999400da6184c6d3bec53abe147239e170c3c7b595edba9f",
         "config": {
             "network": "Amsterdam",
             "chainid": "0x01",
@@ -235,7 +239,7 @@
                     "parentHash": "0xc69824e6c6dcba2bb8991de5b541b9fcf4c6e81010b9d62b829c081f3de5dd29",
                     "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
                     "coinbase": "0x4f3f701464972e74606d6ea82d4d3080599a0e79",
-                    "stateRoot": "0xa5fcf06784ea10e78c7e28f5341f20af0f15bec056da35ce302a210f938d0ea6",
+                    "stateRoot": "0xc315e68422786634d78d339df6bfee0bc90d3cb9459105ed8948f283839d0e8f",
                     "transactionsTrie": "0x93a5d2028349f52527f00b6e4c4f9d3776e539dfc974082ddc3280853de406c0",
                     "receiptTrie": "0x11e1ffb0e6b4ce1425af9719156cc54f2c371f8fa14ae5ce03f739c7155beef3",
                     "bloom": "0x00000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000080000000000010000000000000000000000002000000000000000000000000000000000000010000000000000000000000000000200000000000000008000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000008000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000",
@@ -253,9 +257,9 @@
                     "excessBlobGas": "0x00",
                     "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
                     "requestsHash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                    "blockAccessListHash": "0x6c56f3758bc170a617ed46a93a1ce611bc869997391df03eb404a4cba0d5cd6f",
+                    "blockAccessListHash": "0x933038575875556be814517977cc44bdad784a54e5d75086604289ddd6d54ef4",
                     "slotNumber": "0x00",
-                    "hash": "0x8f6cc04a4658107e78f0a4d7f444b7ec52fca1c09f16b9787264d20b987b7d12"
+                    "hash": "0x3dd745a9db28a05b999400da6184c6d3bec53abe147239e170c3c7b595edba9f"
                 },
                 "transactions": [
                     {
@@ -328,19 +332,37 @@
                         "nonceChanges": [],
                         "balanceChanges": [],
                         "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": [
-                            "0x00"
-                        ]
+                        "storageChanges": [
+                            {
+                                "slot": "0x00",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x00",
+                                        "postValue": "0xc69824e6c6dcba2bb8991de5b541b9fcf4c6e81010b9d62b829c081f3de5dd29"
+                                    }
+                                ]
+                            }
+                        ],
+                        "storageReads": []
                     },
                     {
                         "address": "0x000f3df6d732807ef1319fb7b8bb8522d0beac02",
                         "nonceChanges": [],
                         "balanceChanges": [],
                         "codeChanges": [],
-                        "storageChanges": [],
+                        "storageChanges": [
+                            {
+                                "slot": "0x03e8",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x00",
+                                        "postValue": "0x03e8"
+                                    }
+                                ]
+                            }
+                        ],
                         "storageReads": [
-                            "0x03e8"
+                            "0x23e7"
                         ]
                     },
                     {
@@ -383,18 +405,18 @@
                         "storageReads": []
                     }
                 ],
-                "rlp": "0xf902edf90281a0c69824e6c6dcba2bb8991de5b541b9fcf4c6e81010b9d62b829c081f3de5dd29a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347944f3f701464972e74606d6ea82d4d3080599a0e79a0a5fcf06784ea10e78c7e28f5341f20af0f15bec056da35ce302a210f938d0ea6a093a5d2028349f52527f00b6e4c4f9d3776e539dfc974082ddc3280853de406c0a011e1ffb0e6b4ce1425af9719156cc54f2c371f8fa14ae5ce03f739c7155beef3b90100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000800000000000100000000000000000000000020000000000000000000000000000000000000100000000000000000000000000002000000000000000080000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000080000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000008001887fffffffffffffff8252488203e800a000000000000000000000000000000000000000000000000000000000000200008800000000000000000aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a06c56f3758bc170a617ed46a93a1ce611bc869997391df03eb404a4cba0d5cd6f80f865f863800a83061a809414d62b5f3407c5252cf14978b30aa72f1d70c9b7830186a04226a089bf3ce3803dbaeefb989e9f10df170c9e50cbba00f2aca39a1d79aa9aa9fe9ba06ea249748881d2cd8eee4cd842e718f04e568fd909a34dd6b882f017c660a74bc0c0",
+                "rlp": "0xf902edf90281a0c69824e6c6dcba2bb8991de5b541b9fcf4c6e81010b9d62b829c081f3de5dd29a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347944f3f701464972e74606d6ea82d4d3080599a0e79a0c315e68422786634d78d339df6bfee0bc90d3cb9459105ed8948f283839d0e8fa093a5d2028349f52527f00b6e4c4f9d3776e539dfc974082ddc3280853de406c0a011e1ffb0e6b4ce1425af9719156cc54f2c371f8fa14ae5ce03f739c7155beef3b90100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000800000000000100000000000000000000000020000000000000000000000000000000000000100000000000000000000000000002000000000000000080000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000080000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000008001887fffffffffffffff8252488203e800a000000000000000000000000000000000000000000000000000000000000200008800000000000000000aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a0933038575875556be814517977cc44bdad784a54e5d75086604289ddd6d54ef480f865f863800a83061a809414d62b5f3407c5252cf14978b30aa72f1d70c9b7830186a04226a089bf3ce3803dbaeefb989e9f10df170c9e50cbba00f2aca39a1d79aa9aa9fe9ba06ea249748881d2cd8eee4cd842e718f04e568fd909a34dd6b882f017c660a74bc0c0",
                 "blocknumber": "1"
             }
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xd38277fce72e81f07c7839bc647ec2ce538586de28c991a8fdb74fe04d49c4e9",
+            "hash": "0xd7f3dc5f65b02a6ff2ca90efad93a73129f5f6a72751a397f3f7271bed027332",
             "fixture-format": "blockchain_test",
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test_random_statetest126.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/ported_static/stRandom/test_random_statetest126.py#L25",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-sn\u00f8bal-devnet-4@v1.0.0/tests/ported_static/stRandom/test_random_statetest126.py#L25",
             "metadata": {
                 "opcode_count": {}
             }

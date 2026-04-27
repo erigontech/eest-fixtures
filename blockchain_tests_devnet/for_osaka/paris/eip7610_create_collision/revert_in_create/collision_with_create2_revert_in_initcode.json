@@ -280,7 +280,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test that a CREATE transaction collision with pre-existing storage causes\nthe transaction to fail, even when the initcode would perform CREATE2 with\nreverting inner initcode.\n\nThe initcode (if it were to run) would:\n1. Execute CREATE2 with inner initcode that reverts with 32 bytes of data\n2. Store RETURNDATASIZE to storage slot 0\n3. Copy returndata to memory and store to slot 1\n\nSince there's a collision (pre-existing storage), the CREATE TX should fail\nand the pre-existing account should remain unchanged.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/paris/eip7610_create_collision/test_revert_in_create.py#L28",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-sn\u00f8bal-devnet-4@v1.0.0/tests/paris/eip7610_create_collision/test_revert_in_create.py#L28",
             "metadata": {
                 "opcode_count": {}
             },

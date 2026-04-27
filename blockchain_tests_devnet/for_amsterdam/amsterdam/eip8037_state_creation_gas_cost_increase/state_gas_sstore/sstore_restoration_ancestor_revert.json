@@ -466,7 +466,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Verify the SSTORE 0 to x to 0 refund unwinds when an ancestor frame\n(not the applying frame itself) reverts.\n\nInner frame applies the refund and returns successfully; its\nrefund propagates to middle via `incorporate_child_on_success`.\nMiddle then REVERTs; its refund must be dropped by the caller's\n`incorporate_child_on_error`, rather than propagating up.  This\nexercises the recursive scope that single-frame revert tests do\nnot: a bug in the success propagation of `state_gas_refund` would\nleak the refund into the caller's reservoir.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_sstore.py#L872",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-sn\u00f8bal-devnet-4@v1.0.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_sstore.py#L872",
             "metadata": {
                 "opcode_count": {}
             },

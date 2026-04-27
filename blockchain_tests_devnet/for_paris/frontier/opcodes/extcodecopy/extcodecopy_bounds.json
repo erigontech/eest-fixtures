@@ -141,7 +141,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test EXTCODECOPY with out-of-bounds code offset.\n\nPerform three EXTCODECOPY operations on a 15-byte target contract:\n1. Huge code offset + large size  -> all zeros (beyond code)\n2. Huge code offset + small size  -> all zeros (beyond code)\n3. Offset 5 + size 12             -> partial code copy + zero padding\n\nEach result is read via MLOAD(0) and MLOAD(32) and stored. Only the\nthird operation produces a non-zero result because the dest_offset=1\nshifts the copied bytes into the MLOAD(0) word.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/frontier/opcodes/test_extcodecopy.py#L16",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-sn\u00f8bal-devnet-4@v1.0.0/tests/frontier/opcodes/test_extcodecopy.py#L16",
             "metadata": {
                 "opcode_count": {}
             }
