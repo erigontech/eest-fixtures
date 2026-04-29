@@ -415,7 +415,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Verify SSTORE restoration and SELFDESTRUCT refunds do not stack.\n\nInitcode does SSTORE(0, 1) then SSTORE(0, 0) then SELFDESTRUCT.\nThe 0 to x to 0 restoration refunds the slot inline. The end of\ntx selfdestruct refund scans `storage_writes[B]` and only counts\nnon zero final values, so the restored slot is excluded and the\nend of tx refund is account only.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_selfdestruct.py#L491",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-snobal-devnet-5@v8037.0.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_selfdestruct.py#L491",
             "metadata": {
                 "opcode_count": {}
             },

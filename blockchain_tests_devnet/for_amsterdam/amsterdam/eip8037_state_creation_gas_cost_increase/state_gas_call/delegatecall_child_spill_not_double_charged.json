@@ -1,23 +1,23 @@
 {
-    "tests/ported_static/stRecursiveCreate/test_recursive_create.py::test_recursive_create[fork_Amsterdam-blockchain_test_from_state_test]": {
+    "tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_call.py::test_delegatecall_child_spill_not_double_charged[fork_Amsterdam-blockchain_test_from_state_test]": {
         "network": "Amsterdam",
         "genesisBlockHeader": {
             "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
             "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
             "coinbase": "0x0000000000000000000000000000000000000000",
-            "stateRoot": "0x6cebe8b16cf0ada8c21ebe2014ba3bb18cf342cc146ac060f76c6f35d0f6b136",
+            "stateRoot": "0x47d5a61d8842fc5edd5a24008437c81b66f9350982cc0dfd0867a7ea6ff102b7",
             "transactionsTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "receiptTrie": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
             "difficulty": "0x00",
             "number": "0x00",
-            "gasLimit": "0x989680",
+            "gasLimit": "0x07270e00",
             "gasUsed": "0x00",
             "timestamp": "0x00",
             "extraData": "0x00",
             "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
             "nonce": "0x0000000000000000",
-            "baseFeePerGas": "0x0b",
+            "baseFeePerGas": "0x07",
             "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "blobGasUsed": "0x00",
             "excessBlobGas": "0x00",
@@ -25,7 +25,7 @@
             "requestsHash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "blockAccessListHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
             "slotNumber": "0x00",
-            "hash": "0x0c7e2fb39d9616b126f3c21ba7751488179636053f791ea7a591589ad7ec3b9e"
+            "hash": "0x7532a094f73aa3b0b3c9b1916914523b1926b9acb7e6424a761d5e84ac42de35"
         },
         "pre": {
             "0x0000f90827f1c53a10cb7a02335b175320002935": {
@@ -90,15 +90,21 @@
                 "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604d57602036146024575f5ffd5b5f35801560495762001fff810690815414603c575f5ffd5b62001fff01545f5260205ff35b5f5ffd5b62001fff42064281555f359062001fff015500",
                 "storage": {}
             },
-            "0x095e7baea6a6c7c4c2dfeb977efac326af552d87": {
-                "nonce": "0x00",
-                "balance": "0x01312d00",
-                "code": "0x60206000600039602060006000f000",
+            "0x30f1585a288bca56a03a8e5cc2e12d2ef804b438": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60016000556002600155600360025560046003556005600455600660055500",
                 "storage": {}
             },
-            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+            "0xfc9b6d6b58b8fe2bb98ab56d76071499dab8db27": {
+                "nonce": "0x01",
+                "balance": "0x00",
+                "code": "0x60006000600060007330f1585a288bca56a03a8e5cc2e12d2ef804b4385af450",
+                "storage": {}
+            },
+            "0x1ad9bc24818784172ff393bb6f89f094d4d2ca29": {
                 "nonce": "0x00",
-                "balance": "0x0de0b6b3a7640000",
+                "balance": "0x3635c9adc5dea00000",
                 "code": "0x",
                 "storage": {}
             }
@@ -109,7 +115,7 @@
                 "balance": "0x00",
                 "code": "0x3373fffffffffffffffffffffffffffffffffffffffe14604657602036036042575f35600143038111604257611fff81430311604257611fff9006545f5260205ff35b5f5ffd5b5f35611fff60014303065500",
                 "storage": {
-                    "0x00": "0x0c7e2fb39d9616b126f3c21ba7751488179636053f791ea7a591589ad7ec3b9e"
+                    "0x00": "0x7532a094f73aa3b0b3c9b1916914523b1926b9acb7e6424a761d5e84ac42de35"
                 }
             },
             "0x0000bbddc7ce488642fb579f8b00f3a590007251": {
@@ -170,230 +176,39 @@
                     "0x03e8": "0x03e8"
                 }
             },
-            "0x095e7baea6a6c7c4c2dfeb977efac326af552d87": {
+            "0x30f1585a288bca56a03a8e5cc2e12d2ef804b438": {
                 "nonce": "0x01",
-                "balance": "0x0132b3a0",
-                "code": "0x60206000600039602060006000f000",
+                "balance": "0x00",
+                "code": "0x60016000556002600155600360025560046003556005600455600660055500",
                 "storage": {}
             },
-            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b": {
+            "0xfc9b6d6b58b8fe2bb98ab56d76071499dab8db27": {
                 "nonce": "0x01",
-                "balance": "0x0de0b6b3a72ca5b0",
+                "balance": "0x00",
+                "code": "0x60006000600060007330f1585a288bca56a03a8e5cc2e12d2ef804b4385af450",
+                "storage": {
+                    "0x00": "0x01",
+                    "0x01": "0x02",
+                    "0x02": "0x03",
+                    "0x03": "0x04",
+                    "0x04": "0x05",
+                    "0x05": "0x06"
+                }
+            },
+            "0x1ad9bc24818784172ff393bb6f89f094d4d2ca29": {
+                "nonce": "0x01",
+                "balance": "0x3635c9adc5de756b1a",
                 "code": "0x",
                 "storage": {}
             },
-            "0xd2571607e241ecf590ed94b12d87c94babe36db6": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x91ed00a0a906270d466af043c4e111dadca970a3": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xb679828fa6040990410b3282e916bfbd6c74f890": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x6965235e025001fb620d441803fedb005f7ac710": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x283b585ba5bc85d64a99cb5ecb9a8495ac944948": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x4326e4b5aa29095a293f86c51e4776beeeb13c9b": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x26963175b50e69c2400aa12887cad973aa275ff0": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x923945f4390ee06a73a80c1f56f979f7959755df": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xec51d36be1c8fd3ff3c74210e408a8710163ceb8": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x7e495061f514448f3dd51bb0cf909eef3c3f4712": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xb1fe911acf07cc8107d984408a443c5af42389e0": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xfa39c0440bdb586ab891b5b0a2db29d81c2068f9": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x551cc3090c98d0e0a07c34e7f7219d1139fede7e": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x0b057f3d7be9b4be7edf09b66f0a154da6a46ae4": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x350a4186374a87dc45cada137c2eed0022e23f0d": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x3c3efeb193be9bdcc59a190ba343b7aa51ab3417": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x0124ac36deebf89244c22bedfcb6e05fb2f62f3b": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xbbc2aea32a7763bf59ea9157274f20e73c47210d": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x2c0b3f7eba30e844978dd6a58127cca7fa9dd329": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x94f69c9e63cf82c2f3a04943b4c57909d99397e5": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xd5a313463930d740250c19f53d6ea3fe596d18a9": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x1e22452e40c125d338ca6b53c49773da2e3760eb": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x4e2634d8427a529403ecdd1d44aa6dd137da4624": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x11802a2c1f85a5da238086378dc4820ccd19134f": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x9aae8b11a923f49fcab42904f8c6759fcbad37f9": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xb650ecfe63d1f0cd6fa262334621f60b09ef1597": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x2ea5d28deea6fd475333f03590fadb6a29514936": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x02660b1fc1d262f440733e8787f6ca21fb55bcd4": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x73714e7e266d879bafd2cb37528e2169cb508513": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x66fddf0c330ee5edcb4854883d27e9e01213de2c": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xbc15fcea3abf3edd959316d68ef6c6c01611869e": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x996d22e0533ff751ab345656c14a5159df187211": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x6b61d79d8680a739ac957dc2309a722b8d587d86": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0x138de55ad30a7e72b8d19a27048203c0297a7750": {
-                "nonce": "0x02",
-                "balance": "0x00",
-                "code": "0x",
-                "storage": {}
-            },
-            "0xdf1050bdf2c8617339324e68a1e6e0e102e3ca31": {
-                "nonce": "0x02",
-                "balance": "0x00",
+            "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba": {
+                "nonce": "0x00",
+                "balance": "0x0cc645",
                 "code": "0x",
                 "storage": {}
             }
         },
-        "lastblockhash": "0x63bcdabab86e240360d3cae1549b8bab355cd6a4c8305c1c0abc52a244a86576",
+        "lastblockhash": "0x5aa761582957b95f3cd9740cb40c20e6d89952f32df7e92502cdb3ab7275c02f",
         "config": {
             "network": "Amsterdam",
             "chainid": "0x01",
@@ -430,34 +245,34 @@
                 }
             }
         },
-        "genesisRLP": "0xf9027ef90278a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a06cebe8b16cf0ada8c21ebe2014ba3bb18cf342cc146ac060f76c6f35d0f6b136a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000808083989680808000a000000000000000000000000000000000000000000000000000000000000000008800000000000000000ba056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d4934780c0c0c0",
+        "genesisRLP": "0xf9027ff90279a00000000000000000000000000000000000000000000000000000000000000000a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347940000000000000000000000000000000000000000a047d5a61d8842fc5edd5a24008437c81b66f9350982cc0dfd0867a7ea6ff102b7a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421b901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080808407270e00808000a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d4934780c0c0c0",
         "blocks": [
             {
                 "blockHeader": {
-                    "parentHash": "0x0c7e2fb39d9616b126f3c21ba7751488179636053f791ea7a591589ad7ec3b9e",
+                    "parentHash": "0x7532a094f73aa3b0b3c9b1916914523b1926b9acb7e6424a761d5e84ac42de35",
                     "uncleHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
                     "coinbase": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
-                    "stateRoot": "0xf62ebcdedeee4b7941c27286a8270b9386f8c1794b9e8e180b95b67454760006",
-                    "transactionsTrie": "0x5b0fe558ad5246d5442ff5f018e5142505d5a6885145708224f8edf4d5c5c68e",
-                    "receiptTrie": "0x6a6620c01eb261a96142a32214ec970263c6506742cc1156ca41522042df5b4c",
-                    "bloom": "0x00000000000000000000000800000000000000000000000000002000000000000000000000000000004000000000000000000000000000000000000000000000000000000080000000000008000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000008000000000000000000000000000000000000000000400000000000010000000000000000000000000000000000000000000000000000",
+                    "stateRoot": "0x662ef46d99a930df1aef77c9d06a431a841e1832ea5ec2864dfa369fcc2f69ab",
+                    "transactionsTrie": "0x4ada28fc362a33df7ae5d352587b12d6249b09b16ab23761aa645e4397f6f292",
+                    "receiptTrie": "0xb1f75e450ca7b38c43a2ee2cd586f51456124d15f4140301f7eff6f01d6f4a5e",
+                    "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
                     "difficulty": "0x00",
                     "number": "0x01",
-                    "gasLimit": "0x989680",
-                    "gasUsed": "0x0552a8",
+                    "gasLimit": "0x07270e00",
+                    "gasUsed": "0x037080",
                     "timestamp": "0x03e8",
                     "extraData": "0x00",
-                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000020000",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
                     "nonce": "0x0000000000000000",
-                    "baseFeePerGas": "0x0a",
+                    "baseFeePerGas": "0x07",
                     "withdrawalsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
                     "blobGasUsed": "0x00",
                     "excessBlobGas": "0x00",
                     "parentBeaconBlockRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
                     "requestsHash": "0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                    "blockAccessListHash": "0xf80a56aa635854e3fca43e74dbf41af2f184ade9f23c918fbc308922a828543a",
+                    "blockAccessListHash": "0x6ace130f2573f7a52c15db02f0cfef694ffb41746ed7597d66cba7f1d2ec10c3",
                     "slotNumber": "0x00",
-                    "hash": "0x63bcdabab86e240360d3cae1549b8bab355cd6a4c8305c1c0abc52a244a86576"
+                    "hash": "0x5aa761582957b95f3cd9740cb40c20e6d89952f32df7e92502cdb3ab7275c02f"
                 },
                 "transactions": [
                     {
@@ -465,37 +280,27 @@
                         "chainId": "0x01",
                         "nonce": "0x00",
                         "gasPrice": "0x0a",
-                        "gasLimit": "0x071948",
-                        "to": "0x095e7baea6a6c7c4c2dfeb977efac326af552d87",
-                        "value": "0x0186a0",
+                        "gasLimit": "0x07a120",
+                        "to": "0xfc9b6d6b58b8fe2bb98ab56d76071499dab8db27",
+                        "value": "0x00",
                         "data": "0x",
                         "v": "0x26",
-                        "r": "0x85b07c290abccc42eafab80926911746ca1e38cd095db7f438018ffc6ccf7970",
-                        "s": "0x02c88980d2761ca4ea127b7ffc3c882cdf8e9a39a4e0524087ec59776124c57c",
-                        "sender": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b"
+                        "r": "0x3bd11371548bb8cfe05efefffc89a041426f7c03826f71f273b14235bd1d61b0",
+                        "s": "0x7f516978d6dcce75f6997a63b28b1c7002265738483d7f86dc1cce60fd9bff17",
+                        "sender": "0x1ad9bc24818784172ff393bb6f89f094d4d2ca29"
                     }
                 ],
                 "uncleHeaders": [],
                 "withdrawals": [],
                 "receipts": [
                     {
-                        "transactionHash": "0xac4ea162330824f86bcf32cb5ba9af657a865c021234dfa48ca1b483ccbc138d",
+                        "transactionHash": "0xd051da7ca0f1bf1e2f47e728585616517d3b30a3c70c022b323fe4fa6a8ee101",
                         "type": "0x00",
-                        "cumulativeGasUsed": "0x0561f8",
-                        "bloom": "0x00000000000000000000000800000000000000000000000000002000000000000000000000000000004000000000000000000000000000000000000000000000000000000080000000000008000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000008000000000000000000000000000000000000000000400000000000010000000000000000000000000000000000000000000000000000",
-                        "logs": [
-                            {
-                                "address": "0xfffffffffffffffffffffffffffffffffffffffe",
-                                "topics": [
-                                    "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
-                                    "0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b",
-                                    "0x000000000000000000000000095e7baea6a6c7c4c2dfeb977efac326af552d87"
-                                ],
-                                "data": "0x00000000000000000000000000000000000000000000000000000000000186a0"
-                            }
-                        ],
+                        "cumulativeGasUsed": "0x044217",
+                        "bloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                        "logs": [],
                         "status": true,
-                        "rlp": "0xf901a701830561f8b9010000000000000000000000000800000000000000000000000000002000000000000000000000000000004000000000000000000000000000000000000000000000000000000080000000000008000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000008000000000000000000000000000000000000000000400000000000010000000000000000000000000000000000000000000000000000f89df89b94fffffffffffffffffffffffffffffffffffffffef863a0ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3efa0000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0ba0000000000000000000000000095e7baea6a6c7c4c2dfeb977efac326af552d87a000000000000000000000000000000000000000000000000000000000000186a0"
+                        "rlp": "0xf901090183044217b9010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0"
                     }
                 ],
                 "blockAccessList": [
@@ -536,7 +341,7 @@
                                 "slotChanges": [
                                     {
                                         "blockAccessIndex": "0x00",
-                                        "postValue": "0x0c7e2fb39d9616b126f3c21ba7751488179636053f791ea7a591589ad7ec3b9e"
+                                        "postValue": "0x7532a094f73aa3b0b3c9b1916914523b1926b9acb7e6424a761d5e84ac42de35"
                                     }
                                 ]
                             }
@@ -564,33 +369,7 @@
                         ]
                     },
                     {
-                        "address": "0x0124ac36deebf89244c22bedfcb6e05fb2f62f3b",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x02660b1fc1d262f440733e8787f6ca21fb55bcd4",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x095e7baea6a6c7c4c2dfeb977efac326af552d87",
+                        "address": "0x1ad9bc24818784172ff393bb6f89f094d4d2ca29",
                         "nonceChanges": [
                             {
                                 "blockAccessIndex": "0x01",
@@ -600,87 +379,9 @@
                         "balanceChanges": [
                             {
                                 "blockAccessIndex": "0x01",
-                                "postBalance": "0x0132b3a0"
+                                "postBalance": "0x3635c9adc5de756b1a"
                             }
                         ],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x0b057f3d7be9b4be7edf09b66f0a154da6a46ae4",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x11802a2c1f85a5da238086378dc4820ccd19134f",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x138de55ad30a7e72b8d19a27048203c0297a7750",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x1e22452e40c125d338ca6b53c49773da2e3760eb",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x26963175b50e69c2400aa12887cad973aa275ff0",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x283b585ba5bc85d64a99cb5ecb9a8495ac944948",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
                         "codeChanges": [],
                         "storageChanges": [],
                         "storageReads": []
@@ -688,52 +389,18 @@
                     {
                         "address": "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
                         "nonceChanges": [],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x2c0b3f7eba30e844978dd6a58127cca7fa9dd329",
-                        "nonceChanges": [
+                        "balanceChanges": [
                             {
                                 "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
+                                "postBalance": "0x0cc645"
                             }
                         ],
-                        "balanceChanges": [],
                         "codeChanges": [],
                         "storageChanges": [],
                         "storageReads": []
                     },
                     {
-                        "address": "0x2ea5d28deea6fd475333f03590fadb6a29514936",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x350a4186374a87dc45cada137c2eed0022e23f0d",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x39bcb9056a944f0955dba921096bbc2ef4025942",
+                        "address": "0x30f1585a288bca56a03a8e5cc2e12d2ef804b438",
                         "nonceChanges": [],
                         "balanceChanges": [],
                         "codeChanges": [],
@@ -741,351 +408,86 @@
                         "storageReads": []
                     },
                     {
-                        "address": "0x3c3efeb193be9bdcc59a190ba343b7aa51ab3417",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
+                        "address": "0xfc9b6d6b58b8fe2bb98ab56d76071499dab8db27",
+                        "nonceChanges": [],
                         "balanceChanges": [],
                         "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x4326e4b5aa29095a293f86c51e4776beeeb13c9b",
-                        "nonceChanges": [
+                        "storageChanges": [
                             {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
+                                "slot": "0x00",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x01",
+                                        "postValue": "0x01"
+                                    }
+                                ]
+                            },
+                            {
+                                "slot": "0x01",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x01",
+                                        "postValue": "0x02"
+                                    }
+                                ]
+                            },
+                            {
+                                "slot": "0x02",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x01",
+                                        "postValue": "0x03"
+                                    }
+                                ]
+                            },
+                            {
+                                "slot": "0x03",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x01",
+                                        "postValue": "0x04"
+                                    }
+                                ]
+                            },
+                            {
+                                "slot": "0x04",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x01",
+                                        "postValue": "0x05"
+                                    }
+                                ]
+                            },
+                            {
+                                "slot": "0x05",
+                                "slotChanges": [
+                                    {
+                                        "blockAccessIndex": "0x01",
+                                        "postValue": "0x06"
+                                    }
+                                ]
                             }
                         ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x4e2634d8427a529403ecdd1d44aa6dd137da4624",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x551cc3090c98d0e0a07c34e7f7219d1139fede7e",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x66fddf0c330ee5edcb4854883d27e9e01213de2c",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x6965235e025001fb620d441803fedb005f7ac710",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x6b61d79d8680a739ac957dc2309a722b8d587d86",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x73714e7e266d879bafd2cb37528e2169cb508513",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x7e495061f514448f3dd51bb0cf909eef3c3f4712",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x91ed00a0a906270d466af043c4e111dadca970a3",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x923945f4390ee06a73a80c1f56f979f7959755df",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x94f69c9e63cf82c2f3a04943b4c57909d99397e5",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x996d22e0533ff751ab345656c14a5159df187211",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0x9aae8b11a923f49fcab42904f8c6759fcbad37f9",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x01"
-                            }
-                        ],
-                        "balanceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postBalance": "0x0de0b6b3a72ca5b0"
-                            }
-                        ],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xb1fe911acf07cc8107d984408a443c5af42389e0",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xb650ecfe63d1f0cd6fa262334621f60b09ef1597",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xb679828fa6040990410b3282e916bfbd6c74f890",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xbbc2aea32a7763bf59ea9157274f20e73c47210d",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xbc15fcea3abf3edd959316d68ef6c6c01611869e",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xd2571607e241ecf590ed94b12d87c94babe36db6",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xd5a313463930d740250c19f53d6ea3fe596d18a9",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xdf1050bdf2c8617339324e68a1e6e0e102e3ca31",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xec51d36be1c8fd3ff3c74210e408a8710163ceb8",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
-                        "storageReads": []
-                    },
-                    {
-                        "address": "0xfa39c0440bdb586ab891b5b0a2db29d81c2068f9",
-                        "nonceChanges": [
-                            {
-                                "blockAccessIndex": "0x01",
-                                "postNonce": "0x02"
-                            }
-                        ],
-                        "balanceChanges": [],
-                        "codeChanges": [],
-                        "storageChanges": [],
                         "storageReads": []
                     }
                 ],
-                "rlp": "0xf902e9f9027da00c7e2fb39d9616b126f3c21ba7751488179636053f791ea7a591589ad7ec3b9ea01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0f62ebcdedeee4b7941c27286a8270b9386f8c1794b9e8e180b95b67454760006a05b0fe558ad5246d5442ff5f018e5142505d5a6885145708224f8edf4d5c5c68ea06a6620c01eb261a96142a32214ec970263c6506742cc1156ca41522042df5b4cb9010000000000000000000000000800000000000000000000000000002000000000000000000000000000004000000000000000000000000000000000000000000000000000000080000000000008000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000008000000000000000000000000000000000000000000400000000000010000000000000000000000000000000000000000000000000000800183989680830552a88203e800a000000000000000000000000000000000000000000000000000000000000200008800000000000000000aa056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a0f80a56aa635854e3fca43e74dbf41af2f184ade9f23c918fbc308922a828543a80f865f863800a8307194894095e7baea6a6c7c4c2dfeb977efac326af552d87830186a08026a085b07c290abccc42eafab80926911746ca1e38cd095db7f438018ffc6ccf7970a002c88980d2761ca4ea127b7ffc3c882cdf8e9a39a4e0524087ec59776124c57cc0c0",
+                "rlp": "0xf902e7f9027ea07532a094f73aa3b0b3c9b1916914523b1926b9acb7e6424a761d5e84ac42de35a01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347942adc25665018aa1fe0e6bc666dac8fc2697ff9baa0662ef46d99a930df1aef77c9d06a431a841e1832ea5ec2864dfa369fcc2f69aba04ada28fc362a33df7ae5d352587b12d6249b09b16ab23761aa645e4397f6f292a0b1f75e450ca7b38c43a2ee2cd586f51456124d15f4140301f7eff6f01d6f4a5eb901000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080018407270e00830370808203e800a0000000000000000000000000000000000000000000000000000000000000000088000000000000000007a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b4218080a00000000000000000000000000000000000000000000000000000000000000000a0e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855a06ace130f2573f7a52c15db02f0cfef694ffb41746ed7597d66cba7f1d2ec10c380f862f860800a8307a12094fc9b6d6b58b8fe2bb98ab56d76071499dab8db27808026a03bd11371548bb8cfe05efefffc89a041426f7c03826f71f273b14235bd1d61b0a07f516978d6dcce75f6997a63b28b1c7002265738483d7f86dc1cce60fd9bff17c0c0",
                 "blocknumber": "1"
             }
         ],
         "sealEngine": "NoProof",
         "_info": {
-            "hash": "0xc372a99c61d280554115f41a6966b34a0baca73f84ee4a5b5cffe1517027a2eb",
+            "hash": "0x28dbc3d1f89e521adfde50e111887391225b8b1f45ffbfd765aaf17ef2b4e4f3",
             "fixture-format": "blockchain_test",
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
-            "description": "Test_recursive_create.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/ported_static/stRecursiveCreate/test_recursive_create.py#L26",
+            "description": "Test DELEGATECALL child state gas paid from `gas_left` is not recharged.\n\nWith gas below the Amsterdam tx gas cap, the top-level frame starts with\nno state gas reservoir and the child pays for SSTOREs by spilling from\n`gas_left`. The parent frame must not charge the same state growth again\nat frame end.",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-snobal-devnet-5@v8037.0.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_call.py#L90",
             "metadata": {
                 "opcode_count": {}
-            }
+            },
+            "reference-spec": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8037.md",
+            "reference-spec-version": "a12902ae1b811c45a81b51bfce671cf7a1fb27f3"
         }
     }
 }

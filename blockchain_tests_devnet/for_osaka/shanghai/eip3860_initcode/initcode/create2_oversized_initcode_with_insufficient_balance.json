@@ -276,7 +276,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test CREATE2 with oversized initcode and insufficient balance.\n\nRegression test for\nhttps://github.com/ethereum/execution-specs/issues/914\n\nCREATE2 is called with an endowment of 1123123123 (exceeds the\ncontract's zero balance). The initcode size check must take\npriority over the balance check:\n\n- Initcode too large: consumes all gas, exits scope, SSTORE(1, 1)\n  is never reached, so storage slot 1 remains 0.\n- Initcode within limit: insufficient balance pushes 0, execution\n  continues, SSTORE(1, 1) executes, so storage slot 1 becomes 1.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/shanghai/eip3860_initcode/test_initcode.py#L700",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-snobal-devnet-5@v8037.0.0/tests/shanghai/eip3860_initcode/test_initcode.py#L700",
             "metadata": {
                 "opcode_count": {}
             },
@@ -563,7 +563,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Test CREATE2 with oversized initcode and insufficient balance.\n\nRegression test for\nhttps://github.com/ethereum/execution-specs/issues/914\n\nCREATE2 is called with an endowment of 1123123123 (exceeds the\ncontract's zero balance). The initcode size check must take\npriority over the balance check:\n\n- Initcode too large: consumes all gas, exits scope, SSTORE(1, 1)\n  is never reached, so storage slot 1 remains 0.\n- Initcode within limit: insufficient balance pushes 0, execution\n  continues, SSTORE(1, 1) executes, so storage slot 1 becomes 1.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/shanghai/eip3860_initcode/test_initcode.py#L700",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-snobal-devnet-5@v8037.0.0/tests/shanghai/eip3860_initcode/test_initcode.py#L700",
             "metadata": {
                 "opcode_count": {}
             },

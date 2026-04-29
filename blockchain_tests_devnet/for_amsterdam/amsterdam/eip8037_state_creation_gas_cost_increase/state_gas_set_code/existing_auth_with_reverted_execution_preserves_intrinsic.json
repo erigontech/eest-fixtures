@@ -435,7 +435,7 @@
             "comment": "`execution-specs` generated test",
             "filling-transition-tool": "2.19.0",
             "description": "Verify the worst case intrinsic state gas survives both the\nexisting account authorization refund and the top level failure\nrefund.\n\nScenario: a tx with a single authorization to an existing\naccount executes an SSTORE then REVERTs. `set_delegation` adds\nthe account creation portion to `state_gas_reservoir` without\nmutating the intrinsic state gas. The top level revert refund\nzeroes execution state gas. Block accounting reflects the worst\ncase intrinsic state gas unchanged. Under a mutating\nimplementation the intrinsic would be reduced and the block\nheader would fall back to the regular gas component.",
-            "url": "https://github.com/ethereum/execution-specs/blob/tests-bal@v5.7.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_set_code.py#L1164",
+            "url": "https://github.com/ethereum/execution-specs/blob/tests-snobal-devnet-5@v8037.0.0/tests/amsterdam/eip8037_state_creation_gas_cost_increase/test_state_gas_set_code.py#L1164",
             "metadata": {
                 "opcode_count": {}
             },
